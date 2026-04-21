@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海高中生学习辅助项目</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .subjects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .subject-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .subject-card h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .content-list {
+            list-style: none;
+        }
+        
+        .content-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .content-list li::before {
+            content: "•";
+            color: #4CAF50;
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+        }
+        
+        .content-list a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .content-list a:hover {
+            color: #4CAF50;
+        }
+        
+        .gvc-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .gvc-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .gvc-header h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        
+        .vocabulary-list {
+            list-style: none;
+        }
+        
+        .vocabulary-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .vocabulary-item:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .vocabulary-item:last-child {
+            border-bottom: none;
+        }
+        
+        .vocabulary-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .vocabulary-header .english {
+            font-weight: bold;
+        }
+        
+        .vocabulary-header .chinese {
+            color: #666;
+        }
+        
+        .category {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .category.G {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .category.V {
+            background-color: #e8f5e8;
+            color: #388e3c;
+        }
+        
+        .category.C {
+            background-color: #fff3e0;
+            color: #f57c00;
+        }
+        
+        .example {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .example.show {
+            display: block;
+        }
+        
+        .example .question {
+            margin-bottom: 10px;
+        }
+        
+        .example .options {
+            margin-bottom: 10px;
+        }
+        
+        .example .option {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .example .answer {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .example .explanation {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .expand-icon {
+            font-size: 12px;
+            color: #999;
+            transition: transform 0.3s ease;
+        }
+        
+        .expand-icon.rotated {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>上海高中生学习辅助项目</h1>
+            <p>为上海高中生提供各科学习知识整理</p>
+        </header>
+        
+        <div class="subjects">
+            <div class="subject-card">
+                <h2>英语</h2>
+                <ul class="content-list">
+                    <li><a href="#gvc">GVC单词知识</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="gvc" class="gvc-container">
+            <div class="gvc-header">
+                <h2>上海高中GVC单词知识</h2>
+                <p>按高考考察频率排序的高频词汇词组</p>
+            </div>
+            <ul class="vocabulary-list" id="vocabulary-list">
+                <!-- 单词列表将通过JavaScript动态生成 -->
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        // 加载GVC单词数据
+        fetch('subjects/english/gvc/data/vocabulary.json')
+            .then(response => response.json())
+            .then(data => {
+                const vocabularyList = document.getElementById('vocabulary-list');
+                data.forEach(item => {
+                    const li = document.createElement('li');
+                    li.className = 'vocabulary-item';
+                    
+                    // 构建选项HTML
+                    let optionsHtml = '';
+                    item.example.options.forEach(option => {
+                        optionsHtml += `<div class="option">${option}</div>`;
+                    });
+                    
+                    li.innerHTML = `
+                        <div class="vocabulary-header">
+                            <div>
+                                <span class="category ${item.category}">${item.category}</span>
+                                <span class="english">${item.english}</span>
+                            </div>
+                            <div>
+                                <span class="chinese">${item.chinese}</span>
+                                <span class="expand-icon">▼</span>
+                            </div>
+                        </div>
+                        <div class="example">
+                            <div class="question">${item.example.question}</div>
+                            <div class="options">${optionsHtml}</div>
+                            <div class="answer">答案: ${item.example.answer}</div>
+                            <div class="explanation">解析: ${item.example.explanation}</div>
+                        </div>
+                    `;
+                    
+                    // 添加点击事件
+                    li.addEventListener('click', function() {
+                        const example = this.querySelector('.example');
+                        const expandIcon = this.querySelector('.expand-icon');
+                        example.classList.toggle('show');
+                        expandIcon.classList.toggle('rotated');
+                    });
+                    
+                    vocabularyList.appendChild(li);
+                });
+            })
+            .catch(error => console.error('加载数据失败:', error));
+    </script>
+</body>
+</html>

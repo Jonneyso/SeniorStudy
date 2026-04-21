@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "english": "hold forth",
+    "chinese": "展现出,充分发挥",
+    "category": "G",
+    "example": {
+      "question": "The speaker was able to ______ his ideas clearly and persuasively during the debate.",
+      "options": ["hold forth", "hold back", "hold on", "hold off"],
+      "answer": "hold forth",
+      "explanation": "hold forth意为展现出，充分发挥，符合语境。hold back意为抑制，hold on意为坚持，hold off意为推迟。"
+    }
+  },
+  {
+    "id": 2,
+    "english": "the final stretch of the voyage",
+    "chinese": "航行的最后一段路程",
+    "category": "G",
+    "example": {
+      "question": "After weeks at sea, we finally reached ______ and could see the shore in the distance.",
+      "options": ["the final stretch of the voyage", "the initial stage of the journey", "the middle part of the trip", "the beginning of the expedition"],
+      "answer": "the final stretch of the voyage",
+      "explanation": "the final stretch of the voyage意为航行的最后一段路程，符合语境。"
+    }
+  },
+  {
+    "id": 3,
+    "english": "spreading through the fabric of spacetime",
+    "chinese": "在时空的结构中蔓延",
+    "category": "G",
+    "example": {
+      "question": "According to the theory, gravitational waves are ______ at the speed of light.",
+      "options": ["spreading through the fabric of spacetime", "moving across the surface of the earth", "flowing through the atmosphere", "traveling along the ocean currents"],
+      "answer": "spreading through the fabric of spacetime",
+      "explanation": "spreading through the fabric of spacetime意为在时空的结构中蔓延，符合语境。"
+    }
+  },
+  {
+    "id": 4,
+    "english": "account for",
+    "chinese": "解释,说明,（数量上）占比",
+    "category": "V",
+    "example": {
+      "question": "The increase in sales can ______ by the new marketing strategy.",
+      "options": ["account for", "be accounted for", "be accounted of", "account of"],
+      "answer": "be accounted for",
+      "explanation": "account for意为解释，说明，此处使用被动语态be accounted for，符合语境。"
+    }
+  },
+  {
+    "id": 5,
+    "english": "keep an eye on",
+    "chinese": "密切关注,留意",
+    "category": "V",
+    "example": {
+      "question": "Please ______ the children while I go to the store.",
+      "options": ["keep an eye on", "keep an eye for", "keep an eye in", "keep an eye with"],
+      "answer": "keep an eye on",
+      "explanation": "keep an eye on意为密切关注，留意，符合语境。"
+    }
+  },
+  {
+    "id": 6,
+    "english": "factoring in the length of the night",
+    "chinese": "考虑到夜晚的时长",
+    "category": "V",
+    "example": {
+      "question": "When planning the hiking trip, we need to ______ to ensure we don't get lost in the dark.",
+      "options": ["factor in the length of the night", "factor out the length of the night", "factor up the length of the night", "factor down the length of the night"],
+      "answer": "factor in the length of the night",
+      "explanation": "factor in意为考虑到，符合语境。"
+    }
+  },
+  {
+    "id": 7,
+    "english": "a steep winding route",
+    "chinese": "一条陡峭蜿蜒的道路",
+    "category": "C",
+    "example": {
+      "question": "The mountain village is only accessible via ______ that requires careful driving.",
+      "options": ["a steep winding route", "a flat straight road", "a wide smooth highway", "a short direct path"],
+      "answer": "a steep winding route",
+      "explanation": "a steep winding route意为一条陡峭蜿蜒的道路，符合语境。"
+    }
+  },
+  {
+    "id": 8,
+    "english": "expansion of high-speed rail networks",
+    "chinese": "高速铁路网的扩张",
+    "category": "C",
+    "example": {
+      "question": "The ______ has greatly improved transportation efficiency in China.",
+      "options": ["expansion of high-speed rail networks", "reduction of public transportation", "closure of railway stations", "decrease in train services"],
+      "answer": "expansion of high-speed rail networks",
+      "explanation": "expansion of high-speed rail networks意为高速铁路网的扩张，符合语境。"
+    }
+  },
+  {
+    "id": 9,
+    "english": "leave a lasting mark on",
+    "chinese": "对……留下深刻印象,对……产生深远影响",
+    "category": "V",
+    "example": {
+      "question": "The teacher's words ______ the students' lives.",
+      "options": ["left a lasting mark on", "left a temporary mark on", "left a small mark on", "left a superficial mark on"],
+      "answer": "left a lasting mark on",
+      "explanation": "leave a lasting mark on意为对……留下深刻印象，对……产生深远影响，符合语境。"
+    }
+  },
+  {
+    "id": 10,
+    "english": "invest all his efforts in...",
+    "chinese": "将心血倾注于……",
+    "category": "V",
+    "example": {
+      "question": "The scientist ______ his research to find a cure for the disease.",
+      "options": ["invested all his efforts in", "invested some his efforts in", "invested none his efforts in", "invested little his efforts in"],
+      "answer": "invested all his efforts in",
+      "explanation": "invest all his efforts in意为将心血倾注于……，符合语境。"
+    }
+  },
+  {
+    "id": 11,
+    "english": "keep an eye out for...",
+    "chinese": "留意……,密切关注……",
+    "category": "V",
+    "example": {
+      "question": "Please ______ any suspicious activities in the neighborhood.",
+      "options": ["keep an eye out for", "keep an eye in for", "keep an eye up for", "keep an eye down for"],
+      "answer": "keep an eye out for",
+      "explanation": "keep an eye out for意为留意……，密切关注……，符合语境。"
+    }
+  },
+  {
+    "id": 12,
+    "english": "in an attempt to...",
+    "chinese": "试图……,为了……",
+    "category": "V",
+    "example": {
+      "question": "The company launched a new product ______ increase its market share.",
+      "options": ["in an attempt to", "in a try to", "in a test to", "in a check to"],
+      "answer": "in an attempt to",
+      "explanation": "in an attempt to意为试图……，为了……，符合语境。"
+    }
+  },
+  {
+    "id": 13,
+    "english": "get involved in social interactions",
+    "chinese": "参与社交互动",
+    "category": "V",
+    "example": {
+      "question": "Children need to ______ to develop their social skills.",
+      "options": ["get involved in social interactions", "stay away from social interactions", "avoid social interactions", "ignore social interactions"],
+      "answer": "get involved in social interactions",
+      "explanation": "get involved in social interactions意为参与社交互动，符合语境。"
+    }
+  },
+  {
+    "id": 14,
+    "english": "protect their territory",
+    "chinese": "保护它们的领地",
+    "category": "V",
+    "example": {
+      "question": "Many animals will fight to ______ from intruders.",
+      "options": ["protect their territory", "invade others' territory", "abandon their territory", "share their territory"],
+      "answer": "protect their territory",
+      "explanation": "protect their territory意为保护它们的领地，符合语境。"
+    }
+  },
+  {
+    "id": 15,
+    "english": "sb. maintains that ... should ...",
+    "chinese": "某人主张…… 应该……",
+    "category": "V",
+    "example": {
+      "question": "The expert ______ parents should spend more time with their children.",
+      "options": ["maintains that", "denies that", "doubts that", "questions that"],
+      "answer": "maintains that",
+      "explanation": "maintains that意为主张，符合语境。"
+    }
+  },
+  {
+    "id": 16,
+    "english": "address the root causes of illegal hunting",
+    "chinese": "解决非法狩猎的根本原因",
+    "category": "V",
+    "example": {
+      "question": "To effectively protect endangered species, we need to ______.",
+      "options": ["address the root causes of illegal hunting", "ignore the root causes of illegal hunting", "promote the root causes of illegal hunting", "support the root causes of illegal hunting"],
+      "answer": "address the root causes of illegal hunting",
+      "explanation": "address the root causes of illegal hunting意为解决非法狩猎的根本原因，符合语境。"
+    }
+  },
+  {
+    "id": 17,
+    "english": "parent a child",
+    "chinese": "养育孩子",
+    "category": "V",
+    "example": {
+      "question": "It takes a lot of patience and effort to ______ properly.",
+      "options": ["parent a child", "teach a child", "train a child", "guide a child"],
+      "answer": "parent a child",
+      "explanation": "parent a child意为养育孩子，符合语境。"
+    }
+  },
+  {
+    "id": 18,
+    "english": "comment on sb. doing sth.",
+    "chinese": "评论某人做某事",
+    "category": "V",
+    "example": {
+      "question": "It's not polite to ______ without knowing the full story.",
+      "options": ["comment on others doing things", "praise others doing things", "encourage others doing things", "support others doing things"],
+      "answer": "comment on others doing things",
+      "explanation": "comment on sb. doing sth.意为评论某人做某事，符合语境。"
+    }
+  },
+  {
+    "id": 19,
+    "english": "be at the risk of becoming spoiled",
+    "chinese": "有被宠坏的风险",
+    "category": "V",
+    "example": {
+      "question": "Children who get everything they want may ______.",
+      "options": ["be at the risk of becoming spoiled", "be at the risk of becoming independent", "be at the risk of becoming responsible", "be at the risk of becoming mature"],
+      "answer": "be at the risk of becoming spoiled",
+      "explanation": "be at the risk of becoming spoiled意为有被宠坏的风险，符合语境。"
+    }
+  },
+  {
+    "id": 20,
+    "english": "raise a child in the right way",
+    "chinese": "以正确的方式养育孩子",
+    "category": "V",
+    "example": {
+      "question": "Parents should learn how to ______ to ensure their children grow up well.",
+      "options": ["raise a child in the right way", "raise a child in the wrong way", "raise a child in a strict way", "raise a child in a lenient way"],
+      "answer": "raise a child in the right way",
+      "explanation": "raise a child in the right way意为以正确的方式养育孩子，符合语境。"
+    }
+  },
+  {
+    "id": 21,
+    "english": "projections of one's anxieties",
+    "chinese": "焦虑的投射,焦虑的外化表现",
+    "category": "C",
+    "example": {
+      "question": "Some people's anger towards others may be ______ rather than genuine dislike.",
+      "options": ["projections of their anxieties", "expressions of their happiness", "indications of their confidence", "signs of their satisfaction"],
+      "answer": "projections of their anxieties",
+      "explanation": "projections of one's anxieties意为焦虑的投射，焦虑的外化表现，符合语境。"
+    }
+  },
+  {
+    "id": 22,
+    "english": "insufficient peer interaction",
+    "chinese": "同伴互动不足",
+    "category": "C",
+    "example": {
+      "question": "______ can lead to social awkwardness in children.",
+      "options": ["Insufficient peer interaction", "Sufficient peer interaction", "Excessive peer interaction", "Regular peer interaction"],
+      "answer": "Insufficient peer interaction",
+      "explanation": "insufficient peer interaction意为同伴互动不足，符合语境。"
+    }
+  },
+  {
+    "id": 23,
+    "english": "challenge one's assumptions",
+    "chinese": "质疑自己的固有假设",
+    "category": "V",
+    "example": {
+      "question": "To grow intellectually, it's important to ______ and consider different perspectives.",
+      "options": ["challenge your assumptions", "confirm your assumptions", "strengthen your assumptions", "protect your assumptions"],
+      "answer": "challenge your assumptions",
+      "explanation": "challenge one's assumptions意为质疑自己的固有假设，符合语境。"
+    }
+  },
+  {
+    "id": 24,
+    "english": "can't be separated from the context",
+    "chinese": "不能脱离上下文",
+    "category": "V",
+    "example": {
+      "question": "Words ______ in which they are used.",
+      "options": ["can't be separated from the context", "can be separated from the context", "should be separated from the context", "must be separated from the context"],
+      "answer": "can't be separated from the context",
+      "explanation": "can't be separated from the context意为不能脱离上下文，符合语境。"
+    }
+  },
+  {
+    "id": 25,
+    "english": "cope with",
+    "chinese": "应对",
+    "category": "V",
+    "example": {
+      "question": "It's important to learn how to ______ stress in daily life.",
+      "options": ["cope with", "cope for", "cope in", "cope on"],
+      "answer": "cope with",
+      "explanation": "cope with意为应对，符合语境。"
+    }
+  },
+  {
+    "id": 26,
+    "english": "depend on",
+    "chinese": "依赖",
+    "category": "V",
+    "example": {
+      "question": "Plants ______ sunlight and water to grow.",
+      "options": ["depend on", "depend in", "depend for", "depend with"],
+      "answer": "depend on",
+      "explanation": "depend on意为依赖，符合语境。"
+    }
+  },
+  {
+    "id": 27,
+    "english": "focus on",
+    "chinese": "专注于",
+    "category": "V",
+    "example": {
+      "question": "Students should ______ their studies rather than distractions.",
+      "options": ["focus on", "focus in", "focus for", "focus with"],
+      "answer": "focus on",
+      "explanation": "focus on意为专注于，符合语境。"
+    }
+  },
+  {
+    "id": 28,
+    "english": "lead to",
+    "chinese": "导致",
+    "category": "V",
+    "example": {
+      "question": "Smoking can ______ serious health problems.",
+      "options": ["lead to", "lead in", "lead for", "lead with"],
+      "answer": "lead to",
+      "explanation": "lead to意为导致，符合语境。"
+    }
+  },
+  {
+    "id": 29,
+    "english": "participate in",
+    "chinese": "参与",
+    "category": "V",
+    "example": {
+      "question": "Everyone is encouraged to ______ the school activities.",
+      "options": ["participate in", "participate for", "participate with", "participate on"],
+      "answer": "participate in",
+      "explanation": "participate in意为参与，符合语境。"
+    }
+  },
+  {
+    "id": 30,
+    "english": "result in",
+    "chinese": "导致",
+    "category": "V",
+    "example": {
+      "question": "Poor diet and lack of exercise can ______ obesity.",
+      "options": ["result in", "result from", "result for", "result with"],
+      "answer": "result in",
+      "explanation": "result in意为导致，符合语境。result from意为由……引起。"
+    }
+  },
+  {
+    "id": 31,
+    "english": "take into account",
+    "chinese": "考虑",
+    "category": "V",
+    "example": {
+      "question": "When making decisions, we should ______ all relevant factors.",
+      "options": ["take into account", "take into consideration", "both A and B", "neither A nor B"],
+      "answer": "both A and B",
+      "explanation": "take into account和take into consideration都意为考虑，符合语境。"
+    }
+  },
+  {
+    "id": 32,
+    "english": "be exposed to",
+    "chinese": "接触",
+    "category": "V",
+    "example": {
+      "question": "Children who ______ different cultures tend to be more open-minded.",
+      "options": ["are exposed to", "are exposed with", "are exposed for", "are exposed in"],
+      "answer": "are exposed to",
+      "explanation": "be exposed to意为接触，符合语境。"
+    }
+  },
+  {
+    "id": 33,
+    "english": "be involved in",
+    "chinese": "参与",
+    "category": "V",
+    "example": {
+      "question": "He was ______ the planning of the event.",
+      "options": ["involved in", "involved with", "involved for", "involved at"],
+      "answer": "involved in",
+      "explanation": "be involved in意为参与，符合语境。"
+    }
+  },
+  {
+    "id": 34,
+    "english": "play a role in",
+    "chinese": "在...中起作用",
+    "category": "V",
+    "example": {
+      "question": "Education ______ shaping a person's future.",
+      "options": ["plays a role in", "plays a part in", "both A and B", "neither A nor B"],
+      "answer": "both A and B",
+      "explanation": "play a role in和play a part in都意为在...中起作用，符合语境。"
+    }
+  },
+  {
+    "id": 35,
+    "english": "analyze",
+    "chinese": "分析",
+    "category": "V",
+    "example": {
+      "question": "We need to ______ the data to find patterns.",
+      "options": ["analyze", "synthesize", "summarize", "categorize"],
+      "answer": "analyze",
+      "explanation": "analyze意为分析，符合语境。"
+    }
+  },
+  {
+    "id": 36,
+    "english": "approach",
+    "chinese": "接近；处理",
+    "category": "V",
+    "example": {
+      "question": "We need to ______ the problem from a different angle.",
+      "options": ["approach", "avoid", "ignore", "neglect"],
+      "answer": "approach",
+      "explanation": "approach意为处理，符合语境。"
+    }
+  },
+  {
+    "id": 37,
+    "english": "assess",
+    "chinese": "评估",
+    "category": "V",
+    "example": {
+      "question": "Teachers need to ______ students' progress regularly.",
+      "options": ["assess", "assist", "assign", "assume"],
+      "answer": "assess",
+      "explanation": "assess意为评估，符合语境。"
+    }
+  },
+  {
+    "id": 38,
+    "english": "benefit",
+    "chinese": "受益",
+    "category": "V",
+    "example": {
+      "question": "Students can ______ from extra-curricular activities.",
+      "options": ["benefit", "suffer", "lose", "fail"],
+      "answer": "benefit",
+      "explanation": "benefit意为受益，符合语境。"
+    }
+  },
+  {
+    "id": 39,
+    "english": "challenge",
+    "chinese": "挑战",
+    "category": "V",
+    "example": {
+      "question": "The new job will ______ my abilities.",
+      "options": ["challenge", "comfort", "support", "encourage"],
+      "answer": "challenge",
+      "explanation": "challenge意为挑战，符合语境。"
+    }
+  },
+  {
+    "id": 40,
+    "english": "contribute",
+    "chinese": "贡献",
+    "category": "V",
+    "example": {
+      "question": "Everyone can ______ to making the world a better place.",
+      "options": ["contribute", "detract", "subtract", "withdraw"],
+      "answer": "contribute",
+      "explanation": "contribute意为贡献，符合语境。"
+    }
+  },
+  {
+    "id": 41,
+    "english": "demonstrate",
+    "chinese": "证明；展示",
+    "category": "V",
+    "example": {
+      "question": "The experiment ______ the theory is correct.",
+      "options": ["demonstrates", "denies", "disproves", "doubts"],
+      "answer": "demonstrates",
+      "explanation": "demonstrate意为证明，符合语境。"
+    }
+  },
+  {
+    "id": 42,
+    "english": "emphasize",
+    "chinese": "强调",
+    "category": "V",
+    "example": {
+      "question": "The teacher ______ the importance of hard work.",
+      "options": ["emphasized", "minimized", "ignored", "forgot"],
+      "answer": "emphasized",
+      "explanation": "emphasize意为强调，符合语境。"
+    }
+  },
+  {
+    "id": 43,
+    "english": "enable",
+    "chinese": "使能够",
+    "category": "V",
+    "example": {
+      "question": "Technology ______ us to communicate with people around the world.",
+      "options": ["enables", "disables", "prevents", "stops"],
+      "answer": "enables",
+      "explanation": "enable意为使能够，符合语境。"
+    }
+  },
+  {
+    "id": 44,
+    "english": "ensure",
+    "chinese": "确保",
+    "category": "V",
+    "example": {
+      "question": "We need to ______ that all students have access to education.",
+      "options": ["ensure", "risk", "endanger", "threaten"],
+      "answer": "ensure",
+      "explanation": "ensure意为确保，符合语境。"
+    }
+  },
+  {
+    "id": 45,
+    "english": "establish",
+    "chinese": "建立",
+    "category": "V",
+    "example": {
+      "question": "The company was ______ in 1990.",
+      "options": ["established", "destroyed", "closed", "sold"],
+      "answer": "established",
+      "explanation": "establish意为建立，符合语境。"
+    }
+  },
+  {
+    "id": 46,
+    "english": "evaluate",
+    "chinese": "评价",
+    "category": "V",
+    "example": {
+      "question": "Employers need to ______ candidates based on their skills and experience.",
+      "options": ["evaluate", "estimate", "calculate", "measure"],
+      "answer": "evaluate",
+      "explanation": "evaluate意为评价，符合语境。"
+    }
+  },
+  {
+    "id": 47,
+    "english": "evolve",
+    "chinese": "演变",
+    "category": "V",
+    "example": {
+      "question": "Languages ______ over time to meet new needs.",
+      "options": ["evolve", "remain", "stagnate", "decline"],
+      "answer": "evolve",
+      "explanation": "evolve意为演变，符合语境。"
+    }
+  },
+  {
+    "id": 48,
+    "english": "impact",
+    "chinese": "影响",
+    "category": "V",
+    "example": {
+      "question": "Climate change ______ ecosystems around the world.",
+      "options": ["impacts", "improves", "enhances", "strengthens"],
+      "answer": "impacts",
+      "explanation": "impact意为影响，符合语境。"
+    }
+  },
+  {
+    "id": 49,
+    "english": "implement",
+    "chinese": "实施",
+    "category": "V",
+    "example": {
+      "question": "The government plans to ______ new policies to reduce pollution.",
+      "options": ["implement", "ignore", "reject", "oppose"],
+      "answer": "implement",
+      "explanation": "implement意为实施，符合语境。"
+    }
+  },
+  {
+    "id": 50,
+    "english": "improve",
+    "chinese": "改进",
+    "category": "V",
+    "example": {
+      "question": "Practice can ______ your language skills.",
+      "options": ["improve", "worsen", "deteriorate", "decline"],
+      "answer": "improve",
+      "explanation": "improve意为改进，符合语境。"
+    }
+  }
+]
