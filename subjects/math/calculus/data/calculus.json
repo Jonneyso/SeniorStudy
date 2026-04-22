@@ -1,0 +1,192 @@
+{
+  "groups": [
+    {
+      "id": "calculus-limit",
+      "name": "极限",
+      "items": [
+        {
+          "id": "limit-concept",
+          "title": "极限的概念",
+          "content": "数列极限：若当n无限增大时，aₙ无限接近常数A，则称数列{aₙ}收敛于A，记作limₙ→∞ aₙ = A。\n函数极限：若当x无限接近x₀时，f(x)无限接近常数A，则称A为f(x)当x→x₀时的极限。",
+          "annotation": "极限存在的充要条件：左极限和右极限都存在且相等。",
+          "explanation": "极限是微积分的基础，理解极限的概念对于学习导数和积分至关重要。",
+          "test_points": ["calculus-1"]
+        },
+        {
+          "id": "limit-calculation",
+          "title": "极限的计算",
+          "content": "常见极限类型及计算方法：\n1. 多项式商的极限：因式分解后约分\n2. 无理式的极限：有理化或换元\n3. 重要极限：limₓ→0 sinx/x = 1，limₓ→∞ (1+1/x)ˣ = e",
+          "annotation": "夹逼准则：若f(x) ≤ g(x) ≤ h(x)且lim f(x) = lim h(x) = A，则lim g(x) = A。",
+          "explanation": "极限的计算是高考的重点，需要熟练掌握各种计算方法。",
+          "test_points": ["calculus-2"]
+        }
+      ]
+    },
+    {
+      "id": "calculus-derivative",
+      "name": "导数",
+      "items": [
+        {
+          "id": "derivative-concept",
+          "title": "导数的概念",
+          "content": "导数的定义：f'(x₀) = lim₌→₀ [f(x₀+Δx) - f(x₀)] / Δx\n导数的几何意义：函数图像在某点处切线的斜率",
+          "annotation": "可导与连续的关系：可导必连续，连续不一定可导。",
+          "explanation": "导数是微积分的核心内容之一，是研究函数性质的重要工具。",
+          "test_points": ["calculus-3"]
+        },
+        {
+          "id": "derivative-rules",
+          "title": "导数的计算法则",
+          "content": "基本求导公式：\n(c)' = 0\n(xⁿ)' = nxⁿ⁻¹\n(sinx)' = cosx\n(cosx)' = -sinx\n(eˣ)' = eˣ\n(lnx)' = 1/x\n\n运算法则：\n(u±v)' = u' ± v'\n(uv)' = u'v + uv'\n(u/v)' = (u'v - uv')/v²",
+          "annotation": "复合函数求导：若y = f(g(x))，则y' = f'(g(x))·g'(x)。",
+          "explanation": "导数的计算是高考的必考内容，需要熟练掌握各种求导公式和法则。",
+          "test_points": ["calculus-4"]
+        }
+      ]
+    },
+    {
+      "id": "calculus-integration",
+      "name": "积分",
+      "items": [
+        {
+          "id": "integral-concept",
+          "title": "不定积分",
+          "content": "不定积分的定义：若F'(x) = f(x)，则称F(x)为f(x)的一个原函数，f(x)的不定积分∫f(x)dx = F(x) + C。\n\n基本积分公式：\n∫xⁿdx = xⁿ⁺¹/(n+1) + C (n ≠ -1)\n∫eˣdx = eˣ + C\n∫1/x dx = ln|x| + C\n∫sinx dx = -cosx + C\n∫cosx dx = sinx + C",
+          "annotation": "积分是导数的逆运算。",
+          "explanation": "不定积分是积分学的基础，需要熟练掌握各种积分公式。",
+          "test_points": ["calculus-5"]
+        },
+        {
+          "id": "definite-integral",
+          "title": "定积分",
+          "content": "定积分的定义：∫ₐᵇf(x)dx = F(b) - F(a)，其中F(x)是f(x)的一个原函数。\n\n定积分的几何意义：\n- 当f(x) ≥ 0时，∫ₐᵇf(x)dx表示曲线y = f(x)与x轴、直线x = a、x = b所围成的曲边梯形的面积。",
+          "annotation": "定积分的计算要先求不定积分，再代入上下限。",
+          "explanation": "定积分是高考的重点内容，常与几何、物理问题综合考查。",
+          "test_points": ["calculus-6"]
+        }
+      ]
+    }
+  ],
+  "test_points": [
+    {
+      "id": "calculus-1",
+      "name": "极限的概念",
+      "questions": [
+        {
+          "content": "数列aₙ = (2n+1)/(3n-1)，当n→∞时，aₙ的极限为____。",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "分子分母同时除以n：aₙ = (2+1/n)/(3-1/n)，当n→∞时，1/n→0，所以limₙ→∞ aₙ = 2/3。",
+          "answer": "2/3"
+        },
+        {
+          "content": "函数f(x) = {x² (x<1), ax+b (x≥1)}，若f(x)在x=1处连续，则a+b = ____。",
+          "source": "2022年上海市重点高中高二期末联考",
+          "link": "",
+          "analysis": "连续需满足左极限=右极限=函数值。左极限：limₓ→₁⁻ x² = 1；右极限：limₓ→₁⁺ (ax+b) = a+b；函数值：f(1) = a+b。所以a+b = 1。",
+          "answer": "1"
+        }
+      ]
+    },
+    {
+      "id": "calculus-2",
+      "name": "极限的计算",
+      "questions": [
+        {
+          "content": "求极限limₓ→₀ (sin5x)/x",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "利用重要极限limₓ→₀ sinx/x = 1。limₓ→₀ (sin5x)/x = limₓ→₀ 5·(sin5x)/(5x) = 5·1 = 5。",
+          "answer": "5"
+        },
+        {
+          "content": "求极限limₓ→∞ (1+2/x)³ˣ",
+          "source": "2022年上海市重点高中高二期末联考",
+          "link": "",
+          "analysis": "利用重要极限limₓ→∞ (1+1/x)ˣ = e。令t = x/2，则(1+2/x)³ˣ = [(1+2/x)ˣ]³ = [(1+1/t)²ᵗ]³ = [(1+1/t)ᵗ]⁶ → e⁶。",
+          "answer": "e⁶"
+        }
+      ]
+    },
+    {
+      "id": "calculus-3",
+      "name": "导数的概念",
+      "questions": [
+        {
+          "content": "已知f(x) = x²，则f'(2) = ____。",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "f'(x) = 2x，所以f'(2) = 2×2 = 4。",
+          "answer": "4"
+        },
+        {
+          "content": "曲线y = x³在点(1,1)处的切线方程为____。",
+          "source": "2022年上海市重点高中高二期末联考",
+          "link": "",
+          "analysis": "y' = 3x²，在x=1处切线斜率为3。点斜式：y - 1 = 3(x - 1)，即y = 3x - 2。",
+          "answer": "y = 3x - 2"
+        }
+      ]
+    },
+    {
+      "id": "calculus-4",
+      "name": "导数的计算",
+      "questions": [
+        {
+          "content": "求y = x²eˣ的导数。",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "由乘法法则：y' = (x²)'eˣ + x²(eˣ)' = 2xeˣ + x²eˣ = eˣ(x² + 2x)。",
+          "answer": "eˣ(x² + 2x)"
+        },
+        {
+          "content": "求y = ln(x²+1)的导数。",
+          "source": "2022年上海市重点高中高二期末联考",
+          "link": "",
+          "analysis": "由复合函数求导法则：y' = [1/(x²+1)]·(x²+1)' = 2x/(x²+1)。",
+          "answer": "2x/(x²+1)"
+        }
+      ]
+    },
+    {
+      "id": "calculus-5",
+      "name": "不定积分",
+      "questions": [
+        {
+          "content": "求∫2x dx。",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "由幂函数积分公式：∫xⁿdx = xⁿ⁺¹/(n+1) + C，所以∫2x dx = 2·x²/2 + C = x² + C。",
+          "answer": "x² + C"
+        },
+        {
+          "content": "求∫eˣcosx dx。",
+          "source": "2022年上海市重点高中高二期末联考",
+          "link": "",
+          "analysis": "这是一个常见积分，结果为(eˣ(sinx+cosx))/2 + C。（提示：需要用到分部积分法。）",
+          "answer": "(eˣ(sinx+cosx))/2 + C"
+        }
+      ]
+    },
+    {
+      "id": "calculus-6",
+      "name": "定积分",
+      "questions": [
+        {
+          "content": "求∫₀¹ x² dx。",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "先求不定积分：∫x² dx = x³/3 + C。代入上下限：F(1) - F(0) = 1/3 - 0 = 1/3。",
+          "answer": "1/3"
+        },
+        {
+          "content": "求由y = x²和y = x所围成图形的面积。",
+          "source": "2022年上海市重点高中高二期末联考",
+          "link": "",
+          "analysis": "先求交点：x² = x，解得x = 0或x = 1。面积S = ∫₀¹ (x - x²) dx = [x²/2 - x³/3]₀¹ = (1/2 - 1/3) - 0 = 1/6。",
+          "answer": "1/6"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "groups": [
+    {
+      "id": "grammar-tense",
+      "name": "时态",
+      "items": [
+        {
+          "id": "simple-present-past-future",
+          "title": "一般现在时、一般过去时、一般将来时",
+          "content": "一般现在时表示经常发生的动作或存在的状态，构成：主语 + 动词原形（第三人称单数加s/es）。\n\n一般过去时表示过去发生的动作，构成：主语 + 动词过去式。\n\n一般将来时表示将来发生的动作，构成：will + 动词原形 或 be going to + 动词原形。",
+          "examples": [
+            "一般现在时：I study English every day. (我每天学英语。)",
+            "一般过去时：I studied English yesterday. (我昨天学了英语。)",
+            "一般将来时：I will study English tomorrow. (我明天要学英语。)"
+          ],
+          "test_points": ["grammar-1"]
+        },
+        {
+          "id": "present-past-future-perfect",
+          "title": "现在完成时、过去完成时、将来完成时",
+          "content": "现在完成时表示过去发生的动作对现在造成的影响或持续到现在，构成：have/has + 过去分词。\n\n过去完成时表示过去的过去发生的动作，构成：had + 过去分词。\n\n将来完成时表示将来某一时间前已经完成的动作，构成：will have + 过去分词。",
+          "examples": [
+            "现在完成时：I have finished my homework. (我已经完成了作业。)",
+            "过去完成时：I had finished my homework before you came. (你来之前我已经完成了作业。)",
+            "将来完成时：I will have finished my homework by tomorrow. (到明天我将已经完成作业。)"
+          ],
+          "test_points": ["grammar-2"]
+        }
+      ]
+    },
+    {
+      "id": "grammar-voice",
+      "name": "语态",
+      "items": [
+        {
+          "id": "active-passive",
+          "title": "主动语态与被动语态",
+          "content": "主动语态表示主语是动作的执行者，被动语态表示主语是动作的承受者。\n\n被动语态的构成：be + 过去分词\n- 一般现在时：am/is/are + past participle\n- 一般过去时：was/were + past participle\n- 一般将来时：will be + past participle\n- 现在完成时：have/has been + past participle",
+          "examples": [
+            "主动语态：The cat caught the mouse. (猫抓住了老鼠。)",
+            "被动语态：The mouse was caught by the cat. (老鼠被猫抓住了。)",
+            "现在完成时被动：The work has been finished. (工作已经被完成了。)"
+          ],
+          "test_points": ["grammar-3"]
+        }
+      ]
+    },
+    {
+      "id": "grammar-clause",
+      "name": "从句",
+      "items": [
+        {
+          "id": "noun-clause",
+          "title": "名词性从句",
+          "content": "名词性从句包括主语从句、宾语从句、表语从句和同位语从句。\n\n连接词：that, whether, if, who, whom, whose, which, what, when, where, why, how\n\nthat在句中无含义，只起连接作用；whether/if表示是否；其他连接词有各自含义。",
+          "examples": [
+            "主语从句：What he said is true. (他说的是真的。)",
+            "宾语从句：I believe that he is honest. (我相信他是诚实的。)",
+            "表语从句：The question is whether we can finish it. (问题是我们能否完成它。)",
+            "同位语从句：The news that he won the game made us happy. (他赢得比赛的消息使我们高兴。)"
+          ],
+          "test_points": ["grammar-4"]
+        },
+        {
+          "id": "adjective-clause",
+          "title": "定语从句",
+          "content": "定语从句修饰名词或代词，由关系代词或关系副词引导。\n\n关系代词：who, whom, whose, which, that\n关系副词：when, where, why\n\nthat与which的区别：\n- 先行词被序数词、最高级、the only、the very修饰时，用that\n- 先行词是不定代词（something, anything等）时，用that\n- 非限制性定语从句用which",
+          "examples": [
+            "The book that I bought yesterday is interesting. (我昨天买的那本书很有趣。)",
+            "The man who is standing there is our teacher. (站在那里的那个人是我们的老师。)",
+            "I still remember the day when we first met. (我仍记得我们第一次见面的那天。)"
+          ],
+          "test_points": ["grammar-5"]
+        },
+        {
+          "id": "adverb-clause",
+          "title": "状语从句",
+          "content": "状语从句修饰动词、形容词或整个句子，分为时间、地点、原因、目的、结果、条件、让步、比较、方式等。\n\n常用连接词：\n- 时间：when, while, as, before, after, since, until\n- 原因：because, since, as\n- 条件：if, unless\n- 让步：although, though, even if\n- 结果：so...that, such...that",
+          "examples": [
+            "时间：I was reading when he came in. (他进来时我在读书。)",
+            "原因：Because it was raining, we stayed at home. (因为下雨，我们待在家里。)",
+            "结果：He was so tired that he fell asleep. (他太累了以至于睡着了。)"
+          ],
+          "test_points": ["grammar-6"]
+        }
+      ]
+    },
+    {
+      "id": "grammar-non-finite",
+      "name": "非谓语动词",
+      "items": [
+        {
+          "id": "infinitive",
+          "title": "不定式",
+          "content": "不定式的基本形式：to + 动词原形\n\n不定式的用法：\n- 作主语：To learn English is important. (学英语很重要。)\n- 作宾语：I want to go. (我想去。)\n- 作宾补：I told him to go. (我告诉他去。)\n- 作定语：I have a lot of homework to do. (我有很多作业要做。)\n- 作状语：I came here to see you. (我来这里看你。)",
+          "examples": [
+            "不定式作主语：To see is to believe. (眼见为实。)",
+            "不定式作宾语：I decided to leave. (我决定离开。)",
+            "不定式作宾补：She asked me to help her. (她请我帮助她。)"
+          ],
+          "test_points": ["grammar-7"]
+        },
+        {
+          "id": "gerund",
+          "title": "动名词",
+          "content": "动名词由动词加-ing构成，兼具动词和名词的特性。\n\n动名词的用法：\n- 作主语：Learning English is fun. (学英语很有趣。)\n- 作宾语：I enjoy reading. (我喜欢读书。)\n- 作表语：My hobby is collecting stamps. (我的爱好是集邮。)\n\n动词后接动名词：enjoy, finish, suggest, practice, mind, keep等。\n动词后接不定式：want, decide, hope, wish等。",
+          "examples": [
+            "动名词作主语：Seeing is believing. (眼见为实。)",
+            "动名词作宾语：I am considering moving to a new place. (我在考虑搬到一个新地方。)",
+            "接动名词的动词：I suggested going there by bus. (我建议乘公交车去那里。)"
+          ],
+          "test_points": ["grammar-8"]
+        },
+        {
+          "id": "participle",
+          "title": "分词",
+          "content": "分词包括现在分词和过去分词。\n\n现在分词表示主动和进行，过去分词表示被动和完成。\n\n分词的用法：\n- 作定语：The smiling girl is my sister. (那个微笑的女孩是我妹妹。)\n- 作状语：Seeing the teacher, the students stood up. (看到老师，学生们站了起来。)\n- 作宾补：I found him sleeping. (我发现他在睡觉。)",
+          "examples": [
+            "现在分词作定语：The rising sun is beautiful. (正在升起的太阳很美。)",
+            "过去分词作定语：The broken glass is dangerous. (碎玻璃很危险。)",
+            "分词作状语：Having finished the work, he went home. (完成工作后，他回家了。)"
+          ],
+          "test_points": ["grammar-9"]
+        }
+      ]
+    },
+    {
+      "id": "grammar-subjunctive",
+      "name": "虚拟语气",
+      "items": [
+        {
+          "id": "subjunctive-mood",
+          "title": "虚拟语气",
+          "content": "虚拟语气用于表达与事实相反的假设或愿望。\n\n与现在事实相反：if + 主语 + 动词过去式，主语 + would/could/might + 动词原形\n与过去事实相反：if + 主语 + had + 过去分词，主语 + would/could/might have + 过去分词\n与将来事实相反：if + 主语 + were to/should + 动词原形，主语 + would/could/might + 动词原形\n\nwish后的宾语从句用虚拟语气：wish + 主语 + 过去式/had + 过去分词/would + 动词原形",
+          "examples": [
+            "与现在事实相反：If I were you, I would take this job. (如果我是你，我会接受这份工作。)",
+            "与过去事实相反：If I had studied harder, I would have passed the exam. (如果我学习更努力些，我就能通过考试了。)",
+            "wish从句：I wish I had more money. (我希望我有更多的钱。)"
+          ],
+          "test_points": ["grammar-10"]
+        }
+      ]
+    }
+  ],
+  "test_points": [
+    {
+      "id": "grammar-1",
+      "name": "一般时态",
+      "questions": [
+        {
+          "content": "The earth _____ around the sun.",
+          "options": ["moves", "moved", "will move", "has moved"],
+          "answer": "moves",
+          "explanation": "一般现在时表示客观事实或规律。地球绕太阳转是客观事实，用一般现在时。",
+          "source": "2023年上海高考英语卷"
+        },
+        {
+          "content": "He _____ to Beijing last week.",
+          "options": ["goes", "went", "will go", "has gone"],
+          "answer": "went",
+          "explanation": "一般过去时表示过去发生的动作。last week表示过去时间，用一般过去时。",
+          "source": "2022年上海市重点高中高一期末联考"
+        }
+      ]
+    },
+    {
+      "id": "grammar-2",
+      "name": "完成时态",
+      "questions": [
+        {
+          "content": "I _____ my homework already.",
+          "options": ["finish", "finished", "have finished", "had finished"],
+          "answer": "have finished",
+          "explanation": "现在完成时表示过去发生的动作对现在造成的影响。already常用于现在完成时。",
+          "source": "2023年上海高考英语卷"
+        },
+        {
+          "content": "By the time he _____ home, his wife had prepared dinner.",
+          "options": ["gets", "got", "has got", "had got"],
+          "answer": "got",
+          "explanation": "过去完成时表示过去的过去发生的动作。had prepared是过去完成时，主句发生在它之前，用一般过去时got。",
+          "source": "2022年上海市重点高中高二期末联考"
+        }
+      ]
+    },
+    {
+      "id": "grammar-3",
+      "name": "被动语态",
+      "questions": [
+        {
+          "content": "The book _____ by millions of people worldwide.",
+          "options": ["has read", "has been read", "is reading", "reads"],
+          "answer": "has been read",
+          "explanation": "现在完成时的被动语态：has/have + been + 过去分词。书是被读的，用被动语态。",
+          "source": "2023年上海高考英语卷"
+        },
+        {
+          "content": "If more trees _____, the air will be fresher.",
+          "options": ["are planted", "will be planted", "were planted", "planted"],
+          "answer": "are planted",
+          "explanation": "条件状语从句中用一般现在时表示将来，主语与动词是被动关系，用被动语态。",
+          "source": "2022年上海市重点高中高一期末联考"
+        }
+      ]
+    },
+    {
+      "id": "grammar-4",
+      "name": "名词性从句",
+      "questions": [
+        {
+          "content": "_____ he said at the meeting surprised everyone.",
+          "options": ["What", "That", "When", "Where"],
+          "answer": "What",
+          "explanation": "What引导主语从句，表示'他所说的'，在从句中作said的宾语。That只起连接作用无含义。",
+          "source": "2023年上海高考英语卷"
+        },
+        {
+          "content": "I don't know _____ he will come or not.",
+          "options": ["that", "whether", "which", "what"],
+          "answer": "whether",
+          "explanation": "whether可以与or not连用，而if不能。if有'如果'的含义，此处表示'是否'，用whether。",
+          "source": "2022年上海市重点高中高二期末联考"
+        }
+      ]
+    },
+    {
+      "id": "grammar-5",
+      "name": "定语从句",
+      "questions": [
+        {
+          "content": "The book _____ cover is blue is mine.",
+          "options": ["whose", "which", "that", "who"],
+          "answer": "whose",
+          "explanation": "whose引导定语从句，表示所属关系，在从句中作cover的定语。whose = the book's。",
+          "source": "2023年上海高考英语卷"
+        },
+        {
+          "content": "This is the best movie _____ I have ever seen.",
+          "options": ["which", "that", "what", "where"],
+          "answer": "that",
+          "explanation": "先行词被最高级修饰，定语从句只能用that引导。",
+          "source": "2022年上海市重点高中高一期末联考"
+        }
+      ]
+    },
+    {
+      "id": "grammar-6",
+      "name": "状语从句",
+      "questions": [
+        {
+          "content": "_____ it was raining heavily, we still went out.",
+          "options": ["Although", "Because", "If", "Unless"],
+          "answer": "Although",
+          "explanation": "although引导让步状语从句，表示'虽然...但是...'。because表示原因，不符合语境。",
+          "source": "2023年上海高考英语卷"
+        },
+        {
+          "content": "He will call you as soon as he _____ home.",
+          "options": ["gets", "got", "will get", "has got"],
+          "answer": "gets",
+          "explanation": "as soon as引导时间状语从句，从句用一般现在时表示将来，主语是第三人称单数，动词加s。",
+          "source": "2022年上海市重点高中高二期末联考"
+        }
+      ]
+    },
+    {
+      "id": "grammar-7",
+      "name": "不定式",
+      "questions": [
+        {
+          "content": "It is important _____ English well.",
+          "options": ["learn", "to learn", "learning", "learned"],
+          "explanation": "It is important to do something是固定句型，it是形式主语，真正的主语是to learn English。",
+          "answer": "to learn",
+          "source": "2023年上海高考英语卷"
+        },
+        {
+          "content": "She wanted me _____ her with her homework.",
+          "options": ["help", "to help", "helping", "helped"],
+          "answer": "to help",
+          "explanation": "want sb to do sth是固定用法，不定式作宾语补足语。",
+          "source": "2022年上海市重点高中高一期末联考"
+        }
+      ]
+    },
+    {
+      "id": "grammar-8",
+      "name": "动名词",
+      "questions": [
+        {
+          "content": "I enjoy _____ music in my spare time.",
+          "options": ["listen", "to listen", "listening", "listened"],
+          "answer": "listening",
+          "explanation": "enjoy后接动名词作宾语，表示喜欢做某事。",
+          "source": "2023年上海高考英语卷"
+        },
+        {
+          "content": "_____ English is becoming more and more important.",
+          "options": ["Learn", "To learn", "Learning", "Learned"],
+          "answer": "Learning",
+          "explanation": "动名词作主语，表示经常性动作。to learn表示一次性动作。",
+          "source": "2022年上海市重点高中高二期末联考"
+        }
+      ]
+    },
+    {
+      "id": "grammar-9",
+      "name": "分词",
+      "questions": [
+        {
+          "content": "The students _____ in the classroom are having a discussion.",
+          "options": ["sit", "sat", "sitting", "having sat"],
+          "answer": "sitting",
+          "explanation": "现在分词作定语，表示正在进行的动作，与students是主动关系。",
+          "source": "2023年上海高考英语卷"
+        },
+        {
+          "content": "_____ the letter, he went to the post office.",
+          "options": ["Wrote", "Writing", "Written", "Having written"],
+          "answer": "Having written",
+          "explanation": "现在分词的完成式 having + 过去分词，表示动作在谓语动词之前发生。",
+          "source": "2022年上海市重点高中高一期末联考"
+        }
+      ]
+    },
+    {
+      "id": "grammar-10",
+      "name": "虚拟语气",
+      "questions": [
+        {
+          "content": "If I _____ you, I would accept the offer.",
+          "options": ["am", "was", "were", "had been"],
+          "answer": "were",
+          "explanation": "与现在事实相反的虚拟语气，if + 主语 + 动词过去式，were可以用于所有人称。",
+          "source": "2023年上海高考英语卷"
+        },
+        {
+          "content": "I wish I _____ harder last semester.",
+          "options": ["study", "studied", "had studied", "would study"],
+          "answer": "had studied",
+          "explanation": "wish后的宾语从句与过去事实相反，用had + 过去分词。",
+          "source": "2022年上海市重点高中高二期末联考"
+        }
+      ]
+    }
+  ]
+}

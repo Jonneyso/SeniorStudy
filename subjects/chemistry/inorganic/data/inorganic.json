@@ -1,0 +1,130 @@
+{
+  "groups": [
+    {
+      "id": "inorganic-elements",
+      "name": "元素及其化合物",
+      "items": [
+        {
+          "id": "metal-elements",
+          "title": "金属元素",
+          "content": "常见金属元素及其化合物：\n\n钠（Na）：\n- Na₂O：白色固体，与水反应生成NaOH\n- Na₂O₂：淡黄色固体，与水反应生成NaOH和O₂\n- NaOH：白色固体，强碱，易潮解\n- Na₂CO₃：白色固体，俗名纯碱或苏打\n- NaHCO₃：白色固体，俗名小苏打，受热分解\n\n铝（Al）：\n- Al₂O₃：白色固体，两性氧化物\n- Al(OH)₃：白色沉淀，两性氢氧化物\n- AlCl₃：无色液体，易水解\n\n铁（Fe）：\n- Fe₂O₃：红色固体，赤铁矿主要成分\n- Fe₃O₄：黑色固体，有磁性\n- FeCl₂：浅绿色溶液，易被氧化\n- FeCl₃：棕黄色溶液",
+          "annotation": "钠及其化合物之间的转化关系：\nNa → Na₂O → NaOH → Na₂CO₃ → NaHCO₃",
+          "explanation": "金属元素及其化合物是化学的基础，需要掌握重要的化学反应方程式。",
+          "test_points": ["chemistry-inorg-1"]
+        },
+        {
+          "id": "nonmetal-elements",
+          "title": "非金属元素",
+          "content": "常见非金属元素及其化合物：\n\n氯（Cl）：\n- Cl₂：黄绿色有毒气体\n- HCl：无色刺激性气体，易溶于水\n- HClO：弱酸，有强氧化性，用于漂白\n- NaClO：次氯酸盐，用于漂白和消毒\n\n硫（S）：\n- SO₂：无色刺激性气体，有漂白性\n- H₂SO₄：无色油状液体，强酸，有吸水性、脱水性\n- SO₄²⁻检验：加BaCl₂溶液生成白色沉淀\n\n氮（N）：\n- N₂：无色无味气体，难溶于水\n- NO：無色有毒气体，易与O₂反应生成NO₂\n- NO₂：红棕色有毒气体\n- NH₃：无色刺激性气体，易溶于水\n- HNO₃：无色液体，强酸，有挥发性",
+          "annotation": "氨气的实验室制法：2NH₄Cl + Ca(OH)₂ → CaCl₂ + 2NH₃↑ + 2H₂O",
+          "explanation": "非金属元素及其化合物是高考的重点，需要掌握重要的化学反应和性质。",
+          "test_points": ["chemistry-inorg-2"]
+        }
+      ]
+    },
+    {
+      "id": "inorganic-reactions",
+      "name": "化学反应原理",
+      "items": [
+        {
+          "id": "ion-reaction",
+          "title": "离子反应",
+          "content": "电解质：在水溶液中或熔融状态下能导电的化合物。\n\n离子反应的条件：生成沉淀、气体、水或其他电解质。\n\n离子方程式的书写：\n1. 写化学方程式\n2. 拆写为离子方程式（强电解质拆，弱电解质不拆）\n3. 删去两边相同的离子\n4. 检查原子守恒、电荷守恒\n\n常见离子不能共存：\n- H⁺与OH⁻不能共存\n- CO₃²⁻与Ca²⁺、Ba²⁺不能共存\n- SO₄²⁻与Ba²⁺不能共存\n- Cl⁻与Ag⁺不能共存",
+          "annotation": "离子方程式书写的关键：正确判断电解质的强弱和拆分情况。",
+          "explanation": "离子反应是高考的重点，需要熟练掌握离子方程式的书写和判断离子共存。",
+          "test_points": ["chemistry-inorg-3"]
+        },
+        {
+          "id": "redox-reaction",
+          "title": "氧化还原反应",
+          "content": "氧化还原反应的本质：电子的转移（得失或偏移）。\n\n氧化剂：得到电子的物质，化合价降低。\n还原剂：失去电子的物质，化合价升高。\n\n常见的氧化剂：\n- 卤素单质（Cl₂、Br₂、I₂）\n- 硝酸、浓硫酸\n- 高锰酸钾、重铬酸钾\n\n常见的还原剂：\n- 金属单质（Na、Mg、Al等）\n- 氢气、碳\n- 硫离子、亚铁离子",
+          "annotation": "氧化还原反应的配平：得失电子守恒。",
+          "explanation": "氧化还原反应是化学的核心概念，需要理解电子转移与化合价变化的关系。",
+          "test_points": ["chemistry-inorg-4"]
+        }
+      ]
+    }
+  ],
+  "test_points": [
+    {
+      "id": "chemistry-inorg-1",
+      "name": "金属元素及其化合物",
+      "questions": [
+        {
+          "content": "下列物质中，既能与盐酸反应又能与氢氧化钠溶液反应的是____。",
+          "options": ["Na₂CO₃", "Al(OH)₃", "FeCl₃", "CuO"],
+          "answer": "Al(OH)₃",
+          "explanation": "Al(OH)₃是两性氢氧化物，能与盐酸反应生成AlCl₃和水，也能与NaOH反应生成NaAlO₂和水。",
+          "source": "2023年上海高考化学卷"
+        },
+        {
+          "content": "除去FeCl₂溶液中混有的少量FeCl₃，应加入的试剂是____。",
+          "options": ["铜粉", "铁粉", "氯水", "氢氧化钠溶液"],
+          "answer": "铁粉",
+          "explanation": "铁粉能与FeCl₃反应生成FeCl₂：2FeCl₃ + Fe = 3FeCl₂，从而除去FeCl₃。",
+          "source": "2022年上海市重点高中高二期末联考"
+        }
+      ]
+    },
+    {
+      "id": "chemistry-inorg-2",
+      "name": "非金属元素及其化合物",
+      "questions": [
+        {
+          "content": "下列气体中，既能用排水法收集又能用向下排空气法收集的是____。",
+          "options": ["CO₂", "NH₃", "NO", "SO₂"],
+          "answer": "NO",
+          "explanation": "NO难溶于水，且密度与空气相近，可用排水法收集；NO能与O₂反应生成NO₂，不能用排空气法收集。NH₃密度比空气小，但不能用排水法收集；CO₂和SO₂能溶于水。",
+          "source": "2023年上海高考化学卷"
+        },
+        {
+          "content": "浓硫酸具有的性质是____。",
+          "options": ["挥发性", "吸水性", "见光分解", "无色"],
+          "answer": "吸水性",
+          "explanation": "浓硫酸具有吸水性、脱水性、强氧化性。挥发性是浓盐酸的性质；浓硫酸见光不分解；浓硫酸是无色油状液体。",
+          "source": "2022年上海市重点高中高一期末联考"
+        }
+      ]
+    },
+    {
+      "id": "chemistry-inorg-3",
+      "name": "离子反应",
+      "questions": [
+        {
+          "content": "下列离子方程式中，正确的是____。",
+          "options": ["Fe与盐酸反应：2Fe + 6H⁺ = 2Fe³⁺ + 3H₂↑", "NaOH与H₂SO₄反应：H⁺ + OH⁻ = H₂O", "CaCO₃与盐酸反应：CO₃²⁻ + 2H⁺ = H₂O + CO₂↑", "Cu与AgNO₃反应：Cu + Ag⁺ = Cu²⁺ + Ag"],
+          "answer": "NaOH与H₂SO₄反应：H⁺ + OH⁻ = H₂O",
+          "explanation": "Fe与盐酸反应生成Fe²⁺不是Fe³⁺；CaCO₃是难溶物不能拆；Cu与AgNO₃反应方程式正确，但Ag⁺需要写成离子形式。",
+          "source": "2023年上海高考化学卷"
+        },
+        {
+          "content": "下列各组离子，能在溶液中大量共存的是____。",
+          "options": ["H⁺、Cl⁻、Na⁺、CO₃²⁻", "K⁺、Na⁺、Cl⁻、NO₃⁻", "Ba²⁺、SO₄²⁻、Na⁺、Cl⁻", "Ag⁺、NO₃⁻、Na⁺、Cl⁻"],
+          "answer": "K⁺、Na⁺、Cl⁻、NO₃⁻",
+          "explanation": "H⁺与CO₃²⁻不能共存会生成CO₂；Ba²⁺与SO₄²⁻不能共存会生成BaSO₄沉淀；Ag⁺与Cl⁻不能共存会生成AgCl沉淀。",
+          "source": "2022年上海市重点高中高二期末联考"
+        }
+      ]
+    },
+    {
+      "id": "chemistry-inorg-4",
+      "name": "氧化还原反应",
+      "questions": [
+        {
+          "content": "在反应MnO₂ + 4HCl(浓) = MnCl₂ + Cl₂↑ + 2H₂O中，氧化剂是____，还原剂是____。",
+          "options": ["MnO₂、HCl", "MnCl₂、Cl₂", "HCl、MnO₂", "Cl₂、H₂O"],
+          "answer": "MnO₂、HCl",
+          "explanation": "MnO₂中Mn化合价从+4降到+2，得到电子，是氧化剂；HCl中Cl化合价从-1升到0，失去电子，是还原剂。",
+          "source": "2023年上海高考化学卷"
+        },
+        {
+          "content": "下列反应中，水作氧化剂的是____。",
+          "options": ["2Na + 2H₂O = 2NaOH + H₂↑", "2F₂ + 2H₂O = 4HF + O₂", "H₂O + CO₂ = H₂CO₃", "CaO + H₂O = Ca(OH)₂"],
+          "answer": "2Na + 2H₂O = 2NaOH + H₂↑",
+          "explanation": "水作氧化剂，则水被还原，H化合价降低。Na与H₂O反应时，H₂O中H从+1降到0，被还原，水是氧化剂。",
+          "source": "2022年上海市重点高中高一期末联考"
+        }
+      ]
+    }
+  ]
+}

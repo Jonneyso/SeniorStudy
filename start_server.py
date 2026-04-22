@@ -2,7 +2,7 @@ import http.server
 import socketserver
 import traceback
 
-PORT = 3000
+PORT = 3002
 Handler = http.server.SimpleHTTPRequestHandler
 
 try:

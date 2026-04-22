@@ -1,0 +1,192 @@
+{
+  "groups": [
+    {
+      "id": "algebra-equations",
+      "name": "方程与不等式",
+      "items": [
+        {
+          "id": "quadratic-equation",
+          "title": "一元二次方程",
+          "content": "一元二次方程的标准形式为ax² + bx + c = 0 (a ≠ 0)，求根公式为x = (-b ± √(b²-4ac)) / 2a。",
+          "annotation": "判别式Δ = b² - 4ac：\n- Δ > 0：两个不相等的实根\n- Δ = 0：两个相等的实根\n- Δ < 0：两个共轭复根",
+          "explanation": "一元二次方程是高中数学的基础内容，涉及求根公式、根与系数的关系（韦达定理）、方程的讨论等多种题型。",
+          "test_points": ["algebra-eq-1"]
+        },
+        {
+          "id": "inequality-solution",
+          "title": "不等式的解法",
+          "content": "常见不等式类型及解法：\n1. 一元二次不等式：先求对应方程的根，再根据二次项系数正负确定解集\n2. 分式不等式：移项通分，转化为整式不等式\n3. 绝对值不等式：分段讨论或利用绝对值性质",
+          "annotation": "解不等式的核心是等价转化，注意定义域和分母不为零的条件。",
+          "explanation": "不等式是高考的重点内容，常与函数、方程综合考查。解题时要注意数形结合思想的应用。",
+          "test_points": ["algebra-eq-2"]
+        }
+      ]
+    },
+    {
+      "id": "algebra-function",
+      "name": "函数",
+      "items": [
+        {
+          "id": "function-concept",
+          "title": "函数的基本概念",
+          "content": "函数的三要素：定义域、对应法则、值域。\n函数的表示方法：解析法、图像法、表格法。\n常见函数性质：单调性、奇偶性、周期性。",
+          "annotation": "函数单调性的判断方法：\n1. 定义法：设x1 < x2，判断f(x1)与f(x2)的大小\n2. 导数法：f'(x) > 0则递增，f'(x) < 0则递减",
+          "explanation": "函数是高中数学的核心内容，各种初等函数、函数的性质、函数的图像都是高考考查的重点。",
+          "test_points": ["algebra-eq-3"]
+        },
+        {
+          "id": "exponential-logarithm",
+          "title": "指数函数与对数函数",
+          "content": "指数函数：y = aˣ (a > 0, a ≠ 1)\n对数函数：y = logₐx (a > 0, a ≠ 1)\n互为反函数，图像关于y = x对称。",
+          "annotation": "对数的运算性质：\nlogₐ(MN) = logₐM + logₐN\nlogₐ(M/N) = logₐM - logₐN\nlogₐMⁿ = nlogₐM",
+          "explanation": "指数和对数函数是高考的必考内容，常与方程、不等式综合考查。",
+          "test_points": ["algebra-eq-4"]
+        }
+      ]
+    },
+    {
+      "id": "algebra-sequence",
+      "name": "数列",
+      "items": [
+        {
+          "id": "arithmetic-sequence",
+          "title": "等差数列",
+          "content": "等差数列通项公式：aₙ = a₁ + (n-1)d\n前n项和：Sₙ = n(a₁ + aₙ)/2 = n·a₁ + n(n-1)d/2",
+          "annotation": "等差中项：若a, b, c成等差数列，则2b = a + c",
+          "explanation": "等差数列是数列部分的基础，需要熟练掌握通项公式和前n项和公式的应用。",
+          "test_points": ["algebra-eq-5"]
+        },
+        {
+          "id": "geometric-sequence",
+          "title": "等比数列",
+          "content": "等比数列通项公式：aₙ = a₁·qⁿ⁻¹\n前n项和：Sₙ = a₁(1-qⁿ)/(1-q) = a₁(qⁿ-1)/(q-1) (q ≠ 1)",
+          "annotation": "等比中项：若a, b, c成等比数列，则b² = ac",
+          "explanation": "等比数列常与指数函数综合考查，注意q的正负和范围讨论。",
+          "test_points": ["algebra-eq-6"]
+        }
+      ]
+    }
+  ],
+  "test_points": [
+    {
+      "id": "algebra-eq-1",
+      "name": "一元二次方程根的分布",
+      "questions": [
+        {
+          "content": "已知方程x² - 2x + m = 0有两不等实根，则m的取值范围是____。",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "方程有两个不等实根，判别式Δ > 0，即(-2)² - 4·1·m > 0，解得4 - 4m > 0，所以m < 1。",
+          "answer": "m < 1"
+        },
+        {
+          "content": "若方程x² + mx + 4 = 0的两根都大于0，则m的取值范围是____。",
+          "source": "2022年上海市重点高中高一期末联考",
+          "link": "",
+          "analysis": "方程有两根，首先Δ ≥ 0，即m² - 16 ≥ 0，得m ≤ -4或m ≥ 4。两根都大于0，由韦达定理：a₁ + a₂ = -m > 0，a₁·a₂ = 4 > 0，所以-m > 0，即m < 0。综合得m ≤ -4。",
+          "answer": "m ≤ -4"
+        }
+      ]
+    },
+    {
+      "id": "algebra-eq-2",
+      "name": "不等式解法",
+      "questions": [
+        {
+          "content": "解不等式：x² - 3x + 2 > 0",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "因式分解得(x-1)(x-2) > 0，根据二次函数图像，解为x < 1或x > 2。",
+          "answer": "x < 1或x > 2"
+        },
+        {
+          "content": "解不等式：|2x - 1| < 3",
+          "source": "2022年上海市重点高中高一期末联考",
+          "link": "",
+          "analysis": "由绝对值不等式性质：-3 < 2x - 1 < 3，各加1得：-2 < 2x < 4，所以-1 < x < 2。",
+          "answer": "-1 < x < 2"
+        }
+      ]
+    },
+    {
+      "id": "algebra-eq-3",
+      "name": "函数的单调性与奇偶性",
+      "questions": [
+        {
+          "content": "已知f(x)是定义在R上的奇函数，且f(x)在[0,+∞)上单调递增，则f(-2)、f(0)、f(3)的大小关系为____。",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "因为f(x)是奇函数，所以f(-2) = -f(2)。又f(x)在[0,+∞)单调递增，所以f(0) ≤ f(2) < f(3)，即0 ≤ f(2) < f(3)。因此f(-2) = -f(2) ≤ 0 < f(3)，所以f(-2) < f(0) < f(3)。",
+          "answer": "f(-2) < f(0) < f(3)"
+        },
+        {
+          "content": "判断函数f(x) = x³ + 2x的奇偶性。",
+          "source": "2022年上海市重点高中高一期末联考",
+          "link": "",
+          "analysis": "f(-x) = (-x)³ + 2(-x) = -x³ - 2x = -(x³ + 2x) = -f(x)，所以f(x)是奇函数。",
+          "answer": "奇函数"
+        }
+      ]
+    },
+    {
+      "id": "algebra-eq-4",
+      "name": "指数对数运算",
+      "questions": [
+        {
+          "content": "计算：log₂3 · log₃4 · log₄5 · log₅2",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "利用换底公式：logₐb = lgb/lga = lna/lnb。原式 = (lg3/lg2) · (lg4/lg3) · (lg5/lg4) · (lg2/lg5) = 1。",
+          "answer": "1"
+        },
+        {
+          "content": "已知logₐ2 = m，logₐ3 = n，则logₐ6 = ____。",
+          "source": "2022年上海市重点高中高一期末联考",
+          "link": "",
+          "analysis": "因为6 = 2 × 3，所以logₐ6 = logₐ2 + logₐ3 = m + n。",
+          "answer": "m + n"
+        }
+      ]
+    },
+    {
+      "id": "algebra-eq-5",
+      "name": "等差数列",
+      "questions": [
+        {
+          "content": "在等差数列{aₙ}中，若a₃ = 5，a₇ = 13，则a₅ = ____。",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "设等差数列公差为d，则a₇ = a₃ + 4d，即13 = 5 + 4d，解得d = 2。所以a₅ = a₃ + 2d = 5 + 4 = 9。",
+          "answer": "9"
+        },
+        {
+          "content": "等差数列的前n项和为Sₙ = 2n² + n，则其通项公式为____。",
+          "source": "2022年上海市重点高中高一期末联考",
+          "link": "",
+          "analysis": "由Sₙ = 2n² + n，得a₁ = S₁ = 2×1² + 1 = 3。当n ≥ 2时，aₙ = Sₙ - Sₙ₋₁ = (2n² + n) - [2(n-1)² + (n-1)] = 2n² + n - (2n² - 4n + 2 + n - 1) = 4n - 1。验证a₁ = 4×1 - 1 = 3，符合。所以aₙ = 4n - 1。",
+          "answer": "aₙ = 4n - 1"
+        }
+      ]
+    },
+    {
+      "id": "algebra-eq-6",
+      "name": "等比数列",
+      "questions": [
+        {
+          "content": "在等比数列{aₙ}中，若a₂ = 2，a₅ = 16，则公比q = ____。",
+          "source": "2023年上海高考数学卷",
+          "link": "",
+          "analysis": "由等比数列通项公式：a₅ = a₂·q³，即16 = 2·q³，解得q³ = 8，所以q = 2。",
+          "answer": "2"
+        },
+        {
+          "content": "等比数列的前n项和Sₙ = 3ⁿ - 1，则其公比为____。",
+          "source": "2022年上海市重点高中高一期末联考",
+          "link": "",
+          "analysis": "由Sₙ = 3ⁿ - 1，得a₁ = S₁ = 3 - 1 = 2。当n ≥ 2时，aₙ = Sₙ - Sₙ₋₁ = (3ⁿ - 1) - (3ⁿ⁻¹ - 1) = 3ⁿ - 3ⁿ⁻¹ = 2·3ⁿ⁻¹。所以q = a₂/a₁ = (2·3)/(2) = 3。",
+          "answer": "3"
+        }
+      ]
+    }
+  ]
+}

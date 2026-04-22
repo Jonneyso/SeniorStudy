@@ -4,215 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>上海高中生学习辅助项目</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .subjects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        
-        .subject-card {
-            background-color: white;
-            border-radius: 8px;
-            padding: 20px;
-            width: 300px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .subject-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .subject-card h2 {
-            color: #4CAF50;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-        
-        .content-list {
-            list-style: none;
-        }
-        
-        .content-list li {
-            margin-bottom: 10px;
-            padding-left: 20px;
-            position: relative;
-        }
-        
-        .content-list li::before {
-            content: "•";
-            color: #4CAF50;
-            font-size: 1.2em;
-            position: absolute;
-            left: 0;
-        }
-        
-        .content-list a {
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .content-list a:hover {
-            color: #4CAF50;
-        }
-        
-        .gvc-container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .gvc-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .gvc-header h2 {
-            color: #4CAF50;
-            margin-bottom: 10px;
-        }
-        
-        .vocabulary-list {
-            list-style: none;
-        }
-        
-        .vocabulary-item {
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        
-        .vocabulary-item:hover {
-            background-color: #f5f5f5;
-        }
-        
-        .vocabulary-item:last-child {
-            border-bottom: none;
-        }
-        
-        .vocabulary-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .vocabulary-header .english {
-            font-weight: bold;
-        }
-        
-        .vocabulary-header .chinese {
-            color: #666;
-        }
-        
-        .category {
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 10px;
-            font-size: 12px;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        
-        .category.G {
-            background-color: #e3f2fd;
-            color: #1976d2;
-        }
-        
-        .category.V {
-            background-color: #e8f5e8;
-            color: #388e3c;
-        }
-        
-        .category.C {
-            background-color: #fff3e0;
-            color: #f57c00;
-        }
-        
-        .example {
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            display: none;
-        }
-        
-        .example.show {
-            display: block;
-        }
-        
-        .example .question {
-            margin-bottom: 10px;
-        }
-        
-        .example .options {
-            margin-bottom: 10px;
-        }
-        
-        .example .option {
-            display: block;
-            margin-bottom: 5px;
-        }
-        
-        .example .answer {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .example .explanation {
-            color: #666;
-            font-size: 14px;
-        }
-        
-        .expand-icon {
-            font-size: 12px;
-            color: #999;
-            transition: transform 0.3s ease;
-        }
-        
-        .expand-icon.rotated {
-            transform: rotate(180deg);
-        }
-    </style>
+    <link rel="stylesheet" href="src/styles/main.css">
 </head>
 <body>
     <div class="container">
@@ -223,9 +15,72 @@
         
         <div class="subjects">
             <div class="subject-card">
+                <h2>语文</h2>
+                <ul class="content-list">
+                    <li><a href="#classical">上海高中必考古文古诗</a></li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h2>数学</h2>
+                <ul class="content-list">
+                    <li><a href="#math-algebra">代数</a></li>
+                    <li><a href="#math-geometry">几何</a></li>
+                    <li><a href="#math-calculus">微积分</a></li>
+                </ul>
+            </div>
+            <div class="subject-card">
                 <h2>英语</h2>
                 <ul class="content-list">
                     <li><a href="#gvc">GVC单词知识</a></li>
+                    <li><a href="#english-grammar">语法知识</a></li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h2>物理</h2>
+                <ul class="content-list">
+                    <li><a href="#physics-mechanics">力学</a></li>
+                    <li><a href="#physics-thermodynamics">热学</a></li>
+                    <li><a href="#physics-electricity">电磁学</a></li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h2>化学</h2>
+                <ul class="content-list">
+                    <li><a href="#chemistry-inorganic">无机化学</a></li>
+                    <li><a href="#chemistry-organic">有机化学</a></li>
+                    <li><a href="#chemistry-physical">物理化学</a></li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h2>地理</h2>
+                <ul class="content-list">
+                    <li><a href="#geography-physical">自然地理</a></li>
+                    <li><a href="#geography-human">人文地理</a></li>
+                    <li><a href="#geography-regional">区域地理</a></li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h2>历史</h2>
+                <ul class="content-list">
+                    <li><a href="#history-ancient">古代史</a></li>
+                    <li><a href="#history-modern">近代史</a></li>
+                    <li><a href="#history-contemporary">现代史</a></li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h2>政治</h2>
+                <ul class="content-list">
+                    <li><a href="#politics-economics">经济生活</a></li>
+                    <li><a href="#politics-politics">政治生活</a></li>
+                    <li><a href="#politics-philosophy">哲学生活</a></li>
+                </ul>
+            </div>
+            <div class="subject-card">
+                <h2>生物</h2>
+                <ul class="content-list">
+                    <li><a href="#biology-cell">细胞生物学</a></li>
+                    <li><a href="#biology-genetics">遗传学</a></li>
+                    <li><a href="#biology-ecology">生态学</a></li>
                 </ul>
             </div>
         </div>
@@ -239,55 +94,252 @@
                 <!-- 单词列表将通过JavaScript动态生成 -->
             </ul>
         </div>
+        
+        <div id="classical" class="gvc-container">
+            <div class="gvc-header">
+                <h2>上海高中必考古文古诗</h2>
+                <p>按教学进度分组整理</p>
+            </div>
+            <div id="classical-content">
+                <!-- 古诗文内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 数学学科内容 -->
+        <div id="math-algebra" class="gvc-container">
+            <div class="gvc-header">
+                <h2>数学 - 代数</h2>
+                <p>代数知识点整理</p>
+            </div>
+            <div id="math-algebra-content">
+                <!-- 代数内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="math-geometry" class="gvc-container">
+            <div class="gvc-header">
+                <h2>数学 - 几何</h2>
+                <p>几何知识点整理</p>
+            </div>
+            <div id="math-geometry-content">
+                <!-- 几何内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="math-calculus" class="gvc-container">
+            <div class="gvc-header">
+                <h2>数学 - 微积分</h2>
+                <p>微积分知识点整理</p>
+            </div>
+            <div id="math-calculus-content">
+                <!-- 微积分内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 英语语法内容 -->
+        <div id="english-grammar" class="gvc-container">
+            <div class="gvc-header">
+                <h2>英语 - 语法知识</h2>
+                <p>英语语法知识点整理</p>
+            </div>
+            <div id="english-grammar-content">
+                <!-- 语法内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 物理学科内容 -->
+        <div id="physics-mechanics" class="gvc-container">
+            <div class="gvc-header">
+                <h2>物理 - 力学</h2>
+                <p>力学知识点整理</p>
+            </div>
+            <div id="physics-mechanics-content">
+                <!-- 力学内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="physics-thermodynamics" class="gvc-container">
+            <div class="gvc-header">
+                <h2>物理 - 热学</h2>
+                <p>热学知识点整理</p>
+            </div>
+            <div id="physics-thermodynamics-content">
+                <!-- 热学内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="physics-electricity" class="gvc-container">
+            <div class="gvc-header">
+                <h2>物理 - 电磁学</h2>
+                <p>电磁学知识点整理</p>
+            </div>
+            <div id="physics-electricity-content">
+                <!-- 电磁学内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 化学学科内容 -->
+        <div id="chemistry-inorganic" class="gvc-container">
+            <div class="gvc-header">
+                <h2>化学 - 无机化学</h2>
+                <p>无机化学知识点整理</p>
+            </div>
+            <div id="chemistry-inorganic-content">
+                <!-- 无机化学内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="chemistry-organic" class="gvc-container">
+            <div class="gvc-header">
+                <h2>化学 - 有机化学</h2>
+                <p>有机化学知识点整理</p>
+            </div>
+            <div id="chemistry-organic-content">
+                <!-- 有机化学内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="chemistry-physical" class="gvc-container">
+            <div class="gvc-header">
+                <h2>化学 - 物理化学</h2>
+                <p>物理化学知识点整理</p>
+            </div>
+            <div id="chemistry-physical-content">
+                <!-- 物理化学内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 地理学科内容 -->
+        <div id="geography-physical" class="gvc-container">
+            <div class="gvc-header">
+                <h2>地理 - 自然地理</h2>
+                <p>自然地理知识点整理</p>
+            </div>
+            <div id="geography-physical-content">
+                <!-- 自然地理内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="geography-human" class="gvc-container">
+            <div class="gvc-header">
+                <h2>地理 - 人文地理</h2>
+                <p>人文地理知识点整理</p>
+            </div>
+            <div id="geography-human-content">
+                <!-- 人文地理内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="geography-regional" class="gvc-container">
+            <div class="gvc-header">
+                <h2>地理 - 区域地理</h2>
+                <p>区域地理知识点整理</p>
+            </div>
+            <div id="geography-regional-content">
+                <!-- 区域地理内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 历史学科内容 -->
+        <div id="history-ancient" class="gvc-container">
+            <div class="gvc-header">
+                <h2>历史 - 古代史</h2>
+                <p>古代史知识点整理</p>
+            </div>
+            <div id="history-ancient-content">
+                <!-- 古代史内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="history-modern" class="gvc-container">
+            <div class="gvc-header">
+                <h2>历史 - 近代史</h2>
+                <p>近代史知识点整理</p>
+            </div>
+            <div id="history-modern-content">
+                <!-- 近代史内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="history-contemporary" class="gvc-container">
+            <div class="gvc-header">
+                <h2>历史 - 现代史</h2>
+                <p>现代史知识点整理</p>
+            </div>
+            <div id="history-contemporary-content">
+                <!-- 现代史内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 政治学科内容 -->
+        <div id="politics-economics" class="gvc-container">
+            <div class="gvc-header">
+                <h2>政治 - 经济生活</h2>
+                <p>经济生活知识点整理</p>
+            </div>
+            <div id="politics-economics-content">
+                <!-- 经济生活内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="politics-politics" class="gvc-container">
+            <div class="gvc-header">
+                <h2>政治 - 政治生活</h2>
+                <p>政治生活知识点整理</p>
+            </div>
+            <div id="politics-politics-content">
+                <!-- 政治生活内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="politics-philosophy" class="gvc-container">
+            <div class="gvc-header">
+                <h2>政治 - 哲学生活</h2>
+                <p>哲学生活知识点整理</p>
+            </div>
+            <div id="politics-philosophy-content">
+                <!-- 哲学生活内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <!-- 生物学科内容 -->
+        <div id="biology-cell" class="gvc-container">
+            <div class="gvc-header">
+                <h2>生物 - 细胞生物学</h2>
+                <p>细胞生物学知识点整理</p>
+            </div>
+            <div id="biology-cell-content">
+                <!-- 细胞生物学内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="biology-genetics" class="gvc-container">
+            <div class="gvc-header">
+                <h2>生物 - 遗传学</h2>
+                <p>遗传学知识点整理</p>
+            </div>
+            <div id="biology-genetics-content">
+                <!-- 遗传学内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="biology-ecology" class="gvc-container">
+            <div class="gvc-header">
+                <h2>生物 - 生态学</h2>
+                <p>生态学知识点整理</p>
+            </div>
+            <div id="biology-ecology-content">
+                <!-- 生态学内容将通过JavaScript动态生成 -->
+            </div>
+        </div>
     </div>
     
-    <script>
-        // 加载GVC单词数据
-        fetch('subjects/english/gvc/data/vocabulary.json')
-            .then(response => response.json())
-            .then(data => {
-                const vocabularyList = document.getElementById('vocabulary-list');
-                data.forEach(item => {
-                    const li = document.createElement('li');
-                    li.className = 'vocabulary-item';
-                    
-                    // 构建选项HTML
-                    let optionsHtml = '';
-                    item.example.options.forEach(option => {
-                        optionsHtml += `<div class="option">${option}</div>`;
-                    });
-                    
-                    li.innerHTML = `
-                        <div class="vocabulary-header">
-                            <div>
-                                <span class="category ${item.category}">${item.category}</span>
-                                <span class="english">${item.english}</span>
-                            </div>
-                            <div>
-                                <span class="chinese">${item.chinese}</span>
-                                <span class="expand-icon">▼</span>
-                            </div>
-                        </div>
-                        <div class="example">
-                            <div class="question">${item.example.question}</div>
-                            <div class="options">${optionsHtml}</div>
-                            <div class="answer">答案: ${item.example.answer}</div>
-                            <div class="explanation">解析: ${item.example.explanation}</div>
-                        </div>
-                    `;
-                    
-                    // 添加点击事件
-                    li.addEventListener('click', function() {
-                        const example = this.querySelector('.example');
-                        const expandIcon = this.querySelector('.expand-icon');
-                        example.classList.toggle('show');
-                        expandIcon.classList.toggle('rotated');
-                    });
-                    
-                    vocabularyList.appendChild(li);
-                });
-            })
-            .catch(error => console.error('加载数据失败:', error));
-    </script>
+    <!-- 加载JavaScript文件 -->
+    <script src="src/services/DataService.js"></script>
+    <script src="src/services/DataManager.js"></script>
+    <script src="src/components/SubjectComponent.js"></script>
+    <script src="src/components/english/GVCComponent.js"></script>
+    <script src="src/components/chinese/ClassicalComponent.js"></script>
+    <script src="src/main.js"></script>
 </body>
 </html>
