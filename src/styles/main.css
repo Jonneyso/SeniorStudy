@@ -34,16 +34,20 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .subject-card {
     background-color: white;
     border-radius: 8px;
-    padding: 15px;
-    width: 280px;
+    padding: 10px;
+    width: calc(100% / 9 - 15px);
+    min-width: 200px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .subject-card:hover {
@@ -53,18 +57,27 @@ h1 {
 
 .subject-card h2 {
     color: #4CAF50;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center;
+    font-size: 1.2em;
+    line-height: 1.2;
 }
 
 .content-list {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
 }
 
 .content-list li {
-    margin-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 12px;
     position: relative;
+    white-space: nowrap;
+    font-size: 0.9em;
+    line-height: 1.3;
 }
 
 .content-list li::before {
@@ -86,11 +99,11 @@ h1 {
 }
 
 .gvc-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: white;
     border-radius: 8px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: none;
 }
@@ -101,7 +114,7 @@ h1 {
 
 .gvc-header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .gvc-header h2 {
@@ -111,6 +124,37 @@ h1 {
 
 .vocabulary-list {
     list-style: none;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+@media (min-width: 1000px) {
+    .vocabulary-list {
+        column-count: 3;
+    }
+}
+
+.classical-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    gap: 15px;
+}
+
+.test-questions {
+    display: none;
+    column-count: 1;
+}
+
+@media (min-width: 800px) {
+    .test-questions {
+        column-count: 2;
+        column-gap: 20px;
+    }
+    
+    .test-question {
+        break-inside: avoid;
+        margin-bottom: 15px;
+    }
 }
 
 .vocabulary-item {
@@ -213,21 +257,21 @@ h1 {
 
 /* 语文学科样式 */
 .classical-group {
-    margin-bottom: 40px;
-    padding: 20px;
+    margin-bottom: 30px;
+    padding: 15px;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
 
 .classical-group h3 {
     color: #4CAF50;
-    margin-bottom: 20px;
-    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-size: 1.3em;
 }
 
 .classical-item {
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 15px;
+    padding: 12px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -235,9 +279,10 @@ h1 {
 
 .classical-title {
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     cursor: pointer;
     transition: color 0.3s ease;
+    font-size: 1.1em;
 }
 
 .classical-title:hover {
@@ -246,8 +291,8 @@ h1 {
 
 .classical-detail {
     display: none;
-    margin-top: 15px;
-    padding-top: 15px;
+    margin-top: 10px;
+    padding-top: 10px;
     border-top: 1px solid #eee;
 }
 
@@ -273,8 +318,8 @@ h1 {
 }
 
 .test-points {
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 20px;
+    padding-top: 15px;
     border-top: 1px solid #ddd;
 }
 
@@ -284,8 +329,8 @@ h1 {
 }
 
 .test-point {
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 15px;
+    padding: 12px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);

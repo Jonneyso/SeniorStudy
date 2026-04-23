@@ -51,18 +51,18 @@ SeniorStudy/
 │   ├── geography/human/data/      # 地理人文地理数据
 │   ├── geography/regional/data/   # 地理区域地理数据
 │   ├── history/ancient/data/      # 历史古代史数据
-│   ├── history/modern/data/       # 历史近代史数据
-│   ├── history/contemporary/data/ # 历史现代史数据
 │   ├── politics/economics/data/   # 政治经济生活数据
-│   ├── politics/politics_life/data/ # 政治政治生活数据
-│   ├── politics/philosophy/data/  # 政治哲学生活数据
 │   ├── biology/cell/data/          # 生物细胞生物学数据
-│   ├── biology/genetics/data/     # 生物遗传学数据
-│   └── biology/ecology/data/       # 生物生态学数据
 └── src/                            # 源代码目录
     ├── components/                 # 组件目录
+    │   ├── chinese/               # 语文学科组件
+    │   ├── english/               # 英语学科组件
+    │   └── SubjectComponent.js    # 通用学科组件
     ├── services/                   # 服务层
+    │   ├── DataManager.js         # 数据管理类
+    │   └── DataService.js         # 数据服务类
     ├── styles/                     # 样式文件
+    │   └── main.css               # 主样式文件
     └── main.js                    # 主入口文件
 ```
 
@@ -214,13 +214,7 @@ App (主应用)
 ├── GVCComponent (英语GVC单词组件)
 ├── ClassicalComponent (语文古诗文组件)
 ├── GrammarComponent (英语语法组件)
-├── MathComponent (数学通用组件)
-├── PhysicsComponent (物理通用组件)
-├── ChemistryComponent (化学通用组件)
-├── GeographyComponent (地理通用组件)
-├── HistoryComponent (历史通用组件)
-├── PoliticsComponent (政治通用组件)
-└── BiologyComponent (生物通用组件)
+└── SubjectComponent (通用学科组件，用于数学、物理、化学、地理、历史、政治、生物)
 ```
 
 ### 6.2 组件接口
@@ -265,18 +259,21 @@ App (主应用)
 | 类名 | 说明 |
 |------|------|
 | `.container` | 页面容器 |
-| `.subjects` | 学科卡片容器 |
-| `.subject-card` | 学科卡片 |
-| `.gvc-container` | 内容容器（默认隐藏） |
+| `.subjects` | 学科卡片容器（两端对齐布局） |
+| `.subject-card` | 学科卡片（自适应宽度，最小宽度200px，纵向空间压缩25%） |
+| `.content-list` | 学科内容链接列表（横向排列，居中对齐） |
+| `.gvc-container` | 内容容器（默认隐藏，最大宽度1200px） |
 | `.gvc-container.active` | 激活的内容容器 |
-| `.classical-group` | 古诗文分组 |
-| `.classical-item` | 古诗文条目 |
+| `.classical-group` | 古诗文分组（紧凑布局） |
+| `.classical-items` | 古诗文条目容器（网格布局，每行2个） |
+| `.classical-item` | 古诗文条目（紧凑布局） |
 | `.classical-title` | 古诗文标题（可点击） |
 | `.classical-detail` | 古诗文详情（可折叠） |
-| `.test-point` | 考点 |
+| `.test-point` | 考点（紧凑布局） |
 | `.test-point-title` | 考点标题（可点击） |
-| `.test-questions` | 考点题目（可折叠） |
+| `.test-questions` | 考点题目（可折叠，多列布局） |
 | `.test-question` | 单个题目 |
+| `.vocabulary-list` | 词汇列表（多列布局） |
 
 ### 8.3 交互效果
 
@@ -344,10 +341,10 @@ App (主应用)
 ```bash
 python start_server.py
 # 或
-python -m http.server 3000
+python -m http.server 8000
 ```
 
-访问：`http://localhost:3000`
+访问：`http://localhost:8000`
 
 ### 11.2 线上部署
 
@@ -399,3 +396,12 @@ python -m http.server 3000
 ## 16. 总结
 
 本项目通过模块化组件化架构，实现了上海高中生学习辅助应用的功能。项目的设计注重可扩展性和可维护性，便于后续添加新学科和新功能。所有考点均包含高考真题及上海市重点高中期中期末考试试卷真题，为学生提供了真实的练习资源。
+
+## 17. 开发规范
+
+### 17.1 代码优化规范
+- 每次优化代码后不要自动启动服务，只需提供启动命令
+- 启动命令：`python start_server.py` 或 `python -m http.server 8000`
+
+### 17.2 设计文档维护规范
+- 每次修改代码后要自动更新设计文档，确保文档与代码保持一致
