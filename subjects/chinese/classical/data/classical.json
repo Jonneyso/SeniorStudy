@@ -2,7 +2,7 @@
   "groups": [
     {
       "id": "grade1_semester1",
-      "name": "高一第一学期",
+      "name": "高一上册（试用本）",
       "items": [
         {
           "id": "guofeng",
@@ -26,7 +26,7 @@
     },
     {
       "id": "grade1_semester2",
-      "name": "高一第二学期",
+      "name": "高一下册",
       "items": [
         {
           "id": "chibi",
@@ -41,7 +41,7 @@
     },
     {
       "id": "grade2_semester1",
-      "name": "高二第一学期",
+      "name": "高二上册",
       "items": [
         {
           "id": "peachblossom",
@@ -56,7 +56,7 @@
     },
     {
       "id": "grade2_semester2",
-      "name": "高二第二学期",
+      "name": "高二下册",
       "items": [
         {
           "id": "loushizhang",
@@ -80,7 +80,7 @@
     },
     {
       "id": "grade3_semester1",
-      "name": "高三第一学期",
+      "name": "高三上册",
       "items": [
         {
           "id": "li sao",
@@ -104,7 +104,7 @@
     },
     {
       "id": "grade3_semester2",
-      "name": "高三第二学期",
+      "name": "高三下册",
       "items": [
         {
           "id": "shui diao ge tou",
