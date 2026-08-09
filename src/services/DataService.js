@@ -247,6 +247,19 @@ class DataService {
         }
     }
 
+    async getTextbookData(subjectKey) {
+        try {
+            const response = await fetch(`subjects/${subjectKey}/textbooks.json`);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return await response.json();
+        } catch (error) {
+            console.error(`Error fetching ${subjectKey} textbook data:`, error);
+            throw error;
+        }
+    }
+
     async fetchData(path) {
         try {
             const response = await fetch(path);

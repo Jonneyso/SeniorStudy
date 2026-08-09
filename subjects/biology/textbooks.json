@@ -1,0 +1,200 @@
+{
+  "subject": "生物",
+  "textbooks": [
+    {
+      "id": "biology-required-1",
+      "name": "必修1 (分子与细胞)",
+      "chapters": [
+        {
+          "name": "第二章 组成细胞的分子",
+          "topics": ["细胞中的元素和化合物", "蛋白质", "核酸", "糖类和脂质"],
+          "knowledge_points": [
+            {
+              "title": "蛋白质",
+              "content": "氨基酸是蛋白质的基本单位，结构通式：NH₂-CHR-COOH。氨基酸通过脱水缩合形成肽键(-CO-NH-)。蛋白质多样性：氨基酸种类、数目、排列顺序、空间结构。"
+            },
+            {
+              "title": "核酸",
+              "content": "DNA和RNA。基本单位是核苷酸(磷酸+五碳糖+含氮碱基)。DNA主要在细胞核，RNA主要在细胞质。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "蛋白质的计算",
+              "content": "考查氨基酸数、肽键数、脱水数的计算。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "某蛋白质由m个氨基酸组成，形成n条肽链，则该蛋白质形成过程中脱去的水分子数为",
+              "options": ["A. m", "B. n", "C. m-n", "D. m+n"],
+              "answer": "C",
+              "explanation": "脱水数=肽键数=氨基酸数-肽链数=m-n，故选C。",
+              "source": "2023年上海中学高一期中考试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biology-required-2",
+      "name": "必修2 (遗传与进化)",
+      "chapters": [
+        {
+          "name": "第一章 遗传因子的发现",
+          "topics": ["孟德尔的豌豆杂交实验"],
+          "knowledge_points": [
+            {
+              "title": "孟德尔遗传定律",
+              "content": "基因分离定律：杂合子Aa自交，F2代性状分离比3:1。自由组合定律：两对以上基因独立遗传。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "遗传概率计算",
+              "content": "考查基因型、表现型概率。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "计算题",
+              "content": "豌豆中高茎(D)对矮茎(d)显性，现让杂合高茎豌豆自交，求F2代中矮茎所占比例。",
+              "answer": "1/4",
+              "explanation": "Dd自交，F2代DD:Dd:dd=1:2:1，矮茎(dd)占1/4。",
+              "source": "2023年复旦附中高一期末考试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biology-required-3",
+      "name": "必修3 (稳态与环境)",
+      "chapters": [
+        {
+          "name": "第二章 动物和人体生命活动的调节",
+          "topics": ["神经调节", "激素调节", "免疫调节"],
+          "knowledge_points": [
+            {
+              "title": "神经调节",
+              "content": "神经调节的基本方式是反射，结构基础是反射弧(感受器、传入神经、神经中枢、传出神经、效应器)。静息电位：K⁺外流；动作电位：Na⁺内流。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "反射弧与兴奋传导",
+              "content": "考查兴奋在神经纤维和突触间的传导。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "在神经纤维上，兴奋传导的方向与局部电流方向的关系是",
+              "options": ["A. 相同", "B. 相反", "C. 垂直", "D. 无关"],
+              "answer": "B",
+              "explanation": "兴奋传导方向与膜内局部电流方向相同，与膜外相反，故选B。",
+              "source": "2023年华东师大二附中高二期中考试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biology-elective-1",
+      "name": "选修1 (生物技术实践)",
+      "chapters": [
+        {
+          "name": "专题1 传统发酵技术的应用",
+          "topics": ["果酒和果醋的制作", "腐乳的制作", "泡菜制作"],
+          "knowledge_points": [
+            {
+              "title": "果酒制作",
+              "content": "酵母菌在无氧条件下分解葡萄糖产生酒精和CO₂。反应式：C₆H₁₂O₆→2C₂H₅OH+2CO₂。温度控制：18-25℃。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "发酵技术",
+              "content": "考查发酵条件控制。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "果酒制作过程中，酵母菌酒精发酵的适宜温度是",
+              "options": ["A. 10-15℃", "B. 18-25℃", "C. 30-35℃", "D. 35-40℃"],
+              "answer": "B",
+              "explanation": "酵母菌酒精发酵的适宜温度是18-25℃，故选B。",
+              "source": "2022年上海交大附中高二期末考试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biology-elective-2",
+      "name": "选修2 (生物科学与社会)",
+      "chapters": [
+        {
+          "name": "专题1 基因工程",
+          "topics": ["DNA重组技术", "基因工程的应用"],
+          "knowledge_points": [
+            {
+              "title": "基因工程工具",
+              "content": "限制酶(剪刀)：识别特定序列切割DNA。DNA连接酶(针线)：连接DNA片段。运载体：质粒、噬菌体。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "基因工程基本操作",
+              "content": "考查工具酶的作用。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "下列关于基因工程的叙述，正确的是",
+              "options": ["A. 限制酶只在原核生物中存在", "B. DNA连接酶只能连接相同的黏性末端", "C. 质粒是基因工程常用的运载体", "D. 基因工程不需要运载体"],
+              "answer": "C",
+              "explanation": "质粒是常用的运载体，故选C。",
+              "source": "2023年七宝中学高二期末考试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biology-elective-3",
+      "name": "选修3 (现代生物科技专题)",
+      "chapters": [
+        {
+          "name": "专题2 细胞工程",
+          "topics": ["植物细胞工程", "动物细胞工程"],
+          "knowledge_points": [
+            {
+              "title": "植物组织培养",
+              "content": "原理：植物细胞全能性。过程：外植体→愈伤组织→丛芽→生根→完整植株。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "细胞工程应用",
+              "content": "考查植物体细胞杂交、动物细胞培养。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "植物组织培养依据的生物学原理是",
+              "options": ["A. 细胞全能性", "B. 细胞分裂", "C. 细胞分化", "D. 细胞衰老"],
+              "answer": "A",
+              "explanation": "植物组织培养体现了植物细胞的全能性，故选A。",
+              "source": "2023年建平中学高二期末考试"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

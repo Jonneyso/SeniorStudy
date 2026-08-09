@@ -18,6 +18,7 @@
                 <h2>语文</h2>
                 <ul class="content-list">
                     <li><a href="#classical">上海高中必考古文古诗</a></li>
+                    <li><a href="#chinese-textbook">课本内容</a></li>
                 </ul>
             </div>
             <div class="subject-card">
@@ -26,6 +27,7 @@
                     <li><a href="#math-algebra">代数</a></li>
                     <li><a href="#math-geometry">几何</a></li>
                     <li><a href="#math-calculus">微积分</a></li>
+                    <li><a href="#math-textbook">课本内容</a></li>
                 </ul>
             </div>
             <div class="subject-card">
@@ -33,6 +35,7 @@
                 <ul class="content-list">
                     <li><a href="#gvc">GVC单词知识</a></li>
                     <li><a href="#english-grammar">语法知识</a></li>
+                    <li><a href="#english-textbook">课本内容</a></li>
                 </ul>
             </div>
             <div class="subject-card">
@@ -41,6 +44,7 @@
                     <li><a href="#physics-mechanics">力学</a></li>
                     <li><a href="#physics-thermodynamics">热学</a></li>
                     <li><a href="#physics-electricity">电磁学</a></li>
+                    <li><a href="#physics-textbook">课本内容</a></li>
                 </ul>
             </div>
             <div class="subject-card">
@@ -49,6 +53,7 @@
                     <li><a href="#chemistry-inorganic">无机化学</a></li>
                     <li><a href="#chemistry-organic">有机化学</a></li>
                     <li><a href="#chemistry-physical">物理化学</a></li>
+                    <li><a href="#chemistry-textbook">课本内容</a></li>
                 </ul>
             </div>
             <div class="subject-card">
@@ -57,6 +62,7 @@
                     <li><a href="#geography-physical">自然地理</a></li>
                     <li><a href="#geography-human">人文地理</a></li>
                     <li><a href="#geography-regional">区域地理</a></li>
+                    <li><a href="#geography-textbook">课本内容</a></li>
                 </ul>
             </div>
             <div class="subject-card">
@@ -65,6 +71,7 @@
                     <li><a href="#history-ancient">古代史</a></li>
                     <li><a href="#history-modern">近代史</a></li>
                     <li><a href="#history-contemporary">现代史</a></li>
+                    <li><a href="#history-textbook">课本内容</a></li>
                 </ul>
             </div>
             <div class="subject-card">
@@ -73,6 +80,7 @@
                     <li><a href="#politics-economics">经济生活</a></li>
                     <li><a href="#politics-politics">政治生活</a></li>
                     <li><a href="#politics-philosophy">哲学生活</a></li>
+                    <li><a href="#politics-textbook">课本内容</a></li>
                 </ul>
             </div>
             <div class="subject-card">
@@ -81,6 +89,7 @@
                     <li><a href="#biology-cell">细胞生物学</a></li>
                     <li><a href="#biology-genetics">遗传学</a></li>
                     <li><a href="#biology-ecology">生态学</a></li>
+                    <li><a href="#biology-textbook">课本内容</a></li>
                 </ul>
             </div>
         </div>
@@ -332,12 +341,86 @@
                 <!-- 生态学内容将通过JavaScript动态生成 -->
             </div>
         </div>
+        
+        <!-- 各科目课本内容思维导图 -->
+        <div id="chinese-textbook" class="gvc-container">
+            <div class="gvc-header">
+                <h2>语文 - 课本内容思维导图</h2>
+                <p>按上海市高中语文课本组织</p>
+            </div>
+            <div id="chinese-textbook-content"></div>
+        </div>
+        
+        <div id="math-textbook" class="gvc-container">
+            <div class="gvc-header">
+                <h2>数学 - 课本内容思维导图</h2>
+                <p>按上海市高中数学课本组织</p>
+            </div>
+            <div id="math-textbook-content"></div>
+        </div>
+        
+        <div id="english-textbook" class="gvc-container">
+            <div class="gvc-header">
+                <h2>英语 - 课本内容思维导图</h2>
+                <p>按上海市高中英语课本组织</p>
+            </div>
+            <div id="english-textbook-content"></div>
+        </div>
+        
+        <div id="physics-textbook" class="gvc-container">
+            <div class="gvc-header">
+                <h2>物理 - 课本内容思维导图</h2>
+                <p>按上海市高中物理课本组织</p>
+            </div>
+            <div id="physics-textbook-content"></div>
+        </div>
+        
+        <div id="chemistry-textbook" class="gvc-container">
+            <div class="gvc-header">
+                <h2>化学 - 课本内容思维导图</h2>
+                <p>按上海市高中化学课本组织</p>
+            </div>
+            <div id="chemistry-textbook-content"></div>
+        </div>
+        
+        <div id="geography-textbook" class="gvc-container">
+            <div class="gvc-header">
+                <h2>地理 - 课本内容思维导图</h2>
+                <p>按上海市高中地理课本组织</p>
+            </div>
+            <div id="geography-textbook-content"></div>
+        </div>
+        
+        <div id="history-textbook" class="gvc-container">
+            <div class="gvc-header">
+                <h2>历史 - 课本内容思维导图</h2>
+                <p>按上海市高中历史课本组织</p>
+            </div>
+            <div id="history-textbook-content"></div>
+        </div>
+        
+        <div id="politics-textbook" class="gvc-container">
+            <div class="gvc-header">
+                <h2>政治 - 课本内容思维导图</h2>
+                <p>按上海市高中政治课本组织</p>
+            </div>
+            <div id="politics-textbook-content"></div>
+        </div>
+        
+        <div id="biology-textbook" class="gvc-container">
+            <div class="gvc-header">
+                <h2>生物 - 课本内容思维导图</h2>
+                <p>按上海市高中生物课本组织</p>
+            </div>
+            <div id="biology-textbook-content"></div>
+        </div>
     </div>
     
     <!-- 加载JavaScript文件 -->
     <script src="src/services/DataService.js"></script>
     <script src="src/services/DataManager.js"></script>
     <script src="src/components/SubjectComponent.js"></script>
+    <script src="src/components/TextbookComponent.js"></script>
     <script src="src/components/english/GVCComponent.js"></script>
     <script src="src/components/chinese/ClassicalComponent.js"></script>
     <script src="src/main.js"></script>

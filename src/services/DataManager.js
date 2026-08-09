@@ -195,6 +195,16 @@ class DataManager {
         return data;
     }
 
+    async getTextbookData(subjectKey) {
+        const cacheKey = `textbookData_${subjectKey}`;
+        if (this.cache.has(cacheKey)) {
+            return this.cache.get(cacheKey);
+        }
+        const data = await this.dataService.getTextbookData(subjectKey);
+        this.cache.set(cacheKey, data);
+        return data;
+    }
+
     clearCache() {
         this.cache.clear();
     }

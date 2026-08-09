@@ -1,0 +1,195 @@
+{
+  "subject": "英语",
+  "textbooks": [
+    {
+      "id": "english-required-1",
+      "name": "必修1",
+      "chapters": [
+        {
+          "name": "Unit 1 School Life",
+          "topics": ["School life vocabulary", "Present perfect tense", "Reading strategies"],
+          "knowledge_points": [
+            {
+              "title": "Present Perfect Tense (现在完成时)",
+              "content": "构成：have/has + 过去分词。用法：1.表示过去发生的动作对现在造成的影响或结果；2.表示过去开始的动作持续到现在。常与already, yet, just, ever, never, for+段时间, since+点时间连用。"
+            },
+            {
+              "title": "Reading Strategies",
+              "content": "Skimming(略读) for main idea; Scanning(查读) for specific information; Predicting(预测) before reading. "
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "现在完成时与一般过去时的区别",
+              "content": "现在完成时强调与现在的联系，一般过去时只表示过去发生的事。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "—______ you ______ your homework yet? —Yes, I ______ it an hour ago.",
+              "options": ["A. Did; do; finished", "B. Have; done; finished", "C. Have; done; have finished", "D. Did; do; have finished"],
+              "answer": "B",
+              "explanation": "第一空yet常与现在完成时连用，第二空an hour ago是一般过去时，故选B。",
+              "source": "2023年上海中学高一期中考试"
+            }
+          ]
+        },
+        {
+          "name": "Unit 2 Growing Pains",
+          "topics": ["Family relationships", "Modal verbs", "Writing narratives"],
+          "knowledge_points": [
+            {
+              "title": "Modal Verbs (情态动词)",
+              "content": "can/could表示能力和请求；must表示必须和肯定推测；should表示建议和责备；may/might表示许可和可能。must的疑问句否定回答用needn't。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "情态动词的用法",
+              "content": "考查情态动词表推测、责备等用法。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "You ______ be tired after such a long journey. Let me help you with your luggage.",
+              "options": ["A. can", "B. must", "C. should", "D. need"],
+              "answer": "B",
+              "explanation": "must表示肯定的推测，意为“一定”，故选B。",
+              "source": "2023年复旦附中高一期中考试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-required-2",
+      "name": "必修2",
+      "chapters": [
+        {
+          "name": "Unit 3 Amazing People",
+          "topics": ["Famous people", "Past perfect", "Biography writing"],
+          "knowledge_points": [
+            {
+              "title": "Past Perfect Tense (过去完成时)",
+              "content": "构成：had + 过去分词。用法：表示在过去某一时间或动作之前已经发生或完成的动作，即“过去的过去”。常与by the time, before, when等连用。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "过去完成时",
+              "content": "考查过去完成时与一般过去时的区别。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "By the time he arrived at the station, the train ______.",
+              "options": ["A. left", "B. has left", "C. had left", "D. was leaving"],
+              "answer": "C",
+              "explanation": "火车离开发生在他到达之前，是“过去的过去”，用过去完成时，故选C。",
+              "source": "2023年华东师大二附中高一期末考试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-required-3",
+      "name": "必修3",
+      "chapters": [
+        {
+          "name": "Unit 1 The World of Our Senses",
+          "topics": ["Five senses", "Noun clauses", "Descriptive writing"],
+          "knowledge_points": [
+            {
+              "title": "Noun Clauses (名词性从句)",
+              "content": "包括主语从句、宾语从句、表语从句、同位语从句。引导词：that, whether, if, who, what, which, when, where, why, how。注意：that在名词性从句中不充当成分，what充当主语、宾语或表语。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "名词性从句",
+              "content": "考查引导词的选择和语序。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "______ made the school proud was ______ more than 90% of the students had been admitted to key universities.",
+              "options": ["A. What; because", "B. What; that", "C. That; what", "D. That; because"],
+              "answer": "B",
+              "explanation": "第一空what引导主语从句并在从句中作主语；第二空that引导表语从句，不充当成分，故选B。",
+              "source": "2023年上海交大附中高一期末考试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-elective-1",
+      "name": "选修1",
+      "chapters": [
+        {
+          "name": "Unit 1 Advertising",
+          "topics": ["Advertising vocabulary", "Passive voice", "Persuasive writing"],
+          "knowledge_points": [
+            {
+              "title": "Passive Voice (被动语态)",
+              "content": "构成：be + 过去分词。常用时态：一般现在时am/is/are done；一般过去时was/were done；现在完成时have/has been done；带情态动词must be done。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "被动语态",
+              "content": "考查各种时态的被动语态。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "The new library ______ next month will be the biggest one in our city.",
+              "options": ["A. completing", "B. completed", "C. being completed", "D. to be completed"],
+              "answer": "D",
+              "explanation": "next month表将来，用不定式的被动式作后置定语，故选D。",
+              "source": "2022年七宝中学高二期中考试"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english-elective-2",
+      "name": "选修2",
+      "chapters": [
+        {
+          "name": "Unit 2 The Environment",
+          "topics": ["Environmental vocabulary", "Inversion", "Environmental writing"],
+          "knowledge_points": [
+            {
+              "title": "Inversion (倒装句)",
+              "content": "完全倒装：副词/介词短语+谓语+主语。部分倒装：否定词(hardly, never, seldom, little等)置于句首时，助动词/情态动词/be动词提前。Only+状语置于句首也用部分倒装。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "倒装句",
+              "content": "考查部分倒装和完全倒装的应用。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "______ had I arrived at the station when the train started to move.",
+              "options": ["A. No sooner", "B. Hardly", "C. Seldom", "D. Little"],
+              "answer": "B",
+              "explanation": "Hardly...when...为固定句型，意为“一...就...”，hardly置于句首用部分倒装，故选B。",
+              "source": "2023年建平中学高二期末考试"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

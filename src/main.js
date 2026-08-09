@@ -62,6 +62,9 @@ class App {
         
         // 初始化生物组件
         this.initBiologyComponents();
+
+        // 初始化课本思维导图组件
+        this.initTextbookComponents();
     }
 
     initMathComponents() {
@@ -267,6 +270,27 @@ class App {
                 console.log('点击链接，目标ID:', targetId);
                 this.showContent(targetId);
             });
+        });
+    }
+
+    initTextbookComponents() {
+        const textbookSubjects = [
+            { containerId: 'chinese-textbook-content', subjectKey: 'chinese' },
+            { containerId: 'math-textbook-content', subjectKey: 'math' },
+            { containerId: 'english-textbook-content', subjectKey: 'english' },
+            { containerId: 'physics-textbook-content', subjectKey: 'physics' },
+            { containerId: 'chemistry-textbook-content', subjectKey: 'chemistry' },
+            { containerId: 'geography-textbook-content', subjectKey: 'geography' },
+            { containerId: 'history-textbook-content', subjectKey: 'history' },
+            { containerId: 'politics-textbook-content', subjectKey: 'politics' },
+            { containerId: 'biology-textbook-content', subjectKey: 'biology' }
+        ];
+
+        textbookSubjects.forEach(item => {
+            if (document.getElementById(item.containerId)) {
+                const textbookComponent = new TextbookComponent(item.containerId, item.subjectKey);
+                textbookComponent.init();
+            }
         });
     }
 

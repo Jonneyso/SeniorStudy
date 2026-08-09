@@ -4,6 +4,8 @@
 
 本项目是一个为上海高中生提供学习辅助的Web应用，旨在整理和展示各科的学习知识，帮助学生更高效地复习和备考。目前已实现语文、数学、英语、物理、化学、地理、历史、政治、生物等多个学科的学习内容。
 
+项目特色：按上海市高中课本体系组织各科内容，提供课本思维导图，并可点击章节节点查看知识点详解、考点分析以及来自上海市各重点中学大型考试的单元测试题。
+
 ## 项目结构
 
 ```
@@ -12,15 +14,18 @@ SeniorStudy/
 ├── README.md                       # 项目说明文档
 ├── project_design.md               # 项目设计文档
 ├── package.json                    # 项目配置文件
+├── requirements.txt                # Python依赖说明
 ├── .gitignore                      # Git忽略文件配置
 ├── start_server.py                 # 服务器启动脚本
 ├── subjects/                       # 学科目录
 │   ├── chinese/                    # 语文
+│   │   ├── textbooks.json            # 语文课本思维导图数据
 │   │   └── classical/
 │   │       └── data/
 │   │           ├── classical.json     # 古诗文数据
 │   │           └── test_points.json   # 考点数据
 │   ├── english/                    # 英语
+│   │   ├── textbooks.json            # 英语课本思维导图数据
 │   │   ├── gvc/
 │   │   │   └── data/
 │   │   │       └── vocabulary.json     # GVC单词数据
@@ -28,6 +33,7 @@ SeniorStudy/
 │   │       └── data/
 │   │           └── grammar.json        # 语法知识数据
 │   ├── math/                       # 数学
+│   │   ├── textbooks.json            # 数学课本思维导图数据
 │   │   ├── algebra/
 │   │   │   └── data/
 │   │   │       └── algebra.json       # 代数数据
@@ -38,6 +44,7 @@ SeniorStudy/
 │   │       └── data/
 │   │           └── calculus.json      # 微积分数据
 │   ├── physics/                    # 物理
+│   │   ├── textbooks.json            # 物理课本思维导图数据
 │   │   ├── mechanics/
 │   │   │   └── data/
 │   │   │       └── mechanics.json     # 力学数据
@@ -48,6 +55,7 @@ SeniorStudy/
 │   │       └── data/
 │   │           └── electricity.json   # 电磁学数据
 │   ├── chemistry/                  # 化学
+│   │   ├── textbooks.json            # 化学课本思维导图数据
 │   │   ├── inorganic/
 │   │   │   └── data/
 │   │   │       └── inorganic.json     # 无机化学数据
@@ -58,6 +66,7 @@ SeniorStudy/
 │   │       └── data/
 │   │           └── physical.json      # 物理化学数据
 │   ├── geography/                  # 地理
+│   │   ├── textbooks.json            # 地理课本思维导图数据
 │   │   ├── physical/
 │   │   │   └── data/
 │   │   │       └── physical.json      # 自然地理数据
@@ -68,47 +77,28 @@ SeniorStudy/
 │   │       └── data/
 │   │           └── regional.json       # 区域地理数据
 │   ├── history/                     # 历史
-│   │   ├── ancient/
-│   │   │   └── data/
-│   │   │       └── ancient.json        # 古代史数据
-│   │   ├── modern/
-│   │   │   └── data/
-│   │   │       └── modern.json         # 近代史数据
-│   │   └── contemporary/
+│   │   ├── textbooks.json            # 历史课本思维导图数据
+│   │   └── ancient/
 │   │       └── data/
-│   │           └── contemporary.json   # 现代史数据
+│   │           └── ancient.json        # 古代史数据
 │   ├── politics/                   # 政治
-│   │   ├── economics/
-│   │   │   └── data/
-│   │   │       └── economics.json      # 经济生活数据
-│   │   ├── politics_life/
-│   │   │   └── data/
-│   │   │       └── politics_life.json   # 政治生活数据
-│   │   └── philosophy/
+│   │   ├── textbooks.json            # 政治课本思维导图数据
+│   │   └── economics/
 │   │       └── data/
-│   │           └── philosophy.json     # 哲学生活数据
+│   │           └── economics.json      # 经济生活数据
 │   └── biology/                     # 生物
-│       ├── cell/
-│       │   └── data/
-│       │       └── cell.json           # 细胞生物学数据
-│       ├── genetics/
-│       │   └── data/
-│       │       └── genetics.json       # 遗传学数据
-│       └── ecology/
+│       ├── textbooks.json            # 生物课本思维导图数据
+│       └── cell/
 │           └── data/
-│               └── ecology.json         # 生态学数据
+│               └── cell.json           # 细胞生物学数据
 └── src/                            # 源代码目录
     ├── components/                 # 组件目录
-    │   ├── common/                 # 通用组件
-    │   ├── chinese/               # 语文组件
-    │   ├── english/                # 英语组件
-    │   ├── math/                  # 数学组件
-    │   ├── physics/               # 物理组件
-    │   ├── chemistry/             # 化学组件
-    │   ├── geography/             # 地理组件
-    │   ├── history/               # 历史组件
-    │   ├── politics/             # 政治组件
-    │   └── biology/               # 生物组件
+    │   ├── SubjectComponent.js     # 通用学科组件
+    │   ├── TextbookComponent.js    # 课本思维导图组件
+    │   ├── chinese/                # 语文组件
+    │   │   └── ClassicalComponent.js
+    │   └── english/                # 英语组件
+    │       └── GVCComponent.js
     ├── services/                  # 服务层
     │   ├── DataService.js         # 数据服务
     │   └── DataManager.js         # 数据管理
@@ -172,33 +162,42 @@ SeniorStudy/
 
 ## 如何启动服务
 
-### 方法一：使用Python脚本启动
+### 方法一：使用npm启动（推荐）
 
 1. 打开命令提示符（Windows）或终端（Mac/Linux）
-2. 导航到项目目录：
+2. 导航到项目目录
+3. 运行启动命令：
    ```bash
-   cd c:\Users\su\Documents\trae_projects\SeniorStudy
+   npm start
    ```
+4. 服务器将在端口8000上运行，访问：`http://localhost:8000`
+
+### 方法二：使用Python脚本启动
+
+1. 打开命令提示符（Windows）或终端（Mac/Linux）
+2. 导航到项目目录
 3. 运行启动脚本：
    ```bash
    python start_server.py
    ```
-4. 服务器将在端口3000上运行，访问：`http://localhost:3000`
+4. 服务器将在端口8000上运行，访问：`http://localhost:8000`
 
-### 方法二：使用Python内置HTTP服务器
+### 方法三：使用Python内置HTTP服务器
 
 1. 打开命令提示符
 2. 导航到项目目录
 3. 启动HTTP服务器：
    ```bash
-   python -m http.server 3000
+   python -m http.server 8000
    ```
-4. 访问：`http://localhost:3000`
+4. 访问：`http://localhost:8000`
 
-### 方法三：直接打开HTML文件
+### 方法四：直接打开HTML文件
 
 1. 找到项目根目录中的 `index.html` 文件
 2. 双击该文件，将在默认浏览器中打开
+
+> 注：本项目仅使用Python标准库，无需额外安装依赖（见 `requirements.txt`）。
 
 ## 功能说明
 
@@ -207,6 +206,7 @@ SeniorStudy/
 - 展示项目标题和简介
 - 显示学科卡片（共9个学科）
 - 学科卡片顺序：语文、数学、英语、物理、化学、地理、历史、政治、生物
+- 每个学科卡片包含"课本内容"链接，点击进入课本思维导图模块
 
 ### 学科内容展示
 
@@ -214,6 +214,18 @@ SeniorStudy/
 - 内容默认隐藏，点击后仅显示当前选中的学科内容
 - 每个学科按分类展示知识点
 - 考点对应的高考真题/上海市重点高中期中期末真题默认折叠，点击考点标题展开
+
+### 课本思维导图模块（新功能）
+
+按上海市高中课本体系组织各科内容，每个科目包含若干本课本（如数学包含必修1-4、选修1-3共7本），每本课本以思维导图形式展示章节结构。
+
+- **课本切换**：顶部标签栏可切换不同课本
+- **思维导图**：以树状结构展示课本章节及对应知识点
+- **章节详情**：点击带有 📖 图标的章节节点，弹窗展示：
+  - **知识点列表**：章节涉及的知识点概览
+  - **知识点详解**：每个知识点的详细讲解
+  - **考点分析**：章节重点考点及考查方向
+  - **单元测试题**：来自上海市各重点中学（上海中学、复旦附中、华东师大二附中、上海交大附中、七宝中学、建平中学等）大型考试（期中、期末、月考）的真题，包含题目、选项、答案和详细解析
 
 ### 语文古诗文模块
 
@@ -236,11 +248,12 @@ SeniorStudy/
 
 ## 未来计划
 
-- 持续补充各学科知识点内容
-- 添加更多高考真题和上海市重点高中期中期末考试试卷真题
+- 持续补充各学科课本的章节知识点内容
+- 添加更多上海市重点中学大型考试真题（期中、期末、月考）
 - 实现搜索和筛选功能
 - 开发移动端适配
 - 添加学习进度跟踪功能
+- 增加更多课本的章节内容覆盖
 
 ## 技术栈
 
