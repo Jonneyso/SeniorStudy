@@ -1,4 +1,4 @@
-// 古诗文组件
+// 古诗文组件（含无障碍键盘支持）
 class ClassicalComponent {
     constructor(containerId) {
         this.containerId = containerId;
@@ -19,6 +19,32 @@ class ClassicalComponent {
         }
     }
 
+    _bindToggle(triggerEl, panelEl) {
+        if (!triggerEl || !panelEl) return;
+        if (!panelEl.id) {
+            panelEl.id = 'cls-panel-' + Math.random().toString(36).slice(2, 10);
+        }
+        triggerEl.setAttribute('role', 'button');
+        triggerEl.setAttribute('tabindex', '0');
+        triggerEl.setAttribute('aria-controls', panelEl.id);
+        const hasShow = panelEl.classList.contains('show');
+        triggerEl.setAttribute('aria-expanded', hasShow ? 'true' : 'false');
+
+        const toggle = (e) => {
+            if (e) e.preventDefault();
+            const willShow = !panelEl.classList.contains('show');
+            panelEl.classList.toggle('show', willShow);
+            triggerEl.setAttribute('aria-expanded', willShow ? 'true' : 'false');
+        };
+
+        triggerEl.addEventListener('click', toggle);
+        triggerEl.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ' || e.code === 'Space') {
+                toggle(e);
+            }
+        });
+    }
+
     render(classicalData, testPointsData) {
         const container = document.getElementById(this.containerId);
         if (!container) return;
@@ -33,7 +59,7 @@ class ClassicalComponent {
                 <div class="classical-items"></div>
                 <div class="test-points"></div>
             `;
-            
+
             const itemsContainer = groupDiv.querySelector('.classical-items');
             group.items.forEach(item => {
                 const itemDiv = document.createElement('div');
@@ -46,31 +72,32 @@ class ClassicalComponent {
                         <div class="classical-explanation"><strong>解析：</strong>${item.explanation}</div>
                     </div>
                 `;
-                
-                // 添加点击事件
+
+                // 无障碍：绑定键盘 + ARIA
                 const title = itemDiv.querySelector('.classical-title');
                 const detail = itemDiv.querySelector('.classical-detail');
-                title.addEventListener('click', function() {
-                    detail.classList.toggle('show');
-                });
-                
+                this._bindToggle(title, detail);
+
                 itemsContainer.appendChild(itemDiv);
             });
-            
+
             const testPointsContainer = groupDiv.querySelector('.test-points');
             testPointsContainer.innerHTML = '<h4>考点</h4>';
-            
+
             // 收集该分组所有古诗文的考点
             const groupTestPoints = new Set();
             group.items.forEach(item => {
-                item.test_points.forEach(pointId => {
-                    groupTestPoints.add(pointId);
-                });
+                if (Array.isArray(item.test_points)) {
+                    item.test_points.forEach(pointId => {
+                        groupTestPoints.add(pointId);
+                    });
+                }
             });
-            
+
             // 展示考点
             groupTestPoints.forEach(pointId => {
-                const testPoint = testPointsData.test_points.find(p => p.id === pointId);
+                const testPoint = testPointsData && testPointsData.test_points &&
+                    testPointsData.test_points.find(p => p.id === pointId);
                 if (testPoint) {
                     const testPointDiv = document.createElement('div');
                     testPointDiv.className = 'test-point';
@@ -78,31 +105,32 @@ class ClassicalComponent {
                         <h5 class="test-point-title">${testPoint.name}</h5>
                         <div class="test-questions"></div>
                     `;
-                    
+
                     const questionsContainer = testPointDiv.querySelector('.test-questions');
                     testPoint.questions.forEach(question => {
                         const questionDiv = document.createElement('div');
                         questionDiv.className = 'test-question';
+                        const sourceHtml = question.link
+                            ? `<a href="${question.link}" target="_blank" rel="noopener noreferrer">${question.source}</a>`
+                            : (question.source || '—');
                         questionDiv.innerHTML = `
                             <div class="question-content"><strong>题目：</strong>${question.content}</div>
-                            <div class="question-source"><strong>来源：</strong><a href="${question.link}" target="_blank">${question.source}</a></div>
-                            <div class="question-analysis"><strong>解析：</strong>${question.analysis}</div>
+                            <div class="question-source"><strong>来源：</strong>${sourceHtml}</div>
+                            <div class="question-analysis"><strong>解析：</strong>${question.analysis || ''}</div>
                             <div class="question-answer"><strong>参考答案：</strong>${question.answer}</div>
                         `;
                         questionsContainer.appendChild(questionDiv);
                     });
-                    
-                    // 添加点击事件
+
+                    // 无障碍：绑定键盘 + ARIA
                     const title = testPointDiv.querySelector('.test-point-title');
                     const questions = testPointDiv.querySelector('.test-questions');
-                    title.addEventListener('click', function() {
-                        questions.classList.toggle('show');
-                    });
-                    
+                    this._bindToggle(title, questions);
+
                     testPointsContainer.appendChild(testPointDiv);
                 }
             });
-            
+
             container.appendChild(groupDiv);
         });
     }

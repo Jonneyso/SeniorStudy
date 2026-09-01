@@ -33,3 +33,8 @@ coverage/
 # 临时文件
 tmp/
 temp/
+
+# 项目特有：大体积学习资料（PDF电子书、扫描件等）
+*.pdf
+*.epub
+*.mobi

@@ -1,4 +1,4 @@
-// 课本思维导图组件
+// 课本思维导图组件（含无障碍键盘支持）
 class TextbookComponent {
     constructor(containerId, subjectKey) {
         this.containerId = containerId;
@@ -29,19 +29,64 @@ class TextbookComponent {
         const modal = document.createElement('div');
         modal.id = 'textbook-modal';
         modal.className = 'textbook-modal';
+        modal.setAttribute('role', 'dialog');
+        modal.setAttribute('aria-modal', 'true');
+        modal.setAttribute('aria-labelledby', 'textbook-modal-title');
         modal.innerHTML = `
-            <div class="textbook-modal-content">
-                <span class="textbook-modal-close">&times;</span>
+            <div class="textbook-modal-content" role="document">
+                <button type="button" class="textbook-modal-close" aria-label="关闭章节详情">&times;</button>
                 <div id="textbook-modal-body"></div>
             </div>
         `;
         document.body.appendChild(modal);
 
         modal.querySelector('.textbook-modal-close').addEventListener('click', () => {
-            modal.style.display = 'none';
+            this.closeModal(modal);
         });
         modal.addEventListener('click', (e) => {
-            if (e.target === modal) modal.style.display = 'none';
+            if (e.target === modal) this.closeModal(modal);
+        });
+        // Esc 关闭模态框（无障碍要求）
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                this.closeModal(modal);
+            }
+        });
+    }
+
+    closeModal(modal) {
+        modal.style.display = 'none';
+        // 焦点回到触发模态框的章节节点（上次触发的会被保存）
+        if (this._lastFocusedChapter && typeof this._lastFocusedChapter.focus === 'function') {
+            this._lastFocusedChapter.focus();
+        }
+    }
+
+    /**
+     * 无障碍：给一个「点击后打开模态框」的元素绑定键盘支持
+     */
+    _bindOpenDialog(triggerEl, openFn) {
+        if (!triggerEl) return;
+        triggerEl.setAttribute('role', 'button');
+        triggerEl.setAttribute('tabindex', '0');
+        triggerEl.setAttribute('aria-haspopup', 'dialog');
+
+        const open = (e) => {
+            if (e) e.preventDefault();
+            this._lastFocusedChapter = triggerEl;
+            openFn();
+            // 打开后把焦点放到模态框关闭按钮
+            requestAnimationFrame(() => {
+                const btn = document.querySelector('#textbook-modal .textbook-modal-close');
+                if (btn && typeof btn.focus === 'function') btn.focus();
+            });
+        };
+
+        triggerEl.addEventListener('click', open);
+        triggerEl.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ' || e.code === 'Space') {
+                open(e);
+            }
         });
     }
 
@@ -59,6 +104,8 @@ class TextbookComponent {
         // 课本章节导航
         const nav = document.createElement('div');
         nav.className = 'textbook-nav';
+        nav.setAttribute('role', 'tablist');
+        nav.setAttribute('aria-label', data.subject + '课本切换');
         nav.innerHTML = `<h3>${data.subject}课本思维导图</h3><div class="textbook-tabs"></div>`;
         const tabsContainer = nav.querySelector('.textbook-tabs');
         container.appendChild(nav);
@@ -77,7 +124,13 @@ class TextbookComponent {
         // 为每本课本创建标签和思维导图
         data.textbooks.forEach((textbook, index) => {
             const tab = document.createElement('button');
+            tab.type = 'button';
             tab.className = 'textbook-tab';
+            tab.setAttribute('role', 'tab');
+            const panelId = `tb-panel-${this.subjectKey}-${textbook.id}`;
+            tab.id = `tb-tab-${this.subjectKey}-${textbook.id}`;
+            tab.setAttribute('aria-controls', panelId);
+            tab.setAttribute('aria-selected', index === 0 ? 'true' : 'false');
             tab.textContent = textbook.name;
             tab.dataset.textbookId = textbook.id;
             if (index === 0) tab.classList.add('active');
@@ -93,7 +146,9 @@ class TextbookComponent {
     showTextbook(textbookId, data) {
         const tabs = document.querySelectorAll(`#${this.containerId} .textbook-tab`);
         tabs.forEach(tab => {
-            tab.classList.toggle('active', tab.dataset.textbookId === textbookId);
+            const isActive = tab.dataset.textbookId === textbookId;
+            tab.classList.toggle('active', isActive);
+            tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
         });
 
         const contentArea = document.querySelector(`#${this.containerId} .textbook-content-area`);
@@ -101,6 +156,10 @@ class TextbookComponent {
 
         const textbook = data.textbooks.find(t => t.id === textbookId);
         if (!textbook) return;
+
+        contentArea.id = `tb-panel-${this.subjectKey}-${textbookId}`;
+        contentArea.setAttribute('role', 'tabpanel');
+        contentArea.setAttribute('aria-labelledby', `tb-tab-${this.subjectKey}-${textbookId}`);
 
         contentArea.innerHTML = '';
         const mindMap = this.createMindMap(textbook);
@@ -134,18 +193,18 @@ class TextbookComponent {
             const chapterNode = document.createElement('div');
             chapterNode.className = 'mind-map-chapter';
             chapterNode.textContent = chapter.name;
-            // 添加点击事件
-            chapterNode.addEventListener('click', () => this.showChapterDetail(chapter, textbook));
+
             // 添加可点击指示
             chapterNode.title = '点击查看知识点、考点和测试题';
 
-            // 如果有详细内容，添加可点击标识
+            // 如果有详细内容，添加可点击标识 + 无障碍绑定
             if (chapter.knowledge_points || chapter.exam_points || chapter.test_questions) {
                 chapterNode.classList.add('clickable');
                 const indicator = document.createElement('span');
                 indicator.className = 'chapter-indicator';
                 indicator.textContent = ' 📖';
                 chapterNode.appendChild(indicator);
+                this._bindOpenDialog(chapterNode, () => this.showChapterDetail(chapter, textbook));
             }
 
             branch.appendChild(chapterNode);
@@ -179,7 +238,7 @@ class TextbookComponent {
 
         let html = `
             <div class="chapter-detail-header">
-                <h2>${textbook.name} - ${chapter.name}</h2>
+                <h2 id="textbook-modal-title">${textbook.name} - ${chapter.name}</h2>
                 <div class="chapter-detail-meta">
                     <span class="detail-tag">📚 ${textbook.name}</span>
                     <span class="detail-tag">📝 ${chapter.topics ? chapter.topics.length : 0} 个知识点</span>

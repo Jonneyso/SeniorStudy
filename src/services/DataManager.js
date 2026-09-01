@@ -1,200 +1,30 @@
-// 数据管理类，用于缓存数据和管理数据加载
+// 数据管理类 - 重构版：通用get方法 + Map缓存
 class DataManager {
     constructor() {
         this.cache = new Map();
         this.dataService = new DataService();
     }
 
-    async getGVCData() {
-        const cacheKey = 'gvcData';
+    /**
+     * 通用数据获取方法（内置缓存）
+     * @param {string} key - 数据键名
+     * @returns {Promise<any>} - 数据
+     */
+    async get(key) {
+        const cacheKey = key;
         if (this.cache.has(cacheKey)) {
             return this.cache.get(cacheKey);
         }
-        const data = await this.dataService.getGVCData();
+        const data = await this.dataService.get(key);
         this.cache.set(cacheKey, data);
         return data;
     }
 
-    async getClassicalData() {
-        const cacheKey = 'classicalData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getClassicalData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getTestPointsData() {
-        const cacheKey = 'testPointsData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getTestPointsData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getGrammarData() {
-        const cacheKey = 'grammarData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getGrammarData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getMathAlgebraData() {
-        const cacheKey = 'mathAlgebraData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getMathAlgebraData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getMathGeometryData() {
-        const cacheKey = 'mathGeometryData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getMathGeometryData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getMathCalculusData() {
-        const cacheKey = 'mathCalculusData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getMathCalculusData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getPhysicsMechanicsData() {
-        const cacheKey = 'physicsMechanicsData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getPhysicsMechanicsData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getPhysicsThermodynamicsData() {
-        const cacheKey = 'physicsThermodynamicsData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getPhysicsThermodynamicsData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getPhysicsElectricityData() {
-        const cacheKey = 'physicsElectricityData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getPhysicsElectricityData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getChemistryInorganicData() {
-        const cacheKey = 'chemistryInorganicData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getChemistryInorganicData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getChemistryOrganicData() {
-        const cacheKey = 'chemistryOrganicData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getChemistryOrganicData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getChemistryPhysicalData() {
-        const cacheKey = 'chemistryPhysicalData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getChemistryPhysicalData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getGeographyPhysicalData() {
-        const cacheKey = 'geographyPhysicalData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getGeographyPhysicalData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getGeographyHumanData() {
-        const cacheKey = 'geographyHumanData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getGeographyHumanData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getGeographyRegionalData() {
-        const cacheKey = 'geographyRegionalData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getGeographyRegionalData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getHistoryAncientData() {
-        const cacheKey = 'historyAncientData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getHistoryAncientData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getPoliticsEconomicsData() {
-        const cacheKey = 'politicsEconomicsData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getPoliticsEconomicsData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
-    async getBiologyCellData() {
-        const cacheKey = 'biologyCellData';
-        if (this.cache.has(cacheKey)) {
-            return this.cache.get(cacheKey);
-        }
-        const data = await this.dataService.getBiologyCellData();
-        this.cache.set(cacheKey, data);
-        return data;
-    }
-
+    /**
+     * 获取课本数据（内置缓存，cacheKey按学科区分）
+     * @param {string} subjectKey - 学科key
+     * @returns {Promise<any>}
+     */
     async getTextbookData(subjectKey) {
         const cacheKey = `textbookData_${subjectKey}`;
         if (this.cache.has(cacheKey)) {
@@ -205,19 +35,36 @@ class DataManager {
         return data;
     }
 
-    clearCache() {
-        this.cache.clear();
-    }
+    // 缓存管理工具方法
+    clearCache() { this.cache.clear(); }
+    clearCacheKey(key) { this.cache.delete(key); }
+    hasCache(key) { return this.cache.has(key); }
+    getCacheSize() { return this.cache.size; }
 
-    clearCacheKey(key) {
-        this.cache.delete(key);
-    }
-
-    hasCache(key) {
-        return this.cache.has(key);
-    }
-
-    getCacheSize() {
-        return this.cache.size;
-    }
+    // ======== 以下为兼容旧代码的别名方法（内部调用通用 get） ========
+    async getGVCData() { return this.get('gvc'); }
+    async getClassicalData() { return this.get('classical'); }
+    async getTestPointsData() { return this.get('testPoints'); }
+    async getGrammarData() { return this.get('grammar'); }
+    async getMathAlgebraData() { return this.get('mathAlgebra'); }
+    async getMathGeometryData() { return this.get('mathGeometry'); }
+    async getMathCalculusData() { return this.get('mathCalculus'); }
+    async getPhysicsMechanicsData() { return this.get('physicsMechanics'); }
+    async getPhysicsThermodynamicsData() { return this.get('physicsThermodynamics'); }
+    async getPhysicsElectricityData() { return this.get('physicsElectricity'); }
+    async getChemistryInorganicData() { return this.get('chemistryInorganic'); }
+    async getChemistryOrganicData() { return this.get('chemistryOrganic'); }
+    async getChemistryPhysicalData() { return this.get('chemistryPhysical'); }
+    async getGeographyPhysicalData() { return this.get('geographyPhysical'); }
+    async getGeographyHumanData() { return this.get('geographyHuman'); }
+    async getGeographyRegionalData() { return this.get('geographyRegional'); }
+    async getHistoryAncientData() { return this.get('historyAncient'); }
+    async getHistoryModernData() { return this.get('historyModern'); }
+    async getHistoryContemporaryData() { return this.get('historyContemporary'); }
+    async getPoliticsEconomicsData() { return this.get('politicsEconomics'); }
+    async getPoliticsPoliticsData() { return this.get('politicsPolitics'); }
+    async getPoliticsPhilosophyData() { return this.get('politicsPhilosophy'); }
+    async getBiologyCellData() { return this.get('biologyCell'); }
+    async getBiologyGeneticsData() { return this.get('biologyGenetics'); }
+    async getBiologyEcologyData() { return this.get('biologyEcology'); }
 }

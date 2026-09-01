@@ -857,3 +857,189 @@ h1 {
 #biology-textbook {
     max-width: 1200px;
 }
+
+/* ============ 无障碍：跳过导航链接 ============ */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 8px 16px;
+    background: #2e7d32;
+    color: white;
+    text-decoration: none;
+    z-index: 9999;
+    border-radius: 0 0 6px 0;
+    font-size: 0.95em;
+    font-weight: bold;
+    transition: top 0.2s ease;
+}
+.skip-link:focus {
+    top: 0;
+    outline: 3px solid #ffeb3b;
+    outline-offset: 1px;
+}
+
+/* ============ 焦点可见性（键盘 Tab 顺序）============ */
+:focus-visible {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+    border-radius: 3px;
+}
+
+/* ============ 响应式适配 ============ */
+/* 断点 1：平板 / 小屏笔记本（≤1024px）：9 列学科卡 → 3 列 */
+@media (max-width: 1024px) {
+    .subject-card {
+        width: calc(100% / 3 - 15px);
+    }
+    .mind-map-wrapper {
+        min-width: 520px;
+    }
+}
+
+/* 断点 2：手机 / iPad 竖屏（≤768px）：3 列 → 2 列；标题字号收缩；模态框适配 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    header {
+        padding: 15px 10px;
+        margin-bottom: 20px;
+    }
+    header h1 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+    header p {
+        font-size: 0.9rem;
+    }
+    .subject-card {
+        width: calc(100% / 2 - 15px);
+        min-width: 0;
+        padding: 10px 8px;
+    }
+    .subject-card h2 {
+        font-size: 1.05em;
+    }
+    .content-list li {
+        font-size: 0.82em;
+        padding-left: 10px;
+        white-space: normal;
+    }
+    .gvc-container {
+        padding: 20px 15px;
+        border-radius: 6px;
+    }
+    .gvc-header {
+        margin-bottom: 20px;
+    }
+    .gvc-header h2 {
+        font-size: 1.3rem;
+    }
+    .gvc-header p {
+        font-size: 0.9rem;
+    }
+    /* 思维导图：解除最小宽度强制占满，用横向滚动兜底（优先走 textbook-content-area） */
+    .mind-map {
+        min-width: 100%;
+    }
+    .textbook-content-area,
+    .mind-map-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    /* 课本模态框：最大宽度 95vw，避免溢出 */
+    .textbook-modal {
+        padding: 0 4px;
+    }
+    .textbook-modal-content {
+        max-width: 95vw !important;
+        width: 96%;
+        margin: 1rem auto;
+        padding: 20px 15px;
+    }
+    .mind-map-root {
+        font-size: 1em;
+        padding: 12px 18px;
+    }
+    .mind-map-chapter {
+        min-width: 110px;
+        font-size: 0.85em;
+        padding: 8px 12px;
+    }
+    .mind-map-topics {
+        margin-left: 15px;
+        padding-left: 20px;
+    }
+    .mind-map-topics::before {
+        width: 20px;
+    }
+    .textbook-tab {
+        padding: 6px 12px;
+        font-size: 0.82em;
+    }
+}
+
+/* 断点 3：小屏手机（≤480px）：强制单列 */
+@media (max-width: 480px) {
+    header {
+        padding: 12px 8px;
+    }
+    header h1 {
+        font-size: 1.25rem;
+    }
+    header p {
+        font-size: 0.82rem;
+    }
+    .subject-card {
+        width: 100%;
+    }
+    .gvc-container {
+        padding: 16px 12px;
+    }
+    .gvc-header h2 {
+        font-size: 1.15rem;
+    }
+    .classical-group {
+        padding: 15px 10px;
+        margin-bottom: 25px;
+    }
+    .classical-item {
+        padding: 12px 10px;
+    }
+    .test-point {
+        padding: 12px 10px;
+    }
+    .question-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .question-source {
+        margin-left: 0;
+    }
+    .textbook-modal-content {
+        padding: 16px 12px;
+    }
+    .textbook-modal-close {
+        top: 8px;
+        right: 12px;
+        font-size: 26px;
+    }
+    .chapter-detail-header h2 {
+        font-size: 1.2em;
+    }
+    .knowledge-point,
+    .exam-point,
+    .test-question {
+        padding: 10px;
+    }
+    .vocabulary-item {
+        padding: 10px 6px;
+    }
+    .vocabulary-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+}

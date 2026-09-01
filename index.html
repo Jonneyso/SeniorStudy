@@ -3,419 +3,432 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>上海高中生学习辅助项目</title>
+    <title>上海高中生学习辅助项目 - 九学科知识整理与考点刷题</title>
+    <meta name="description" content="面向上海高中生的学习辅助网站，整理语文、数学、英语、物理、化学、地理、历史、政治、生物九个学科的知识点、高考高频考点、历年真题和课本思维导图。">
+    <meta name="keywords" content="上海高中,高中学习,高考,高中语文,高中数学,高中英语,高中物理,高中化学,高中地理,高中历史,高中政治,高中生物,考点刷题,知识点整理">
+    <meta name="author" content="上海高中生学习辅助项目">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <!-- Open Graph 社交分享预览 -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="上海高中生学习辅助项目">
+    <meta property="og:title" content="上海高中生学习辅助项目 - 九学科知识整理与考点刷题">
+    <meta property="og:description" content="面向上海高中生的学习辅助网站，整理语文、数学、英语、物理、化学、地理、历史、政治、生物九学科的知识点、高考高频考点、历年真题与课本思维导图。">
+    <meta property="og:locale" content="zh_CN">
     <link rel="stylesheet" href="src/styles/main.css">
 </head>
 <body>
-    <div class="container">
+    <a href="#main-content" class="skip-link">跳到主要内容</a>
+    <div class="container" id="main-content">
         <header>
             <h1>上海高中生学习辅助项目</h1>
-            <p>为上海高中生提供各科学习知识整理</p>
+            <p>为上海高中生提供九学科知识整理、高考高频考点与历年真题刷题</p>
         </header>
-        
-        <div class="subjects">
+
+        <div class="subjects" role="navigation" aria-label="学科导航">
             <div class="subject-card">
                 <h2>语文</h2>
                 <ul class="content-list">
-                    <li><a href="#classical">上海高中必考古文古诗</a></li>
-                    <li><a href="#chinese-textbook">课本内容</a></li>
+                    <li><a href="#classical" role="link">📚 知识模块：上海高中必考古文古诗</a></li>
+                    <li><a href="#chinese-textbook" role="link">📖 课本内容思维导图</a></li>
                 </ul>
             </div>
             <div class="subject-card">
                 <h2>数学</h2>
                 <ul class="content-list">
-                    <li><a href="#math-algebra">代数</a></li>
-                    <li><a href="#math-geometry">几何</a></li>
-                    <li><a href="#math-calculus">微积分</a></li>
-                    <li><a href="#math-textbook">课本内容</a></li>
+                    <li><a href="#math-algebra" role="link">📚 知识模块：代数</a></li>
+                    <li><a href="#math-geometry" role="link">📚 知识模块：几何</a></li>
+                    <li><a href="#math-calculus" role="link">📚 知识模块：微积分</a></li>
+                    <li><a href="#math-textbook" role="link">📖 课本内容思维导图</a></li>
                 </ul>
             </div>
             <div class="subject-card">
                 <h2>英语</h2>
                 <ul class="content-list">
-                    <li><a href="#gvc">GVC单词知识</a></li>
-                    <li><a href="#english-grammar">语法知识</a></li>
-                    <li><a href="#english-textbook">课本内容</a></li>
+                    <li><a href="#gvc" role="link">📚 知识模块：GVC单词知识</a></li>
+                    <li><a href="#english-grammar" role="link">📚 知识模块：语法知识</a></li>
+                    <li><a href="#english-textbook" role="link">📖 课本内容思维导图</a></li>
                 </ul>
             </div>
             <div class="subject-card">
                 <h2>物理</h2>
                 <ul class="content-list">
-                    <li><a href="#physics-mechanics">力学</a></li>
-                    <li><a href="#physics-thermodynamics">热学</a></li>
-                    <li><a href="#physics-electricity">电磁学</a></li>
-                    <li><a href="#physics-textbook">课本内容</a></li>
+                    <li><a href="#physics-mechanics" role="link">📚 知识模块：力学</a></li>
+                    <li><a href="#physics-thermodynamics" role="link">📚 知识模块：热学</a></li>
+                    <li><a href="#physics-electricity" role="link">📚 知识模块：电磁学</a></li>
+                    <li><a href="#physics-textbook" role="link">📖 课本内容思维导图</a></li>
                 </ul>
             </div>
             <div class="subject-card">
                 <h2>化学</h2>
                 <ul class="content-list">
-                    <li><a href="#chemistry-inorganic">无机化学</a></li>
-                    <li><a href="#chemistry-organic">有机化学</a></li>
-                    <li><a href="#chemistry-physical">物理化学</a></li>
-                    <li><a href="#chemistry-textbook">课本内容</a></li>
+                    <li><a href="#chemistry-inorganic" role="link">📚 知识模块：无机化学</a></li>
+                    <li><a href="#chemistry-organic" role="link">📚 知识模块：有机化学</a></li>
+                    <li><a href="#chemistry-physical" role="link">📚 知识模块：物理化学</a></li>
+                    <li><a href="#chemistry-textbook" role="link">📖 课本内容思维导图</a></li>
                 </ul>
             </div>
             <div class="subject-card">
                 <h2>地理</h2>
                 <ul class="content-list">
-                    <li><a href="#geography-physical">自然地理</a></li>
-                    <li><a href="#geography-human">人文地理</a></li>
-                    <li><a href="#geography-regional">区域地理</a></li>
-                    <li><a href="#geography-textbook">课本内容</a></li>
+                    <li><a href="#geography-physical" role="link">📚 知识模块：自然地理</a></li>
+                    <li><a href="#geography-human" role="link">📚 知识模块：人文地理</a></li>
+                    <li><a href="#geography-regional" role="link">📚 知识模块：区域地理</a></li>
+                    <li><a href="#geography-textbook" role="link">📖 课本内容思维导图</a></li>
                 </ul>
             </div>
             <div class="subject-card">
                 <h2>历史</h2>
                 <ul class="content-list">
-                    <li><a href="#history-ancient">古代史</a></li>
-                    <li><a href="#history-modern">近代史</a></li>
-                    <li><a href="#history-contemporary">现代史</a></li>
-                    <li><a href="#history-textbook">课本内容</a></li>
+                    <li><a href="#history-ancient" role="link">📚 知识模块：古代史</a></li>
+                    <li><a href="#history-modern" role="link">📚 知识模块：近代史</a></li>
+                    <li><a href="#history-contemporary" role="link">📚 知识模块：现代史</a></li>
+                    <li><a href="#history-textbook" role="link">📖 课本内容思维导图</a></li>
                 </ul>
             </div>
             <div class="subject-card">
                 <h2>政治</h2>
                 <ul class="content-list">
-                    <li><a href="#politics-economics">经济生活</a></li>
-                    <li><a href="#politics-politics">政治生活</a></li>
-                    <li><a href="#politics-philosophy">哲学生活</a></li>
-                    <li><a href="#politics-textbook">课本内容</a></li>
+                    <li><a href="#politics-economics" role="link">📚 知识模块：经济生活</a></li>
+                    <li><a href="#politics-politics" role="link">📚 知识模块：政治生活</a></li>
+                    <li><a href="#politics-philosophy" role="link">📚 知识模块：哲学生活</a></li>
+                    <li><a href="#politics-textbook" role="link">📖 课本内容思维导图</a></li>
                 </ul>
             </div>
             <div class="subject-card">
                 <h2>生物</h2>
                 <ul class="content-list">
-                    <li><a href="#biology-cell">细胞生物学</a></li>
-                    <li><a href="#biology-genetics">遗传学</a></li>
-                    <li><a href="#biology-ecology">生态学</a></li>
-                    <li><a href="#biology-textbook">课本内容</a></li>
+                    <li><a href="#biology-cell" role="link">📚 知识模块：细胞生物学</a></li>
+                    <li><a href="#biology-genetics" role="link">📚 知识模块：遗传学</a></li>
+                    <li><a href="#biology-ecology" role="link">📚 知识模块：生态学</a></li>
+                    <li><a href="#biology-textbook" role="link">📖 课本内容思维导图</a></li>
                 </ul>
             </div>
         </div>
-        
+
         <div id="gvc" class="gvc-container">
             <div class="gvc-header">
-                <h2>上海高中GVC单词知识</h2>
-                <p>按高考考察频率排序的高频词汇词组</p>
+                <h2>英语 · GVC单词知识</h2>
+                <p>【知识详情】按高考考察频率排序的高频词汇词组</p>
             </div>
             <ul class="vocabulary-list" id="vocabulary-list">
                 <!-- 单词列表将通过JavaScript动态生成 -->
             </ul>
         </div>
-        
+
         <div id="classical" class="gvc-container">
             <div class="gvc-header">
-                <h2>上海高中必考古文古诗</h2>
-                <p>按教学进度分组整理</p>
+                <h2>语文 · 上海高中必考古文古诗</h2>
+                <p>【知识详情】按教学进度分组整理</p>
             </div>
             <div id="classical-content">
                 <!-- 古诗文内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <!-- 数学学科内容 -->
         <div id="math-algebra" class="gvc-container">
             <div class="gvc-header">
-                <h2>数学 - 代数</h2>
-                <p>代数知识点整理</p>
+                <h2>数学 · 代数</h2>
+                <p>【知识详情】代数知识点整理</p>
             </div>
             <div id="math-algebra-content">
                 <!-- 代数内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="math-geometry" class="gvc-container">
             <div class="gvc-header">
-                <h2>数学 - 几何</h2>
-                <p>几何知识点整理</p>
+                <h2>数学 · 几何</h2>
+                <p>【知识详情】几何知识点整理</p>
             </div>
             <div id="math-geometry-content">
                 <!-- 几何内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="math-calculus" class="gvc-container">
             <div class="gvc-header">
-                <h2>数学 - 微积分</h2>
-                <p>微积分知识点整理</p>
+                <h2>数学 · 微积分</h2>
+                <p>【知识详情】微积分知识点整理</p>
             </div>
             <div id="math-calculus-content">
                 <!-- 微积分内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <!-- 英语语法内容 -->
         <div id="english-grammar" class="gvc-container">
             <div class="gvc-header">
-                <h2>英语 - 语法知识</h2>
-                <p>英语语法知识点整理</p>
+                <h2>英语 · 语法知识</h2>
+                <p>【知识详情】英语语法知识点整理</p>
             </div>
             <div id="english-grammar-content">
                 <!-- 语法内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <!-- 物理学科内容 -->
         <div id="physics-mechanics" class="gvc-container">
             <div class="gvc-header">
-                <h2>物理 - 力学</h2>
-                <p>力学知识点整理</p>
+                <h2>物理 · 力学</h2>
+                <p>【知识详情】力学知识点整理</p>
             </div>
             <div id="physics-mechanics-content">
                 <!-- 力学内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="physics-thermodynamics" class="gvc-container">
             <div class="gvc-header">
-                <h2>物理 - 热学</h2>
-                <p>热学知识点整理</p>
+                <h2>物理 · 热学</h2>
+                <p>【知识详情】热学知识点整理</p>
             </div>
             <div id="physics-thermodynamics-content">
                 <!-- 热学内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="physics-electricity" class="gvc-container">
             <div class="gvc-header">
-                <h2>物理 - 电磁学</h2>
-                <p>电磁学知识点整理</p>
+                <h2>物理 · 电磁学</h2>
+                <p>【知识详情】电磁学知识点整理</p>
             </div>
             <div id="physics-electricity-content">
                 <!-- 电磁学内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <!-- 化学学科内容 -->
         <div id="chemistry-inorganic" class="gvc-container">
             <div class="gvc-header">
-                <h2>化学 - 无机化学</h2>
-                <p>无机化学知识点整理</p>
+                <h2>化学 · 无机化学</h2>
+                <p>【知识详情】无机化学知识点整理</p>
             </div>
             <div id="chemistry-inorganic-content">
                 <!-- 无机化学内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="chemistry-organic" class="gvc-container">
             <div class="gvc-header">
-                <h2>化学 - 有机化学</h2>
-                <p>有机化学知识点整理</p>
+                <h2>化学 · 有机化学</h2>
+                <p>【知识详情】有机化学知识点整理</p>
             </div>
             <div id="chemistry-organic-content">
                 <!-- 有机化学内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="chemistry-physical" class="gvc-container">
             <div class="gvc-header">
-                <h2>化学 - 物理化学</h2>
-                <p>物理化学知识点整理</p>
+                <h2>化学 · 物理化学</h2>
+                <p>【知识详情】物理化学知识点整理</p>
             </div>
             <div id="chemistry-physical-content">
                 <!-- 物理化学内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <!-- 地理学科内容 -->
         <div id="geography-physical" class="gvc-container">
             <div class="gvc-header">
-                <h2>地理 - 自然地理</h2>
-                <p>自然地理知识点整理</p>
+                <h2>地理 · 自然地理</h2>
+                <p>【知识详情】自然地理知识点整理</p>
             </div>
             <div id="geography-physical-content">
                 <!-- 自然地理内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="geography-human" class="gvc-container">
             <div class="gvc-header">
-                <h2>地理 - 人文地理</h2>
-                <p>人文地理知识点整理</p>
+                <h2>地理 · 人文地理</h2>
+                <p>【知识详情】人文地理知识点整理</p>
             </div>
             <div id="geography-human-content">
                 <!-- 人文地理内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="geography-regional" class="gvc-container">
             <div class="gvc-header">
-                <h2>地理 - 区域地理</h2>
-                <p>区域地理知识点整理</p>
+                <h2>地理 · 区域地理</h2>
+                <p>【知识详情】区域地理知识点整理</p>
             </div>
             <div id="geography-regional-content">
                 <!-- 区域地理内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <!-- 历史学科内容 -->
         <div id="history-ancient" class="gvc-container">
             <div class="gvc-header">
-                <h2>历史 - 古代史</h2>
-                <p>古代史知识点整理</p>
+                <h2>历史 · 古代史</h2>
+                <p>【知识详情】古代史知识点整理</p>
             </div>
             <div id="history-ancient-content">
                 <!-- 古代史内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="history-modern" class="gvc-container">
             <div class="gvc-header">
-                <h2>历史 - 近代史</h2>
-                <p>近代史知识点整理</p>
+                <h2>历史 · 近代史</h2>
+                <p>【知识详情】近代史知识点整理</p>
             </div>
             <div id="history-modern-content">
                 <!-- 近代史内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="history-contemporary" class="gvc-container">
             <div class="gvc-header">
-                <h2>历史 - 现代史</h2>
-                <p>现代史知识点整理</p>
+                <h2>历史 · 现代史</h2>
+                <p>【知识详情】现代史知识点整理</p>
             </div>
             <div id="history-contemporary-content">
                 <!-- 现代史内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <!-- 政治学科内容 -->
         <div id="politics-economics" class="gvc-container">
             <div class="gvc-header">
-                <h2>政治 - 经济生活</h2>
-                <p>经济生活知识点整理</p>
+                <h2>政治 · 经济生活</h2>
+                <p>【知识详情】经济生活知识点整理</p>
             </div>
             <div id="politics-economics-content">
                 <!-- 经济生活内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="politics-politics" class="gvc-container">
             <div class="gvc-header">
-                <h2>政治 - 政治生活</h2>
-                <p>政治生活知识点整理</p>
+                <h2>政治 · 政治生活</h2>
+                <p>【知识详情】政治生活知识点整理</p>
             </div>
             <div id="politics-politics-content">
                 <!-- 政治生活内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="politics-philosophy" class="gvc-container">
             <div class="gvc-header">
-                <h2>政治 - 哲学生活</h2>
-                <p>哲学生活知识点整理</p>
+                <h2>政治 · 哲学生活</h2>
+                <p>【知识详情】哲学生活知识点整理</p>
             </div>
             <div id="politics-philosophy-content">
                 <!-- 哲学生活内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <!-- 生物学科内容 -->
         <div id="biology-cell" class="gvc-container">
             <div class="gvc-header">
-                <h2>生物 - 细胞生物学</h2>
-                <p>细胞生物学知识点整理</p>
+                <h2>生物 · 细胞生物学</h2>
+                <p>【知识详情】细胞生物学知识点整理</p>
             </div>
             <div id="biology-cell-content">
                 <!-- 细胞生物学内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="biology-genetics" class="gvc-container">
             <div class="gvc-header">
-                <h2>生物 - 遗传学</h2>
-                <p>遗传学知识点整理</p>
+                <h2>生物 · 遗传学</h2>
+                <p>【知识详情】遗传学知识点整理</p>
             </div>
             <div id="biology-genetics-content">
                 <!-- 遗传学内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <div id="biology-ecology" class="gvc-container">
             <div class="gvc-header">
-                <h2>生物 - 生态学</h2>
-                <p>生态学知识点整理</p>
+                <h2>生物 · 生态学</h2>
+                <p>【知识详情】生态学知识点整理</p>
             </div>
             <div id="biology-ecology-content">
                 <!-- 生态学内容将通过JavaScript动态生成 -->
             </div>
         </div>
-        
+
         <!-- 各科目课本内容思维导图 -->
         <div id="chinese-textbook" class="gvc-container">
             <div class="gvc-header">
-                <h2>语文 - 课本内容思维导图</h2>
-                <p>按上海市高中语文课本组织</p>
+                <h2>语文 · 课本内容思维导图</h2>
+                <p>【课本思维导图】按上海市高中语文课本组织</p>
             </div>
             <div id="chinese-textbook-content"></div>
         </div>
-        
+
         <div id="math-textbook" class="gvc-container">
             <div class="gvc-header">
-                <h2>数学 - 课本内容思维导图</h2>
-                <p>按上海市高中数学课本组织</p>
+                <h2>数学 · 课本内容思维导图</h2>
+                <p>【课本思维导图】按上海市高中数学课本组织</p>
             </div>
             <div id="math-textbook-content"></div>
         </div>
-        
+
         <div id="english-textbook" class="gvc-container">
             <div class="gvc-header">
-                <h2>英语 - 课本内容思维导图</h2>
-                <p>按上海市高中英语课本组织</p>
+                <h2>英语 · 课本内容思维导图</h2>
+                <p>【课本思维导图】按上海市高中英语课本组织</p>
             </div>
             <div id="english-textbook-content"></div>
         </div>
-        
+
         <div id="physics-textbook" class="gvc-container">
             <div class="gvc-header">
-                <h2>物理 - 课本内容思维导图</h2>
-                <p>按上海市高中物理课本组织</p>
+                <h2>物理 · 课本内容思维导图</h2>
+                <p>【课本思维导图】按上海市高中物理课本组织</p>
             </div>
             <div id="physics-textbook-content"></div>
         </div>
-        
+
         <div id="chemistry-textbook" class="gvc-container">
             <div class="gvc-header">
-                <h2>化学 - 课本内容思维导图</h2>
-                <p>按上海市高中化学课本组织</p>
+                <h2>化学 · 课本内容思维导图</h2>
+                <p>【课本思维导图】按上海市高中化学课本组织</p>
             </div>
             <div id="chemistry-textbook-content"></div>
         </div>
-        
+
         <div id="geography-textbook" class="gvc-container">
             <div class="gvc-header">
-                <h2>地理 - 课本内容思维导图</h2>
-                <p>按上海市高中地理课本组织</p>
+                <h2>地理 · 课本内容思维导图</h2>
+                <p>【课本思维导图】按上海市高中地理课本组织</p>
             </div>
             <div id="geography-textbook-content"></div>
         </div>
-        
+
         <div id="history-textbook" class="gvc-container">
             <div class="gvc-header">
-                <h2>历史 - 课本内容思维导图</h2>
-                <p>按上海市高中历史课本组织</p>
+                <h2>历史 · 课本内容思维导图</h2>
+                <p>【课本思维导图】按上海市高中历史课本组织</p>
             </div>
             <div id="history-textbook-content"></div>
         </div>
-        
+
         <div id="politics-textbook" class="gvc-container">
             <div class="gvc-header">
-                <h2>政治 - 课本内容思维导图</h2>
-                <p>按上海市高中政治课本组织</p>
+                <h2>政治 · 课本内容思维导图</h2>
+                <p>【课本思维导图】按上海市高中政治课本组织</p>
             </div>
             <div id="politics-textbook-content"></div>
         </div>
-        
+
         <div id="biology-textbook" class="gvc-container">
             <div class="gvc-header">
-                <h2>生物 - 课本内容思维导图</h2>
-                <p>按上海市高中生物课本组织</p>
+                <h2>生物 · 课本内容思维导图</h2>
+                <p>【课本思维导图】按上海市高中生物课本组织</p>
             </div>
             <div id="biology-textbook-content"></div>
         </div>
     </div>
-    
+
     <!-- 加载JavaScript文件 -->
     <script src="src/services/DataService.js"></script>
     <script src="src/services/DataManager.js"></script>
