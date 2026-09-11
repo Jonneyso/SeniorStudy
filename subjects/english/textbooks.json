@@ -15,7 +15,7 @@
             },
             {
               "title": "Reading Strategies",
-              "content": "Skimming(略读) for main idea; Scanning(查读) for specific information; Predicting(预测) before reading. "
+              "content": "Skimming(略读) for main idea; Scanning(查读) for specific information; Predicting(预测) before reading."
             }
           ],
           "exam_points": [
@@ -60,6 +60,36 @@
               "source": "2023年复旦附中高一期中考试"
             }
           ]
+        },
+        {
+          "name": "Unit 3 Looking Good, Feeling Good",
+          "topics": ["Health and appearance", "Non-restrictive attributive clauses", "Writing about health"],
+          "knowledge_points": [
+            {
+              "title": "Non-restrictive Attributive Clauses (非限制性定语从句)",
+              "content": "与主句之间用逗号隔开，对先行词作补充说明，去掉后不影响主句意思。引导词：which, who, whom, whose, as。注意：非限制性定语从句中不能用that。"
+            },
+            {
+              "title": "Health Vocabulary",
+              "content": "stay up late, skip meals, be on a diet, work out, side effects, suffer from, in the long term。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "非限制性定语从句",
+              "content": "考查which引导非限制性定语从句，指代整个主句。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "The road conditions there turned out to be very good, ______ was more than we could expect.",
+              "options": ["A. it", "B. what", "C. which", "D. that"],
+              "answer": "C",
+              "explanation": "which引导非限制性定语从句，指代前面整句话内容，that不能引导非限制性定语从句，故选C。",
+              "source": "2023年华东师大二附中高一期末考试"
+            }
+          ]
         }
       ]
     },
@@ -67,6 +97,62 @@
       "id": "english-required-2",
       "name": "必修2",
       "chapters": [
+        {
+          "name": "Unit 1 Tales of the Unexplained",
+          "topics": ["Mysteries and unexplained events", "Present perfect continuous", "Writing a mystery story"],
+          "knowledge_points": [
+            {
+              "title": "Present Perfect Continuous (现在完成进行时)",
+              "content": "构成：have/has been doing。用法：表示从过去某时开始一直持续到现在的动作，强调动作的持续性。常与all day, for hours, since等连用。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "现在完成进行时",
+              "content": "考查现在完成进行时与现在完成时的区别。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "I ______ for three hours. I must be very tired.",
+              "options": ["A. have worked", "B. have been working", "C. worked", "D. am working"],
+              "answer": "B",
+              "explanation": "强调从过去到现在一直在工作且可能继续，用现在完成进行时，故选B。",
+              "source": "2023年上海交大附中高一期中考试"
+            }
+          ]
+        },
+        {
+          "name": "Unit 2 Wish You Were Here",
+          "topics": ["Travel and adventure", "Future continuous", "Writing a travel brochure"],
+          "knowledge_points": [
+            {
+              "title": "Future Continuous (将来进行时)",
+              "content": "构成：will be doing。用法：表示将来某一时刻正在进行的动作，或表示将来某段时间内持续进行的动作。"
+            },
+            {
+              "title": "Travel Vocabulary",
+              "content": "go on an adventure, explore, tourist attraction, accommodation, souvenir, breathtaking, in advance。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "将来进行时",
+              "content": "考查将来进行时的用法。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "This time tomorrow I ______ on the beach in Hawaii.",
+              "options": ["A. will lie", "B. will be lying", "C. am lying", "D. have lain"],
+              "answer": "B",
+              "explanation": "This time tomorrow表示将来某一时刻正在进行，用将来进行时，故选B。",
+              "source": "2023年复旦附中高一期末考试"
+            }
+          ]
+        },
         {
           "name": "Unit 3 Amazing People",
           "topics": ["Famous people", "Past perfect", "Biography writing"],
@@ -124,6 +210,62 @@
               "source": "2023年上海交大附中高一期末考试"
             }
           ]
+        },
+        {
+          "name": "Unit 2 Language",
+          "topics": ["Language development", "Object complement", "Writing about language"],
+          "knowledge_points": [
+            {
+              "title": "Object Complement (宾语补足语)",
+              "content": "宾语补足语用来补充说明宾语的动作或状态。常见结构：make sb do sth, let sb do sth, have sb do sth, find sb doing sth, consider sb to be, with +宾语+宾补。"
+            },
+            {
+              "title": "Language Vocabulary",
+              "content": "consist of, contribute to, depend on, make up, stand for, throughout history, native speaker。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "宾语补足语",
+              "content": "考查with复合结构和make/let等使役动词的宾补。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "With a lot of difficult problems ______, the newly-elected president is having a hard time.",
+              "options": ["A. settled", "B. settling", "C. to settle", "D. being settled"],
+              "answer": "C",
+              "explanation": "问题尚未解决，用不定式表示将来，with+宾语+to do结构，故选C。",
+              "source": "2023年七宝中学高一期末考试"
+            }
+          ]
+        },
+        {
+          "name": "Unit 3 Back to the Past",
+          "topics": ["History and archaeology", "Appositive clauses", "Writing about history"],
+          "knowledge_points": [
+            {
+              "title": "Appositive Clauses (同位语从句)",
+              "content": "同位语从句用来解释说明前面名词的具体内容，常放在fact, news, idea, hope, belief, doubt, possibility等名词后。引导词that不充当成分但不能省略。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "同位语从句",
+              "content": "考查同位语从句与定语从句的区别。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "The news ______ our team has won the match is exciting.",
+              "options": ["A. that", "B. which", "C. what", "D. where"],
+              "answer": "A",
+              "explanation": "that引导同位语从句，解释说明news的具体内容，that在从句中不充当成分，故选A。",
+              "source": "2023年上海中学高一期末考试"
+            }
+          ]
         }
       ]
     },
@@ -156,6 +298,62 @@
               "source": "2022年七宝中学高二期中考试"
             }
           ]
+        },
+        {
+          "name": "Unit 2 Sports Events",
+          "topics": ["Sports vocabulary", "Subject-verb agreement", "Writing about sports"],
+          "knowledge_points": [
+            {
+              "title": "Subject-verb Agreement (主谓一致)",
+              "content": "三大原则：语法一致、意义一致、就近原则。就近原则：either...or, neither...nor, not only...but also, there be句型中谓语与最近的主语一致。"
+            },
+            {
+              "title": "Sports Vocabulary",
+              "content": "compete in, take part in, in honor of, make contributions to, play a role in, be recognized as。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "主谓一致",
+              "content": "考查就近原则和集合名词的主谓一致。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "Either you or one of your students ______ to attend the meeting that is due tomorrow.",
+              "options": ["A. are", "B. is", "C. have", "D. be"],
+              "answer": "B",
+              "explanation": "either...or...遵循就近原则，one of your students是单数，谓语用is，故选B。",
+              "source": "2023年复旦附中高二期中考试"
+            }
+          ]
+        },
+        {
+          "name": "Unit 3 Tomorrow's World",
+          "topics": ["Technology and future", "Verbs + to do/doing", "Writing about future technology"],
+          "knowledge_points": [
+            {
+              "title": "Verbs + to do / doing",
+              "content": "只接to do：want, hope, decide, refuse, manage, agree, promise。只接doing：enjoy, finish, mind, avoid, suggest, practice, consider。两者都可但意思不同：remember/forget to do（未做）/doing（已做）；stop to do（停下来去做）/doing（停止做）；mean to do（打算做）/doing（意味着）。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "非谓语动词",
+              "content": "考查to do和doing作宾语的区别。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "I remembered ______ the door before I left the office, but I forgot to turn off the lights.",
+              "options": ["A. locking", "B. to lock", "C. having locked", "D. to have locked"],
+              "answer": "A",
+              "explanation": "remember doing表示记得做过某事，lock这个动作已经完成，故选A。",
+              "source": "2023年华东师大二附中高二期末考试"
+            }
+          ]
         }
       ]
     },
@@ -163,6 +361,36 @@
       "id": "english-elective-2",
       "name": "选修2",
       "chapters": [
+        {
+          "name": "Unit 1 Getting Along with Others",
+          "topics": ["Interpersonal relationships", "V-ing as subject/object", "Writing about friendship"],
+          "knowledge_points": [
+            {
+              "title": "V-ing as Subject/Object (动名词作主语/宾语)",
+              "content": "动名词作主语：Learning English is important. 作宾语：I enjoy reading. 常用句型：It's no use doing sth, There is no point doing sth。"
+            },
+            {
+              "title": "Relationship Vocabulary",
+              "content": "get along with, be determined to do, keep one's word, apologize to sb for sth, be jealous of, in trouble。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "动名词",
+              "content": "考查动名词作主语和宾语的用法。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "It's no use ______ without taking any action.",
+              "options": ["A. complain", "B. to complain", "C. complaining", "D. complained"],
+              "answer": "C",
+              "explanation": "It's no use doing sth为固定句型，意为“做某事没用”，故选C。",
+              "source": "2023年上海中学高二期末考试"
+            }
+          ]
+        },
         {
           "name": "Unit 2 The Environment",
           "topics": ["Environmental vocabulary", "Inversion", "Environmental writing"],
@@ -186,6 +414,32 @@
               "answer": "B",
               "explanation": "Hardly...when...为固定句型，意为“一...就...”，hardly置于句首用部分倒装，故选B。",
               "source": "2023年建平中学高二期末考试"
+            }
+          ]
+        },
+        {
+          "name": "Unit 3 Science versus Nature",
+          "topics": ["Science and ethics", "Virtual语气(subjunctive mood)", "Argumentative writing"],
+          "knowledge_points": [
+            {
+              "title": "Subjunctive Mood (虚拟语气)",
+              "content": "if虚拟条件句：与现在事实相反，从句用过去式(be用were)，主句用would/could/might do；与过去事实相反，从句用had done，主句用would have done；与将来事实相反，从句用should do/were to do/过去式，主句用would do。"
+            }
+          ],
+          "exam_points": [
+            {
+              "name": "虚拟语气",
+              "content": "考查if虚拟条件句的各种时态。"
+            }
+          ],
+          "test_questions": [
+            {
+              "type": "选择题",
+              "content": "If I ______ you, I would take the opportunity to go abroad.",
+              "options": ["A. am", "B. was", "C. were", "D. be"],
+              "answer": "C",
+              "explanation": "与现在事实相反的虚拟语气，从句be动词统一用were，故选C。",
+              "source": "2023年复旦附中高二期末考试"
             }
           ]
         }
