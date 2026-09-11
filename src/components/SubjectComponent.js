@@ -1,10 +1,11 @@
-// 通用学科组件（含无障碍键盘支持：role / tabindex / aria-* / Enter & Space 触发）
+// 通用学科组件（使用公共无障碍工具 A11y.bindToggle）
 class SubjectComponent {
     constructor(containerId, dataPath, config = {}) {
         this.containerId = containerId;
         this.dataPath = dataPath;
         this.config = config;
-        this.dataManager = new DataManager();
+        // 优先使用外部传入的 dataManager（共享缓存），否则自建
+        this.dataManager = config.dataManager || new DataManager();
     }
 
     init() {
@@ -13,20 +14,18 @@ class SubjectComponent {
 
     async loadData() {
         try {
-            const data = await this.fetchData();
+            // 若 config 中指定了 dataMethod，走兼容接口；否则按 dataPath 直连
+            let data;
+            if (this.config.dataMethod && typeof this.dataManager[this.config.dataMethod] === 'function') {
+                data = await this.dataManager[this.config.dataMethod]();
+            } else if (this.dataPath) {
+                data = await this.dataManager.fetchData(this.dataPath);
+            }
             this.render(data);
         } catch (error) {
             console.error('加载数据失败:', error);
             this.renderError();
         }
-    }
-
-    async fetchData() {
-        const response = await fetch(this.dataPath);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return await response.json();
     }
 
     render(data) {
@@ -76,41 +75,6 @@ class SubjectComponent {
         });
     }
 
-    /**
-     * 无障碍：把一个可点击但非 <button> 的元素当作按钮使用（折叠/展开）
-     * @param {HTMLElement} triggerEl 触发元素
-     * @param {HTMLElement} panelEl  被控制的面板
-     * @param {Function} [onToggle]   折叠/展开切换时额外调用的回调(show:boolean)
-     */
-    _bindToggle(triggerEl, panelEl, onToggle) {
-        if (!triggerEl || !panelEl) return;
-        // 确保面板有稳定 id，aria-controls 需要
-        if (!panelEl.id) {
-            panelEl.id = 'sbj-panel-' + Math.random().toString(36).slice(2, 10);
-        }
-        triggerEl.setAttribute('role', 'button');
-        triggerEl.setAttribute('tabindex', '0');
-        triggerEl.setAttribute('aria-controls', panelEl.id);
-        // aria-expanded 初始状态取决于 .show 是否已存在
-        const hasShow = panelEl.classList.contains('show');
-        triggerEl.setAttribute('aria-expanded', hasShow ? 'true' : 'false');
-
-        const toggle = (e) => {
-            if (e) e.preventDefault();
-            const willShow = !panelEl.classList.contains('show');
-            panelEl.classList.toggle('show', willShow);
-            triggerEl.setAttribute('aria-expanded', willShow ? 'true' : 'false');
-            if (typeof onToggle === 'function') onToggle(willShow);
-        };
-
-        triggerEl.addEventListener('click', toggle);
-        triggerEl.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter' || e.key === ' ' || e.code === 'Space') {
-                toggle(e);
-            }
-        });
-    }
-
     createItemElement(item) {
         const itemDiv = document.createElement('div');
         itemDiv.className = 'classical-item';
@@ -138,7 +102,7 @@ class SubjectComponent {
 
         const title = itemDiv.querySelector('.classical-title');
         const detail = itemDiv.querySelector('.classical-detail');
-        this._bindToggle(title, detail);
+        A11y.bindToggle(title, detail);
 
         return itemDiv;
     }
@@ -193,7 +157,7 @@ class SubjectComponent {
 
                 const title = testPointDiv.querySelector('.test-point-title');
                 const questions = testPointDiv.querySelector('.test-questions');
-                this._bindToggle(title, questions);
+                A11y.bindToggle(title, questions);
 
                 testPointsDiv.appendChild(testPointDiv);
             }
@@ -207,94 +171,5 @@ class SubjectComponent {
         if (!container) return;
 
         container.innerHTML = '<p style="color: red; text-align: center;">数据加载失败，请稍后重试</p>';
-    }
-}
-
-// 语法组件（同 SubjectComponent 共享无障碍辅助逻辑）
-class GrammarComponent {
-    constructor(containerId) {
-        this.containerId = containerId;
-        this.dataManager = new DataManager();
-    }
-
-    init() {
-        this.loadData();
-    }
-
-    async loadData() {
-        try {
-            const data = await this.dataManager.getGrammarData();
-            this.render(data);
-        } catch (error) {
-            console.error('加载语法数据失败:', error);
-        }
-    }
-
-    _bindToggle(triggerEl, panelEl) {
-        if (!triggerEl || !panelEl) return;
-        if (!panelEl.id) {
-            panelEl.id = 'gram-panel-' + Math.random().toString(36).slice(2, 10);
-        }
-        triggerEl.setAttribute('role', 'button');
-        triggerEl.setAttribute('tabindex', '0');
-        triggerEl.setAttribute('aria-controls', panelEl.id);
-        const hasShow = panelEl.classList.contains('show');
-        triggerEl.setAttribute('aria-expanded', hasShow ? 'true' : 'false');
-
-        const toggle = (e) => {
-            if (e) e.preventDefault();
-            const willShow = !panelEl.classList.contains('show');
-            panelEl.classList.toggle('show', willShow);
-            triggerEl.setAttribute('aria-expanded', willShow ? 'true' : 'false');
-        };
-
-        triggerEl.addEventListener('click', toggle);
-        triggerEl.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter' || e.key === ' ' || e.code === 'Space') {
-                toggle(e);
-            }
-        });
-    }
-
-    render(data) {
-        const container = document.getElementById(this.containerId);
-        if (!container) return;
-
-        container.innerHTML = '';
-
-        if (data.groups) {
-            data.groups.forEach(group => {
-                const groupDiv = document.createElement('div');
-                groupDiv.className = 'classical-group';
-                groupDiv.innerHTML = `<h3>${group.name}</h3><div class="classical-items"></div>`;
-
-                const itemsContainer = groupDiv.querySelector('.classical-items');
-                group.items.forEach(item => {
-                    const itemDiv = document.createElement('div');
-                    itemDiv.className = 'classical-item';
-
-                    let examplesHtml = '';
-                    if (item.examples && item.examples.length > 0) {
-                        examplesHtml = `<div class="classical-annotation"><strong>例句：</strong>${item.examples.map(ex => `<div style="margin: 5px 0;">${ex}</div>`).join('')}</div>`;
-                    }
-
-                    itemDiv.innerHTML = `
-                        <h4 class="classical-title">${item.title}</h4>
-                        <div class="classical-detail">
-                            <div class="classical-content">${item.content.replace(/\n/g, '<br>')}</div>
-                            ${examplesHtml}
-                        </div>
-                    `;
-
-                    const title = itemDiv.querySelector('.classical-title');
-                    const detail = itemDiv.querySelector('.classical-detail');
-                    this._bindToggle(title, detail);
-
-                    itemsContainer.appendChild(itemDiv);
-                });
-
-                container.appendChild(groupDiv);
-            });
-        }
     }
 }

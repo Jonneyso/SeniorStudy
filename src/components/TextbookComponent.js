@@ -40,6 +40,9 @@ class TextbookComponent {
         `;
         document.body.appendChild(modal);
 
+        // 焦点陷阱：Tab/Shift+Tab 不离开模态框
+        this._untrapFocus = A11y.trapFocus(modal);
+
         modal.querySelector('.textbook-modal-close').addEventListener('click', () => {
             this.closeModal(modal);
         });

@@ -78,27 +78,48 @@ SeniorStudy/
 │   │           └── regional.json       # 区域地理数据
 │   ├── history/                     # 历史
 │   │   ├── textbooks.json            # 历史课本思维导图数据
-│   │   └── ancient/
+│   │   ├── ancient/
+│   │   │   └── data/
+│   │   │       └── ancient.json        # 古代史数据
+│   │   ├── modern/
+│   │   │   └── data/
+│   │   │       └── modern.json         # 近代史数据
+│   │   └── contemporary/
 │   │       └── data/
-│   │           └── ancient.json        # 古代史数据
+│   │           └── contemporary.json   # 现代史数据
 │   ├── politics/                   # 政治
 │   │   ├── textbooks.json            # 政治课本思维导图数据
-│   │   └── economics/
+│   │   ├── economics/
+│   │   │   └── data/
+│   │   │       └── economics.json      # 经济生活数据
+│   │   ├── politics/
+│   │   │   └── data/
+│   │   │       └── politics.json       # 政治生活数据
+│   │   └── philosophy/
 │   │       └── data/
-│   │           └── economics.json      # 经济生活数据
+│   │           └── philosophy.json     # 哲学生活数据
 │   └── biology/                     # 生物
 │       ├── textbooks.json            # 生物课本思维导图数据
-│       └── cell/
+│       ├── cell/
+│       │   └── data/
+│       │       └── cell.json           # 细胞生物学数据
+│       ├── genetics/
+│       │   └── data/
+│       │       └── genetics.json       # 遗传学数据
+│       └── ecology/
 │           └── data/
-│               └── cell.json           # 细胞生物学数据
+│               └── ecology.json        # 生态学数据
 └── src/                            # 源代码目录
+    ├── utils/                      # 工具函数
+    │   └── accessibility.js        # 无障碍工具（bindToggle / bindOpenDialog / trapFocus）
     ├── components/                 # 组件目录
     │   ├── SubjectComponent.js     # 通用学科组件
     │   ├── TextbookComponent.js    # 课本思维导图组件
     │   ├── chinese/                # 语文组件
     │   │   └── ClassicalComponent.js
     │   └── english/                # 英语组件
-    │       └── GVCComponent.js
+    │       ├── GVCComponent.js
+    │       └── GrammarComponent.js
     ├── services/                  # 服务层
     │   ├── DataService.js         # 数据服务
     │   └── DataManager.js         # 数据管理

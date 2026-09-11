@@ -19,32 +19,6 @@ class ClassicalComponent {
         }
     }
 
-    _bindToggle(triggerEl, panelEl) {
-        if (!triggerEl || !panelEl) return;
-        if (!panelEl.id) {
-            panelEl.id = 'cls-panel-' + Math.random().toString(36).slice(2, 10);
-        }
-        triggerEl.setAttribute('role', 'button');
-        triggerEl.setAttribute('tabindex', '0');
-        triggerEl.setAttribute('aria-controls', panelEl.id);
-        const hasShow = panelEl.classList.contains('show');
-        triggerEl.setAttribute('aria-expanded', hasShow ? 'true' : 'false');
-
-        const toggle = (e) => {
-            if (e) e.preventDefault();
-            const willShow = !panelEl.classList.contains('show');
-            panelEl.classList.toggle('show', willShow);
-            triggerEl.setAttribute('aria-expanded', willShow ? 'true' : 'false');
-        };
-
-        triggerEl.addEventListener('click', toggle);
-        triggerEl.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter' || e.key === ' ' || e.code === 'Space') {
-                toggle(e);
-            }
-        });
-    }
-
     render(classicalData, testPointsData) {
         const container = document.getElementById(this.containerId);
         if (!container) return;
@@ -76,7 +50,7 @@ class ClassicalComponent {
                 // 无障碍：绑定键盘 + ARIA
                 const title = itemDiv.querySelector('.classical-title');
                 const detail = itemDiv.querySelector('.classical-detail');
-                this._bindToggle(title, detail);
+                A11y.bindToggle(title, detail);
 
                 itemsContainer.appendChild(itemDiv);
             });
@@ -125,7 +99,7 @@ class ClassicalComponent {
                     // 无障碍：绑定键盘 + ARIA
                     const title = testPointDiv.querySelector('.test-point-title');
                     const questions = testPointDiv.querySelector('.test-questions');
-                    this._bindToggle(title, questions);
+                    A11y.bindToggle(title, questions);
 
                     testPointsContainer.appendChild(testPointDiv);
                 }

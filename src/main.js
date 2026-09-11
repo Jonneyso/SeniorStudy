@@ -98,12 +98,11 @@ class App {
             const container = document.getElementById(mod.containerId);
             if (!container) return;
 
+            // 通过 config 传入共享 dataManager，避免构造函数内自建造成浪费
             const component = new SubjectComponent(mod.containerId, null, {
-                dataMethod: mod.dataMethod
+                dataMethod: mod.dataMethod,
+                dataManager: this.sharedDataManager
             });
-
-            // 共享同一个 DataManager
-            component.dataManager = this.sharedDataManager;
 
             component.loadData = async () => {
                 try {

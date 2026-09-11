@@ -1,0 +1,53 @@
+name: Validate JSON Data
+
+on:
+  push:
+    paths:
+      - 'subjects/**/*.json'
+      - '.github/workflows/validate-json.yml'
+  pull_request:
+    paths:
+      - 'subjects/**/*.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Validate all JSON files
+        run: |
+          python - <<'PY'
+          import json
+          import glob
+          import sys
+
+          errors = []
+          files = sorted(glob.glob('subjects/**/*.json', recursive=True))
+          for f in files:
+              try:
+                  with open(f, 'r', encoding='utf-8') as fh:
+                      json.load(fh)
+              except Exception as e:
+                  errors.append(f"{f}: {e}")
+
+          print(f"Checked {len(files)} JSON file(s)")
+          if errors:
+              print("\n❌ JSON validation FAILED:")
+              for err in errors:
+                  print(f"  - {err}")
+              sys.exit(1)
+          print("✅ All JSON files are valid")
+          PY
+
+      - name: Syntax check all JS files
+        run: |
+          for f in $(find src -name '*.js'); do
+            node --check "$f" || { echo "❌ Syntax error in $f"; exit 1; }
+          done
+          echo "✅ All JS files pass syntax check"
