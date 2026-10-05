@@ -1,345 +1,736 @@
 {
   "groups": [
     {
-      "id": "grammar-tense",
-      "name": "时态",
+      "id": "tense",
+      "name": "时态与语态",
       "items": [
         {
-          "id": "simple-present-past-future",
-          "title": "一般现在时、一般过去时、一般将来时",
-          "content": "一般现在时表示经常发生的动作或存在的状态，构成：主语 + 动词原形（第三人称单数加s/es）。\n\n一般过去时表示过去发生的动作，构成：主语 + 动词过去式。\n\n一般将来时表示将来发生的动作，构成：will + 动词原形 或 be going to + 动词原形。",
+          "id": "simple-progressive",
+          "title": "一般体与进行体",
+          "content": "一、一般体：陈述经常性动作、客观真理或状态。结构：主语+动词原形/动词第三人称单数（现在）、动词过去式（过去）、will+动词原形（将来）。\n二、进行体：be+doing，强调某一时刻正在进行或现阶段暂时的动作，具有“未完性、暂时性”；与always、forever、constantly连用可带赞叹或抱怨的感情色彩。\n三、状态动词一般不用进行体：know、love、belong、contain、mean、remain，以及表结果的see、hear、notice等。\n四、一般现在表将来：按时刻表、日程表发生的动作用一般现在时（The train leaves at six）；在when、if、unless、as soon as引导的时间、条件状语从句中遵循“主将从现”。\n五、过去进行时与一般过去时：延续性的长动作（背景）用过去进行，短暂动作用一般过去。公式：S+was/were doing ... when ... S+did ...。",
+          "annotation": "判断时态先看时间标志，再看动作是否延续：进行体重“过程、未完成”，一般体重“事实、已完成”。",
+          "explanation": "上海卷常在语境中考查过去进行时作背景、一般现在表将来（时刻表）及主将从现，题干多为单句对话或叙述。",
           "examples": [
-            "一般现在时：I study English every day. (我每天学英语。)",
-            "一般过去时：I studied English yesterday. (我昨天学了英语。)",
-            "一般将来时：I will study English tomorrow. (我明天要学英语。)"
+            "The train for Beijing leaves at 8:15 every morning.（时刻表用一般现在时）",
+            "I was taking a shower when the telephone rang.（长动作进行，短动作过去）",
+            "She is always helping others, which makes her very popular.（be always doing表赞叹）",
+            "If it rains tomorrow, the sports meet will be put off.（主将从现）"
           ],
-          "test_points": ["grammar-1"]
+          "test_points": ["gr-tp-1"]
         },
         {
-          "id": "present-past-future-perfect",
-          "title": "现在完成时、过去完成时、将来完成时",
-          "content": "现在完成时表示过去发生的动作对现在造成的影响或持续到现在，构成：have/has + 过去分词。\n\n过去完成时表示过去的过去发生的动作，构成：had + 过去分词。\n\n将来完成时表示将来某一时间前已经完成的动作，构成：will have + 过去分词。",
+          "id": "perfect-aspect",
+          "title": "完成体与完成进行体",
+          "content": "一、现在完成时have/has+done：①过去动作对现在的影响或结果；②动作始于过去、持续到现在。标志性状语：already、yet、just、ever、never、so far、up to now、recently、in/during the past/last+时间段、since+时间点、for+时间段。\n二、现在完成进行时have/has+been doing：动作从过去某时开始持续至今并可能继续，强调“持续、重复、带感情”，多与all day、for hours、since连用。\n三、过去完成时had+done：表示“过去的过去”，句中必有一个明确的过去时间作参照；常见于by+过去时间、Hardly...when...、No sooner...than...、It was the first time that...had done。\n四、将来完成时will have done：by+将来时间点之前完成。\n五、非延续性动词（buy、join、come、leave、die、borrow、marry）在完成时持续用法中须换成状态：buy→have，join→be in，die→be dead，leave→be away。",
+          "annotation": "for加时间段、since加时间点；have bought（×）应改为have had（√）；完成时不可与yesterday、ago、in 2010等明确过去时间连用。",
+          "explanation": "高频考查：现在完成时与一般过去时辨析、by+过去时间配过去完成时、非延续动词的状态转换，常以对话语境出现。",
           "examples": [
-            "现在完成时：I have finished my homework. (我已经完成了作业。)",
-            "过去完成时：I had finished my homework before you came. (你来之前我已经完成了作业。)",
-            "将来完成时：I will have finished my homework by tomorrow. (到明天我将已经完成作业。)"
+            "Great changes have taken place in Shanghai in the past ten years.",
+            "I have been learning English for eight years and will keep it up.",
+            "By the end of last term, we had learned 3,000 English words.",
+            "This is the third time that he has won the first prize."
           ],
-          "test_points": ["grammar-2"]
+          "test_points": ["gr-tp-1"]
+        },
+        {
+          "id": "passive-special",
+          "title": "被动语态特殊情形",
+          "content": "一、被动基本结构be+done，时态由be体现：一般现在is/am/are done、过去was/were done、进行be being done、完成have been done、将来will be done；含情态动词为“情态动词+be+done”，非谓语为to be done、being done、done。\n二、get done：强调动作的发生或主语的遭遇，多指突发、偶然或不期望之事，如get hurt、get injured、get lost、get married、get dressed、get paid；通常不接by短语，一般不用于进行体。\n三、主动形式表被动意义：①系表结构：The cloth washes well、The book sells well、The pen writes smoothly；②need/want/require/deserve+doing=to be done；③be worth doing；④hard/difficult/comfortable+to do；⑤不定式作定语且与被修饰名词构成动宾关系、句子主语是其逻辑主语时：I have a lot of work to do。\n四、happen、occur、appear、disappear、belong to、take place、break out等无被动语态。",
+          "annotation": "sth. needs/wants/requires doing是上海卷最常考的主动表被动；happen、take place、break out永远无被动。",
+          "explanation": "命题集中在get done表遭遇、need doing主动表被动、sell/wash/write类系表结构以及进行体被动is being done。",
+          "examples": [
+            "The new type of car sells well although it is rather expensive.",
+            "My bike got stolen while I was doing shopping in the supermarket.",
+            "The old house needs repairing / to be repaired before we move in.",
+            "The project is being discussed at the meeting right now."
+          ],
+          "test_points": ["gr-tp-1"]
         }
       ]
     },
     {
-      "id": "grammar-voice",
-      "name": "语态",
-      "items": [
-        {
-          "id": "active-passive",
-          "title": "主动语态与被动语态",
-          "content": "主动语态表示主语是动作的执行者，被动语态表示主语是动作的承受者。\n\n被动语态的构成：be + 过去分词\n- 一般现在时：am/is/are + past participle\n- 一般过去时：was/were + past participle\n- 一般将来时：will be + past participle\n- 现在完成时：have/has been + past participle",
-          "examples": [
-            "主动语态：The cat caught the mouse. (猫抓住了老鼠。)",
-            "被动语态：The mouse was caught by the cat. (老鼠被猫抓住了。)",
-            "现在完成时被动：The work has been finished. (工作已经被完成了。)"
-          ],
-          "test_points": ["grammar-3"]
-        }
-      ]
-    },
-    {
-      "id": "grammar-clause",
-      "name": "从句",
-      "items": [
-        {
-          "id": "noun-clause",
-          "title": "名词性从句",
-          "content": "名词性从句包括主语从句、宾语从句、表语从句和同位语从句。\n\n连接词：that, whether, if, who, whom, whose, which, what, when, where, why, how\n\nthat在句中无含义，只起连接作用；whether/if表示是否；其他连接词有各自含义。",
-          "examples": [
-            "主语从句：What he said is true. (他说的是真的。)",
-            "宾语从句：I believe that he is honest. (我相信他是诚实的。)",
-            "表语从句：The question is whether we can finish it. (问题是我们能否完成它。)",
-            "同位语从句：The news that he won the game made us happy. (他赢得比赛的消息使我们高兴。)"
-          ],
-          "test_points": ["grammar-4"]
-        },
-        {
-          "id": "adjective-clause",
-          "title": "定语从句",
-          "content": "定语从句修饰名词或代词，由关系代词或关系副词引导。\n\n关系代词：who, whom, whose, which, that\n关系副词：when, where, why\n\nthat与which的区别：\n- 先行词被序数词、最高级、the only、the very修饰时，用that\n- 先行词是不定代词（something, anything等）时，用that\n- 非限制性定语从句用which",
-          "examples": [
-            "The book that I bought yesterday is interesting. (我昨天买的那本书很有趣。)",
-            "The man who is standing there is our teacher. (站在那里的那个人是我们的老师。)",
-            "I still remember the day when we first met. (我仍记得我们第一次见面的那天。)"
-          ],
-          "test_points": ["grammar-5"]
-        },
-        {
-          "id": "adverb-clause",
-          "title": "状语从句",
-          "content": "状语从句修饰动词、形容词或整个句子，分为时间、地点、原因、目的、结果、条件、让步、比较、方式等。\n\n常用连接词：\n- 时间：when, while, as, before, after, since, until\n- 原因：because, since, as\n- 条件：if, unless\n- 让步：although, though, even if\n- 结果：so...that, such...that",
-          "examples": [
-            "时间：I was reading when he came in. (他进来时我在读书。)",
-            "原因：Because it was raining, we stayed at home. (因为下雨，我们待在家里。)",
-            "结果：He was so tired that he fell asleep. (他太累了以至于睡着了。)"
-          ],
-          "test_points": ["grammar-6"]
-        }
-      ]
-    },
-    {
-      "id": "grammar-non-finite",
+      "id": "non-finite",
       "name": "非谓语动词",
       "items": [
         {
           "id": "infinitive",
           "title": "不定式",
-          "content": "不定式的基本形式：to + 动词原形\n\n不定式的用法：\n- 作主语：To learn English is important. (学英语很重要。)\n- 作宾语：I want to go. (我想去。)\n- 作宾补：I told him to go. (我告诉他去。)\n- 作定语：I have a lot of homework to do. (我有很多作业要做。)\n- 作状语：I came here to see you. (我来这里看你。)",
+          "content": "一、形式：一般式to do、进行式to be doing、完成式to have done、被动式to be done与to have been done；否定式not to do。\n二、句法功能：可作主语（To see is to believe；多用it作形式主语）、表语、宾语、宾补、定语和状语。\n三、只接不定式作宾语的动词：want、hope、wish、decide、promise、pretend、offer、refuse、agree、manage、learn、choose、expect、afford。\n四、疑问词+to do：what to do、how to deal with、where to go，作decide、know、wonder、explain的宾语。\n五、感官、使役动词：see/hear/watch/notice/feel/make/let/have+宾语+do（看全过程）或doing（看正在进行）；变被动后须还原to：be made to do。\n六、结果状语：only to do表意外、不愿看到的结果；too...to do、enough to do、so...as to do。公式：It is+adj.+for/of sb.+to do；find/think/feel+it+adj.+to do。",
+          "annotation": "only to do表“没想到却……”的意外结果；so as to不能置于句首；of sb.取决于形容词能否描述人的品质（kind、clever、careless）。",
+          "explanation": "上海卷常考only to do意外结果、be said/believed to have done、使役动词被动还原to及it作形式主语/宾语。",
           "examples": [
-            "不定式作主语：To see is to believe. (眼见为实。)",
-            "不定式作宾语：I decided to leave. (我决定离开。)",
-            "不定式作宾补：She asked me to help her. (她请我帮助她。)"
+            "He hurried to the station, only to find the train had left.",
+            "It is important for us students to learn English well.",
+            "The boy was made to work from morning till night.（被动还原to）",
+            "I really don't know what to do with these old books."
           ],
-          "test_points": ["grammar-7"]
+          "test_points": ["gr-tp-2"]
         },
         {
           "id": "gerund",
           "title": "动名词",
-          "content": "动名词由动词加-ing构成，兼具动词和名词的特性。\n\n动名词的用法：\n- 作主语：Learning English is fun. (学英语很有趣。)\n- 作宾语：I enjoy reading. (我喜欢读书。)\n- 作表语：My hobby is collecting stamps. (我的爱好是集邮。)\n\n动词后接动名词：enjoy, finish, suggest, practice, mind, keep等。\n动词后接不定式：want, decide, hope, wish等。",
+          "content": "一、形式：一般式doing、完成式having done、被动式being done/having been done；具有名词性，在句中作主语、表语、宾语、定语。\n二、只接动名词作宾语：mind、enjoy、finish、practise、avoid、escape、suggest、advise、consider、imagine、deny、admit、miss、risk、give up、feel like、be worth、be busy、keep on、insist on、can't help（情不自禁）。\n三、to为介词的短语：look forward to、be/get used to、object to、devote...to、pay attention to、get down to、lead to、contribute to、the key to、access to，后接doing。\n四、接to do与doing意义不同：remember/forget/regret+to do表未做、doing表做过；stop to do停下来去做、stop doing停止做；mean to do打算、mean doing意味着；try to do设法、try doing尝试；go on to do另一件事、go on doing同一件事。\n五、动名词复合结构：one's/sb.+doing，如Do you mind my/me opening the window。",
+          "annotation": "be used to doing“习惯于”区别于used to do“过去常常”；It is no use/good doing、There is no point in doing为固定句型。",
+          "explanation": "命题热点是介词to后接doing、remember/forget/mean/try后两种非谓语的辨析，以及miss being done等被动式。",
           "examples": [
-            "动名词作主语：Seeing is believing. (眼见为实。)",
-            "动名词作宾语：I am considering moving to a new place. (我在考虑搬到一个新地方。)",
-            "接动名词的动词：I suggested going there by bus. (我建议乘公交车去那里。)"
+            "I am looking forward to hearing from you as soon as possible.",
+            "Please remember to lock the door when you leave the office.（记得要去锁）",
+            "The little bird was lucky that it just missed being caught.",
+            "It is no use arguing with him about such a small matter."
           ],
-          "test_points": ["grammar-8"]
+          "test_points": ["gr-tp-2"]
         },
         {
-          "id": "participle",
-          "title": "分词",
-          "content": "分词包括现在分词和过去分词。\n\n现在分词表示主动和进行，过去分词表示被动和完成。\n\n分词的用法：\n- 作定语：The smiling girl is my sister. (那个微笑的女孩是我妹妹。)\n- 作状语：Seeing the teacher, the students stood up. (看到老师，学生们站了起来。)\n- 作宾补：I found him sleeping. (我发现他在睡觉。)",
+          "id": "participles",
+          "title": "现在分词与过去分词",
+          "content": "一、核心区别：现在分词doing表主动、进行、“令人……的”（exciting令人激动的）；过去分词done表被动、完成、“感到……的”（excited感到激动的）。\n二、作定语：boiling water正在沸腾的水、boiled water烧开过的水；the problem discussed yesterday（被动完成）、being discussed now（被动进行）、to be discussed tomorrow（被动将来）。\n三、作状语：表时间、原因、条件、让步、伴随及自然而然的结果（区别于only to do的意外结果）；逻辑主语必须与主句主语一致：Seeing from the hill, we found...（we主动看）；Seen from the hill, the city looks...（city被看）。\n四、完成式having done/having been done：分词动作先于谓语动作完成，如Having finished his homework, he went out。\n五、作宾补：have/get/keep/leave/find+sth.+done（让某事被做）；have sb. doing（让某人一直做）。\n六、系表短语常用过去分词：be seated、be hidden、be dressed in、be located in、be faced with、be absorbed in、be devoted to、be determined to。",
+          "annotation": "悬垂修饰是高频失分点：分词逻辑主语与主句主语不一致即为错；determine、seat、dress、face、lose、hide作状语通常用过去分词。",
+          "explanation": "上海卷侧重考查分词作状语时的主被动判断、having done先时性及be faced with等固定系表结构作状语。",
           "examples": [
-            "现在分词作定语：The rising sun is beautiful. (正在升起的太阳很美。)",
-            "过去分词作定语：The broken glass is dangerous. (碎玻璃很危险。)",
-            "分词作状语：Having finished the work, he went home. (完成工作后，他回家了。)"
+            "Given more time, we could have done the job much better.",
+            "The speaker raised his voice but still couldn't make himself heard.",
+            "Having been told many times, he still repeated the same mistake.",
+            "Determined to catch the early bus, he got up at five o'clock."
           ],
-          "test_points": ["grammar-9"]
+          "test_points": ["gr-tp-2"]
+        },
+        {
+          "id": "absolute-structure",
+          "title": "独立主格结构",
+          "content": "一、构成：名词或代词（用主格）+分词/形容词/副词/不定式/介词短语，用逗号与主句隔开，结构内部无谓语动词、无连词，在句中作时间、原因、条件、伴随状语。\n二、常见类型：①名词+doing（主动）：Weather permitting, we will go hiking；②名词+done（被动）：All things considered, the plan is practical；③名词+to do（将来）：Lots of homework to do, I can't go out；④名词+形容词/副词/介词短语：He entered the room, book in hand。\n三、with复合结构：with+宾语+宾补（doing/done/to do/adj./adv./介词短语），可作伴随状语或后置定语。选择依据：主动进行用doing，被动完成用done，尚未发生用to do。\n四、there being与it being：There being no bus, we had to walk home；It being Sunday, the library was closed。\n五、与分词状语的区别：独立主格有自己独立的逻辑主语，普通分词状语的逻辑主语就是主句主语。",
+          "annotation": "独立主格不是句子，名词后绝不能再加be动词；book in hand这类介词短语型结构中冠词常省略。",
+          "explanation": "高频考查weather permitting、with sth. done/to do的选择及there being句型，常出现在非谓语综合题中。",
+          "examples": [
+            "Weather permitting, the football match will be played on Friday.",
+            "The problem settled, we all felt completely relaxed.",
+            "With a guide leading the way, we found the village without difficulty.",
+            "She sat at the desk, with her eyes fixed on the computer screen."
+          ],
+          "test_points": ["gr-tp-2"]
         }
       ]
     },
     {
-      "id": "grammar-subjunctive",
-      "name": "虚拟语气",
+      "id": "modal-subjunctive",
+      "name": "情态动词与虚拟语气",
       "items": [
         {
-          "id": "subjunctive-mood",
-          "title": "虚拟语气",
-          "content": "虚拟语气用于表达与事实相反的假设或愿望。\n\n与现在事实相反：if + 主语 + 动词过去式，主语 + would/could/might + 动词原形\n与过去事实相反：if + 主语 + had + 过去分词，主语 + would/could/might have + 过去分词\n与将来事实相反：if + 主语 + were to/should + 动词原形，主语 + would/could/might + 动词原形\n\nwish后的宾语从句用虚拟语气：wish + 主语 + 过去式/had + 过去分词/would + 动词原形",
+          "id": "modal-perfect",
+          "title": "情态动词+have done",
+          "content": "一、must have done：对过去事情的肯定推测，语气最强（一定做过）；否定推测用can't/couldn't have done（不可能做过）。must表推测只用于肯定句，否定、疑问句用can。\n二、may/might have done：过去可能做过，might语气更弱，也可带轻微责备。\n三、should/ought to have done：本应该做却没做，含责备；shouldn't/oughtn't to have done：本不该做却做了。\n四、need have done：本有必要做却没做；needn't have done：本不必做却实际做了。区别didn't need to do：过去不必做而且实际也没做。\n五、could have done：本能够做却没做，含遗憾或委婉批评。\n六、推测现在用must be/can't be；推测正在进行用must be doing；推测将来用must do。\n公式：情态动词+have done针对过去；情态动词+be doing针对进行；情态动词+do针对现在或将来。",
+          "annotation": "needn't have done（做了，本不必）与didn't need to do（没做，本不必）是上海卷经典辨析；must have done的反意疑问按实际时态处理。",
+          "explanation": "命题常借助对话语境考查对过去的推测（must/can't have done）与虚拟责备（should/needn't have done）。",
           "examples": [
-            "与现在事实相反：If I were you, I would take this job. (如果我是你，我会接受这份工作。)",
-            "与过去事实相反：If I had studied harder, I would have passed the exam. (如果我学习更努力些，我就能通过考试了。)",
-            "wish从句：I wish I had more money. (我希望我有更多的钱。)"
+            "The ground is all wet. It must have rained last night.",
+            "You ought to have come here ten minutes earlier for the meeting.",
+            "I needn't have taken a taxi, for the station was only five minutes' walk away.",
+            "She can't have left school, for her bike is still parked here."
           ],
-          "test_points": ["grammar-10"]
+          "test_points": ["gr-tp-3"]
+        },
+        {
+          "id": "if-subjunctive",
+          "title": "if虚拟条件句、错综时间与倒装虚拟",
+          "content": "一、与现在事实相反：If+主语+did/were, 主语+would/could/should/might+do。\n二、与过去事实相反：If+主语+had done, 主语+would/could/should/might+have done。\n三、与将来事实相反：If+主语+did / were to do / should do, 主语+would+do。\n四、错综时间条件句：主从句时间不一致时，分别按各自时间调整形式：If you had taken my advice then, you would be much better now（从句对过去，主句对现在）。\n五、倒装虚拟：省略if，将were、had、should提至句首；not须留在主语之后：Were I you...、Had I known earlier...、Should it rain tomorrow...；Had it not been for the delay...。\n六、含蓄虚拟：without、but for、otherwise、or等代替if从句：But for your timely help, I couldn't have succeeded。\n公式：省略if→were/had/should+主语（否定词not不提前）。",
+          "annotation": "解错综时间题先分别标出主从句所指时间；倒装后为Had he not gone，不可写成Had not he gone。",
+          "explanation": "上海卷高频考查错综时间虚拟、if省略倒装及but for含蓄虚拟，题干常结合科技或生活语境。",
+          "examples": [
+            "If I were you, I would accept the offer without hesitation.",
+            "If he had driven more carefully, he would not have had the accident.",
+            "Had I taken the doctor's advice, I would be in good health now.",
+            "But for the timely rain, all the crops would have died."
+          ],
+          "test_points": ["gr-tp-3"]
+        },
+        {
+          "id": "wish-suggest-asif",
+          "title": "suggest、wish与as if等虚拟句型",
+          "content": "一、wish+宾语从句表难以实现的愿望：对现在用did/were，对过去用had done/could have done，对将来用would/could/might do；if only用法相同：If only I had followed your advice!\n二、as if/as though：从句内容可能真实用陈述语气，非真实则时态后退（did/had done/would do）：He talks as if he had been to the moon。\n三、would rather+从句：对现在或将来用过去式did，对过去用had done：I would rather you hadn't told him the news。\n四、It is (high/about) time that+主语+did（或should do，should不省）：It is high time that we took action。\n五、建议、要求、命令类动词后宾语从句用（should）do：suggest、advise、propose、demand、require、request、insist、order、command、desire；其同源名词的表语从句、同位语从句同样用（should）do。\n六、It is necessary/important/strange/natural that...（should）do。注意：suggest表“表明、暗示”、insist表“坚持认为事实”时用陈述语气。",
+          "annotation": "His pale face suggests that he is ill（表明，陈述）；I suggest that he (should) see a doctor（建议，虚拟），一词两制是命题关键。",
+          "explanation": "高频点为insist/suggest的虚实两解、It is high time that...did及would rather后从句时态。",
+          "examples": [
+            "I wish I had studied harder when I was in Senior One.",
+            "The teacher insisted that the homework (should) be handed in before Friday.",
+            "It is high time that we took measures to protect the environment.",
+            "He treats the little boy as if he were his own son."
+          ],
+          "test_points": ["gr-tp-3"]
+        }
+      ]
+    },
+    {
+      "id": "clauses",
+      "name": "复合句",
+      "items": [
+        {
+          "id": "attributive-clause",
+          "title": "定语从句：限定、非限定与介词+which",
+          "content": "一、关系代词：who/whom（人）、whose（所属，人或物）、which（物）、that（人或物）、as；关系副词：when、where、why在从句中作状语，相当于“介词+which”。\n二、只用that：先行词被all、every、no、only、very、序数词、最高级修饰；先行词既有人又有物；以which或who开头的特殊疑问句。只用which：介词之后、逗号之后。\n三、非限定性定语从句用逗号隔开，补充说明，不能用that；which可指代整个主句：He failed again, which made his parents sad。\n四、as引导：the same...as、such...as、as...as；as可位于句首指代全句（As is known to all...），which引导的非限定从句不能置于句首。\n五、介词+关系代词：介词+which（物）/whom（人）；介词取决于从句动词搭配或先行词：the house in which I live=where。\n六、whose=of which：whose roof=the roof of which；先行词为way时关系词用that/in which/省略。",
+          "annotation": "用成分分析法：从句缺主语或宾语用关系代词，不缺成分用关系副词；what不能引导定语从句；that在非限定从句与介词后被禁用。",
+          "explanation": "上海卷常考where引导的分隔定语从句、介词+which/whom、as与which指代全句的区别。",
+          "examples": [
+            "This is the village where / in which my grandmother used to live.",
+            "As is reported in the newspaper, the new bridge will open next month.",
+            "I will never forget the day on which / when I first came to Shanghai.",
+            "He has passed the entrance exam, which makes his parents very proud."
+          ],
+          "test_points": ["gr-tp-4"]
+        },
+        {
+          "id": "noun-clauses",
+          "title": "名词性从句",
+          "content": "一、范围：主语从句、宾语从句、表语从句、同位语从句。that只起连接作用、不充当成分、无词义（宾语从句中可省，其余一般不省）；whether/if表“是否”；连接代词who、whom、whose、what、which、whoever、whatever在从句中充当主、宾、表、定语；连接副词when、where、why、how作状语。\n二、what与that：what在从句中必须充当成分且意为“所……的事物”，that不充当成分。What he said sounds reasonable。\n三、it作形式主语或形式宾语：It is known to all that...；I take it that...；see to it that...。\n四、whether与if：介词之后、不定式之前、句首主语从句、表语/同位语从句、与or not直接连用时只用whether。\n五、同位语从句：跟在news、fact、hope、idea、belief、truth、possibility、suggestion等抽象名词后，that不省、不作成分；定语从句中的that须作成分。\n六、时态呼应：主句过去时，从句相应改为过去时态，但客观真理保持一般现在时。",
+          "annotation": "The news that he won the prize is true（同位语，that不作成分）与The news that he told me is true（定语从句，that作told宾语）要分清。",
+          "explanation": "高频点：what/that引导词选择、whether的使用场景、同位语从句与定语从句辨析及it形式主语句。",
+          "examples": [
+            "Whether the meeting will be put off has not been decided yet.",
+            "What surprised us most was that he spoke Chinese so well.",
+            "The fact that he has not said anything about the plan surprises us all.",
+            "Whoever leaves the classroom last should remember to turn off the lights."
+          ],
+          "test_points": ["gr-tp-4"]
+        },
+        {
+          "id": "adverbial-clause",
+          "title": "状语从句：时间、条件、让步与目的",
+          "content": "一、时间：when、while、as（随着、一边……一边）、before（不知不觉就、才）、since（自从，主句用完成时）、till/until（not...until直到……才）；名词短语和副词引导：the moment、the minute、immediately、directly、each time、every time。\n二、一……就：Hardly...when...、No sooner...than...，主句用过去完成时且部分倒装：Hardly had I arrived when it began to rain。\n三、条件：if、unless（=if...not）、as/so long as、on condition that、provided/providing that、in case（万一）；遵循“主将从现”。\n四、让步：though/although（不与but连用，可与yet、still连用）、even though/even if、while（尽管，只用于句首）、as（必须倒装：Child as he is, ...）、whether...or、疑问词+ever=no matter+疑问词。\n五、目的：so that、in order that（从句含can、could、may、might），for fear that、lest（以免）。\n六、结果：so+adj./adv....that；such+(a/an)+adj.+n....that；so many/much/few/little+n.。",
+          "annotation": "as引导让步状语必须将表语或状语提前，且单数名词提前时去掉冠词；while表“尽管”只能位于句首。",
+          "explanation": "上海卷常把Hardly...when倒装、unless条件、as让步倒装及so/such...that结果句型放入单句辨析。",
+          "examples": [
+            "Hardly had I arrived home when it began to pour with rain.",
+            "Child as he is, he knows a great deal about computers.",
+            "You will be late unless you hurry up right now.",
+            "The teacher spoke loudly so that all the students could hear her clearly."
+          ],
+          "test_points": ["gr-tp-4"]
+        }
+      ]
+    },
+    {
+      "id": "special",
+      "name": "特殊句式",
+      "items": [
+        {
+          "id": "inversion",
+          "title": "倒装句",
+          "content": "一、完全倒装：①here、there、up、down、in、out、away、now、then等方位或时间副词位于句首且谓语为come、go、lie、stand、sit等不及物动词、主语为名词时全倒装（Here comes the bus）；主语为代词不倒装（Here it is）。②表语或介词短语位于句首保持句子平衡：On the wall hangs a painting。\n二、部分倒装（助动词、情态动词或be提至主语前）：①否定或半否定词置句首：never、hardly、scarcely、seldom、rarely、little、nowhere、by no means、in no case、at no time、not only、not until、no sooner；②only+状语（副词、介词短语、状语从句）置句首：Only in this way can we succeed，only修饰主语不倒装；③so/neither/nor+助/be/情+主语表“也（不）”，而so+主语+助动词表赞同、不倒装；④so...that中so+adj./adv.置句首；⑤省略if的虚拟句；⑥as/though让步倒装。",
+          "annotation": "Not until从句不倒装、主句倒装：Not until he came back did I go to bed；Not only倒装所在分句，but also分句用正常语序。",
+          "explanation": "高频点：否定副词置句首、only+状语、Not only...but also...及so...that前置引起的部分倒装。",
+          "examples": [
+            "Never before have I seen such a wonderful science fiction film.",
+            "Only when you have lost your health will you realize its value.",
+            "Not only does he study hard, but he is also ready to help others.",
+            "So loudly did he speak that even people in the next room could hear him."
+          ],
+          "test_points": ["gr-tp-5"]
+        },
+        {
+          "id": "emphatic",
+          "title": "强调句",
+          "content": "一、基本结构：It is/was+被强调部分+that/who+句子其余部分。强调人可用who/whom，强调物、时间、地点、原因、方式等一律用that。\n二、判断方法：删去It is/was和that/who后，剩余部分仍能组成完整正确的句子，即为强调句。\n三、可强调主语、宾语和各类状语（含because引导的原因状语），不能强调谓语动词；强调谓语用do/does/did+动词原形：He did tell me the truth。\n四、一般疑问式：Is/Was it+被强调部分+that...；特殊疑问式：疑问词+is/was it that+陈述语序：When was it that you met him?\n五、not...until的强调：It is/was not until+时间状语+that+肯定句（that之后不倒装）。\n六、与定语从句辨析：It was in the park that I met him（强调句，in the park为完整状语）；It was the park where I met him（定语从句，where在从句中作状语）。",
+          "annotation": "强调时间、地点状语仍用that，不能用when或where；强调句中的that不作任何句子成分。",
+          "explanation": "上海卷常考特殊疑问强调式、not until强调句型以及强调句与定语从句混合辨析。",
+          "examples": [
+            "It was only when I reread the poem that I began to appreciate its beauty.",
+            "It was not until midnight that he finished his chemistry experiment.",
+            "Where was it that you picked up the black wallet yesterday?",
+            "She does sing well whenever there is a party in our class."
+          ],
+          "test_points": ["gr-tp-5"]
+        },
+        {
+          "id": "ellipsis",
+          "title": "省略句",
+          "content": "一、状语从句省略：从句主语与主句主语一致（或从句为it is...）且谓语含be动词时，可省去“主语+be”，构成连词+doing/done/adj./介词短语：When (you are) in Rome, do as the Romans do；If (it is) necessary, ...；Though (he was) tired, he kept working。doing与done的选择看与逻辑主语的主被动关系。\n二、不定式省略：为避免重复，承前省略动词、保留符号to：—Would you like to join us? —I'd love to；但to后的be动词和助动词have通常保留：He is no longer what he used to be。\n三、替代性省略：hope、think、believe、suppose、expect、be afraid后用so替代肯定从句，用not替代否定从句（I hope not）；用do/does/did替代实义动词，one/ones/that/those替代名词。\n四、并列句中相同成分可承前省略：Some study English, others (study) Japanese。\n五、惯用省略：What if...? How/What about doing...? Why not do...? If only...! 比较状语从句也常省略与主句相同的部分。",
+          "annotation": "连词后接doing还是done取决于逻辑主语与动词的主被动；Though told many times=Though he was told many times。",
+          "explanation": "高频考查状语从句省略中的doing/done选择、不定式保留to以及I hope not等简答替代。",
+          "examples": [
+            "While reading the novel, he nodded off from time to time.",
+            "—Will it rain tomorrow? —I hope not. We are having a picnic.",
+            "Though told many times, he still made the same mistake in the test.",
+            "Once begun, the project must be continued without any change."
+          ],
+          "test_points": ["gr-tp-5"]
+        },
+        {
+          "id": "tag-question",
+          "title": "反意疑问句",
+          "content": "一、总原则：“前肯后否，前否后肯”；疑问部分的be动词、助动词、情态动词与陈述部分一致，主语一律用代词。\n二、there be句型疑问部分用there；以this/that作主语用it，these/those用they；everything、nothing用it，everyone、somebody、nobody多用they。\n三、祈使句用will you/won't you/can you；Let's...用shall we；Let us/me...用will you；I'm...用aren't I。\n四、含never、seldom、hardly、little、few、no、nobody、nothing等否定或半否定词视为否定句，后接肯定疑问；含un-、im-等否定前缀的词仍视为肯定。\n五、主句主语为第一人称且谓语为think、believe、suppose、expect、imagine加宾语从句时，疑问部分随从句，并考虑否定转移；其他人称随主句。\n六、must表推测时按其后动词的实际时态反问：He must be tired, isn't he；有明确过去时间用didn't，无过去时间、强调完成用hasn't；have to用don't，used to用didn't/usedn't。",
+          "annotation": "I don't think he is right, is he?（否定转移到从句，反问从句用肯定）；回答依据事实：事实肯定用Yes，事实否定用No。",
+          "explanation": "高频点为否定转移句反问、must have done的反问时态、Let's...用shall we及否定词判定。",
+          "examples": [
+            "He seldom goes to the cinema with his family, does he?",
+            "I don't believe she knows the secret about the party, does she?",
+            "Let's take a short break after two classes, shall we?",
+            "You must have watched the football match last night, didn't you?"
+          ],
+          "test_points": ["gr-tp-5"]
+        }
+      ]
+    },
+    {
+      "id": "agreement",
+      "name": "主谓一致与平行结构",
+      "items": [
+        {
+          "id": "agreement-principles",
+          "title": "就远原则与就近原则",
+          "content": "一、语法一致（就远/就前原则）：主语后接with、along with、together with、as well as、besides、except、but、rather than、including、in addition to、like等引导的短语时，谓语与短语前的真正主语一致：Tom, as well as his friends, is coming。\n二、就近原则：①there be、here be句型；②not only...but also...、neither...nor...、either...or...、not...but...、or、nor连接并列主语，谓语随最近的主语：Either you or I am wrong；③完全倒装句中谓语与其后主语一致。\n三、整体概念用单数：表时间、金钱、距离、重量的复数名词作整体看待；书名、报刊名、国名（the United States）作单数。\n四、a number of+复数名词（许多，谓语复数）与the number of+复数名词（……的数量，谓语单数）；a quantity of随名词，quantities of一律复数。\n五、many a+单数名词、more than one+单数名词谓语用单数；one and a half+复数名词谓语用单数。",
+          "annotation": "就远看插入短语之前的主语，就近看or、nor、but also及there be之后的主语；quantities of不论名词可数与否一律用复数谓语。",
+          "explanation": "上海卷常把as well as、neither...nor...、the number of及时间金钱总量放在单句中综合考查。",
+          "examples": [
+            "The teacher together with some students is visiting the science museum.",
+            "Neither the manager nor his assistants were on duty that cold day.",
+            "The number of foreign students in our school is increasing year by year.",
+            "Twenty miles seems a long distance for a child only five years old."
+          ],
+          "test_points": ["gr-tp-6"]
+        },
+        {
+          "id": "collective-and",
+          "title": "集合名词与and连接的主语",
+          "content": "一、集合名词family、team、class、audience、committee、government、public、crowd、group：视为整体时谓语单数，强调成员各自行动时谓语复数：The family is large / The family are watching TV。\n二、只作复数的集合名词：people、police、cattle、poultry、youth（总称）；只作单数的总称名词：machinery、equipment、furniture、luggage、clothing、poetry、scenery。\n三、and连接两个主语：指不同的人或物时谓语复数；指同一人、同一物或同一概念（第二个名词通常无冠词）时谓语单数：The teacher and writer is coming（教师兼作家）；Bread and butter is my breakfast；Fish and chips is popular。\n四、each/every/no/many a+单数名词+and+(each/every/no)+单数名词，谓语用单数：Every boy and every girl has a badge。\n五、不定代词everyone、everybody、someone、anyone、nobody、no one、something、everything、each、either、neither、one谓语用单数；none可单可复。\n六、分数、百分数、half、part、the rest及some of、most of、plenty of作主语时随of后的名词或前文名词。",
+          "annotation": "一个冠词管两个名词表同一人（the singer and dancer一人），两个冠词表两人（the singer and the dancer）；分数谓语看of后名词。",
+          "explanation": "高频考查family等词的整体与成员之辨、and表同一概念以及分数百分数结构的主谓一致。",
+          "examples": [
+            "My family are all fond of going to concerts at weekends.",
+            "The knife and fork is placed neatly beside the white plate.",
+            "Every man and every woman in the village has the right to vote.",
+            "About 70 percent of the earth's surface is covered with water."
+          ],
+          "test_points": ["gr-tp-6"]
+        },
+        {
+          "id": "parallelism",
+          "title": "平行并列结构",
+          "content": "一、并列连词both...and...、either...or...、neither...nor...、not only...but also...、not...but...、rather than以及and、or、but连接的成分必须语法对等：词对词、短语对短语、从句对从句。\n二、非谓语并列形式统一：to do and (to) do（第二个to可省）；doing...and doing；done...and done。\n三、比较对象必须同类：The weather in Shanghai is warmer than that in Beijing（that指代weather，不可省略）。\n四、解题三步：①找出并列连词；②比较连词两侧结构是否同类；③检查时态、语态、非谓语形式及介词是否前后一致。\n五、介词陷阱：动词或形容词与不同介词搭配时介词不可省略：She is interested in and good at painting（in与at都要保留）。\n六、常用平行句型：prefer to do rather than do、would rather do than do、prefer doing to doing、not only...but also...前后结构对称。",
+          "annotation": "用“对称性”秒杀：动名词对动名词、不定式对不定式、名词对名词；比较对象不同类时用that/those补齐。",
+          "explanation": "上海卷常在词汇与语法结合题中考查rather than、prefer...to...及比较对象一致的平行结构。",
+          "examples": [
+            "We should not only study hard but also keep ourselves fit.",
+            "To learn English well, you need more practice rather than more excuses.",
+            "The population of China is larger than that of any other country in Asia.",
+            "He would rather stay at home than go shopping with his parents."
+          ],
+          "test_points": ["gr-tp-6"]
+        }
+      ]
+    },
+    {
+      "id": "pronoun-article",
+      "name": "代词冠词与介词",
+      "items": [
+        {
+          "id": "it-one-that",
+          "title": "it用法与one、that的区分",
+          "content": "一、it：①指代上文提到的同一事物（同名同物）；②作形式主语或形式宾语（It is no use doing；find it+adj.+to do）；③构成强调句；④指代天气、时间、距离、环境；⑤固定句型I hate it when...、I would appreciate it if...、see to it that...、take it for granted that...、when it comes to...。\n二、one：同名异物、泛指“一个”，相当于a/an+单数可数名词，复数ones；可带定语：the one（特指）、a better one。\n三、that：同名异物、特指，相当于the+单数可数或不可数名词，后常接of/in短语，多用于比较结构；复数those=the ones。\n四、对照：I lost my pen and I am looking for it（同一支）；I need to buy a new one（另一支，泛指）；The weather here is better than that in Beijing（特指不可数）。\n五、反身代词搭配：enjoy oneself、teach oneself、devote oneself to、dress oneself、seat oneself、help oneself to、by oneself、for oneself。\n六、another（另一个、再一个）、the other（两者中另一个）、others（别的一些）、the others（剩余全部）；each用于两者或以上，every用于三者以上。",
+          "annotation": "it指人只用于敲门、打电话等场合（Who is it?）；that可替代不可数名词，one不能；比较结构中复数用those。",
+          "explanation": "高频点为appreciate it if等形式宾语、it/one/that的指代替换及比较结构中的that/those。",
+          "examples": [
+            "I like this house with a beautiful garden, but I don't have enough money to buy it.",
+            "Mr. Zhang gave me a valuable present, one that I had never expected.",
+            "The books on the desk are easier than those / the ones on the shelf.",
+            "I would appreciate it if you could give me an early reply."
+          ],
+          "test_points": ["gr-tp-7"]
+        },
+        {
+          "id": "articles",
+          "title": "冠词活用",
+          "content": "一、不定冠词a/an：①首次提到、某一个；②表类别（A horse is a useful animal）；③表every/per：twice a day；④a most=very（a most interesting book）；⑤抽象名词具体化：a success、a surprise、a pleasure、an honor、a shame、a great help；⑥a knowledge of、a collection of。\n二、定冠词the：①特指上文提过或双方皆知的人/物；②the+形容词表一类人（the rich、the wounded），作复数；③the+单数可数名词表类别；④the+比较级..., the+比较级...；⑤乐器、方位、序数词、最高级前；⑥the+姓氏复数表一家人（the Greens）；⑦the 1990s。\n三、零冠词：①复数或不可数名词表泛指；②称呼语及表示独一职位的名词作表语、补语、同位语（elect sb. president）；③学科、球类、棋类、三餐、月份、星期、节日；④by bus/bike/air表交通方式；⑤as/though让步倒装句中的名词（Child as he is）；⑥man表人类、word表消息。\n四、特殊：a Mr. Wang一位姓王的先生；take/pull sb. by the arm、hit sb. in the face（动词+人+介词+the+身体部位）。",
+          "annotation": "a second表“再一、又一”，the second表顺序“第二”；most表“非常”及物主代词后的最高级前不加the（my best friend）。",
+          "explanation": "上海卷常考抽象名词具体化（a success）、the+形容词指一类人、职位零冠词及the+姓氏复数。",
+          "examples": [
+            "The evening party held last weekend was a great success.",
+            "The wounded were immediately sent to the nearby hospital.",
+            "Dr. Smith was elected president of the famous university last year.",
+            "I go to the cinema with my parents twice a month."
+          ],
+          "test_points": ["gr-tp-7"]
+        },
+        {
+          "id": "prepositions",
+          "title": "常考介词搭配",
+          "content": "一、时间介词：at+时刻及at noon、at night、at weekends；in+年、月、季节、上午下午，in+时间段表“再过多久”；on+具体某天或某天的早中晚（on a cold morning、on hearing the news）；for+时间段、since+时间点、by+截止时间、during、within。\n二、地点介词：at+小地点，in+大地点或内部，on+表面；above/below表高低，over/under表垂直上下或覆盖；across横过平面，through穿过立体空间；between两者之间，among三者以上之间。\n三、动词搭配：result in导致、result from由……引起；consist of由……组成、consist in在于；agree with人或话、agree to计划、agree on达成一致；apply for申请、apply to适用于；insist on、suffer from、protect...from、remind sb. of、rob sb. of sth.、blame sb. for。\n四、形容词搭配：be strict with sb./in sth.、be popular with/among、be familiar with（人熟悉物）、be familiar to（物为人所熟知）、be sensitive to、be patient with。\n五、名词搭配：key、answer、entrance、approach、attitude、introduction、notes后接to；reason for、cause of、effect on、advantage over、difficulty (in) doing。",
+          "annotation": "to是介词还是不定式符号是命题富矿：the approach to doing、be opposed to doing、object to doing后都须用动名词。",
+          "explanation": "高频点为具体某天的早中晚用on、familiar with/to辨析、approach/key to中的介词to及V+sb.+of sth.搭配。",
+          "examples": [
+            "She is said to be familiar with several European languages.",
+            "The key to solving the social problem lies in education.",
+            "Children are warned not to play on the thin ice in winter.",
+            "There is a growing demand for well-trained nurses in the city."
+          ],
+          "test_points": ["gr-tp-7"]
+        }
+      ]
+    },
+    {
+      "id": "comparison",
+      "name": "比较结构与情态表达",
+      "items": [
+        {
+          "id": "multiples",
+          "title": "倍数表达",
+          "content": "一、三个基本句型（A是B的几倍）：①A+be+倍数+as+形容词/副词原级+as+B：This room is three times as large as that one；②A+be+倍数+形容词/副词比较级+than+B；③A+be+倍数+the size/height/length/weight/width/depth/amount+of+B。\n二、倍数词：twice、three times、half、a quarter、one third、double、triple；分数写法为“分子基数词、分母序数词，分子大于一，分母加s”：two thirds；百分数用“基数+percent”，谓语随of后名词。\n三、度量名词句型：The new highway is three times the length of the old one。\n四、比较级的修饰语：much、far、a lot、a great deal、a little、a bit、slightly、even、still、any、no及具体数量词（three meters longer）；very、quite不能修饰比较级。\n五、最高级句型：the+最高级+of/among/in+范围；one of the+最高级+复数名词；the second longest river。\n公式：倍数始终放在as...as或比较级之前。",
+          "annotation": "倍数词位置永远在as或比较级之前：twice as much as（√），as twice much as（×）；分数作主语时谓语看of后名词。",
+          "explanation": "上海卷常把倍数句型与主谓一致、数量名词结合考查，重点识别times+as...as的语序。",
+          "examples": [
+            "The new library is four times the size of the old one.",
+            "This smart phone costs twice as much as that one but works far better.",
+            "The new underground line is 1.5 times longer than the old one.",
+            "Two thirds of the students in this class take part in sports clubs."
+          ],
+          "test_points": ["gr-tp-8"]
+        },
+        {
+          "id": "the-more-the-more",
+          "title": "the more...the more...句型",
+          "content": "一、结构：The+比较级（+主语+谓语）, the+比较级（+主语+谓语），意为“越……，就越……”；前一分句是程度状语从句，后一分句是主句，遵循“主将从现”：The more you practise, the more confident you will become。\n二、含名词时名词须随比较级一并提前：The more books you read, the richer knowledge you will gain；The harder you work, the better results you will get。\n三、两个the都不能省略；口语中可省略主谓形成The sooner, the better、The more, the merrier。\n四、“比较级+and+比较级”表“越来越……”：harder and harder；多音节形容词用more and more beautiful。\n五、两者之中“更……的那一个”用the+比较级+of the two：He is the taller of the two brothers。\n六、比较级可带不定冠词表“更……的一个”：a more interesting book；最高级前带a/an或物主代词时不表最高级含义。",
+          "annotation": "前后分句均须以the+比较级开头；名词要提到比较级之后、主语之前，不能留在句末。",
+          "explanation": "高频点为the more...the more...的语序、名词前移及“比较级+and+比较级”与the more句型的区分。",
+          "examples": [
+            "The more careful you are, the fewer mistakes you will make in the exam.",
+            "The more you give to others, the more you will receive in return.",
+            "Our school campus is becoming more and more beautiful these years.",
+            "The harder the task is, the more interested the boy becomes in it."
+          ],
+          "test_points": ["gr-tp-8"]
+        },
+        {
+          "id": "comparative-negative",
+          "title": "比较级否定表最高级",
+          "content": "一、“否定词+比较级”表达最高级含义：①can't/couldn't+be/实义动词+比较级：It couldn't be better=It is the best；②nothing/nobody/no one+比较级+than：Nothing is more precious than time=Time is the most precious；③never+a/an+比较级+单数名词：I have never spent a more worrying day=the most worrying day。\n二、用比较级表达最高级：比较级+than+any other+单数名词、any of the other+复数名词、anyone else或the rest of：He is taller than any other student in his class。比较范围不在同一群体时不加other：China is larger than any country in Africa。\n三、no与not加比较级的区别：no more than=only（仅仅，强调少），not more than=at most（不超过）；no less than=as much as（多达），not less than（不少于）。\n四、no+比较级+than表“两者都不……”：He is no more careful than you=你俩都不细心。\n五、the last+名词+to do/定语从句表“最不可能……的”：He is the last person to tell a lie。",
+          "annotation": "than any other后接单数名词，且必须把自身排除出比较范围；否定词与比较级同现即考虑最高级含义。",
+          "explanation": "上海卷常考can't be better类口语评价、never a better...及than any other+单数名词。",
+          "examples": [
+            "—What do you think of the film? —Wonderful! It couldn't be better.",
+            "Nothing is more important than to protect the environment we live in.",
+            "Mr. Li is more patient than any other teacher in our school.",
+            "I have never read a more moving science fiction novel than this one."
+          ],
+          "test_points": ["gr-tp-8"]
         }
       ]
     }
   ],
   "test_points": [
     {
-      "id": "grammar-1",
-      "name": "一般时态",
+      "id": "gr-tp-1",
+      "name": "时态语态综合",
       "questions": [
         {
-          "content": "The earth _____ around the sun.",
-          "options": ["moves", "moved", "will move", "has moved"],
-          "answer": "moves",
-          "explanation": "一般现在时表示客观事实或规律。地球绕太阳转是客观事实，用一般现在时。",
+          "content": "—Why didn't you go to the jazz concert with us last night? —I ____ a report on environmental protection and couldn't spare any time.",
+          "options": ["A. write", "B. had written", "C. was writing", "D. have written"],
+          "answer": "C. was writing",
+          "explanation": "答话人解释昨晚音乐会期间“正在写报告”而走不开，过去某一时间段内正在进行的背景动作用过去进行时。",
           "source": "2023年上海高考英语卷"
         },
         {
-          "content": "He _____ to Beijing last week.",
-          "options": ["goes", "went", "will go", "has gone"],
-          "answer": "went",
-          "explanation": "一般过去时表示过去发生的动作。last week表示过去时间，用一般过去时。",
-          "source": "2022年上海市重点高中高一期末联考"
+          "content": "The old temple, which ____ on top of the hill for over eight hundred years, attracts thousands of visitors every year.",
+          "options": ["A. stands", "B. is standing", "C. has stood", "D. had stood"],
+          "answer": "C. has stood",
+          "explanation": "for over eight hundred years与现在相联系，说明动作从过去持续到现在，用现在完成时；stand此处为延续性动词。",
+          "source": "2024年上海高考英语卷"
+        },
+        {
+          "content": "Hurry up! The flight to Xi'an ____ at seven o'clock, and we only have twenty minutes left.",
+          "options": ["A. takes off", "B. has taken off", "C. is taking off", "D. took off"],
+          "answer": "A. takes off",
+          "explanation": "表示按时刻表、日程表规定将要发生的动作，用一般现在时表示将来，故选takes off。",
+          "source": "2024年复旦附中高二月考"
+        },
+        {
+          "content": "The new safety rules ____ to all the employees at tomorrow's meeting, so everyone is required to be present.",
+          "options": ["A. will explain", "B. will be explained", "C. have explained", "D. are explaining"],
+          "answer": "B. will be explained",
+          "explanation": "rules与explain之间是被动关系，时间状语at tomorrow's meeting指向将来，故用一般将来时的被动语态will be explained。",
+          "source": "2023年上海中学高一期末"
+        },
+        {
+          "content": "The little boy got ____ (lose) in the crowded shopping mall yesterday afternoon.",
+          "answer": "lost",
+          "explanation": "get done结构表示主语的遭遇，get lost意为“迷路”，lose用其过去分词形式lost。",
+          "source": "2024年七宝中学单元测验"
         }
       ]
     },
     {
-      "id": "grammar-2",
-      "name": "完成时态",
+      "id": "gr-tp-2",
+      "name": "非谓语动词综合",
       "questions": [
         {
-          "content": "I _____ my homework already.",
-          "options": ["finish", "finished", "have finished", "had finished"],
-          "answer": "have finished",
-          "explanation": "现在完成时表示过去发生的动作对现在造成的影响。already常用于现在完成时。",
+          "content": "____ in the 1920s, the old library has witnessed the great changes of the city over the past century.",
+          "options": ["A. Building", "B. Built", "C. Having built", "D. To build"],
+          "answer": "B. Built",
+          "explanation": "句子主语the old library与build是被动关系，图书馆“被建造”，作时间/原因状语用过去分词built。",
           "source": "2023年上海高考英语卷"
         },
         {
-          "content": "By the time he _____ home, his wife had prepared dinner.",
-          "options": ["gets", "got", "has got", "had got"],
-          "answer": "got",
-          "explanation": "过去完成时表示过去的过去发生的动作。had prepared是过去完成时，主句发生在它之前，用一般过去时got。",
-          "source": "2022年上海市重点高中高二期末联考"
+          "content": "The young manager is reported ____ a new marketing plan, which is expected to double the sales of the company.",
+          "options": ["A. designing", "B. designed", "C. to have designed", "D. design"],
+          "answer": "C. to have designed",
+          "explanation": "be reported后接不定式；“设计方案”发生在报道之前并已完成，用不定式完成式to have designed。",
+          "source": "2024年上海高考英语卷"
+        },
+        {
+          "content": "____ the challenging task ahead of time, the research team decided to hold a small celebration party.",
+          "options": ["A. Accomplishing", "B. Accomplished", "C. Having accomplished", "D. To accomplish"],
+          "answer": "C. Having accomplished",
+          "explanation": "团队与accomplish是主动关系，且“完成任务”先于“决定庆祝”，用现在分词完成式having accomplished。",
+          "source": "2024年复旦附中高二月考"
+        },
+        {
+          "content": "I still remember ____ to the Bund for the first time as a child and being deeply impressed by the night views.",
+          "options": ["A. taking", "B. to take", "C. being taken", "D. having taken"],
+          "answer": "C. being taken",
+          "explanation": "remember doing表示记得做过某事；主语小时候是“被带往”外滩，须用动名词的被动式being taken。",
+          "source": "2023年上海中学高一期末"
+        },
+        {
+          "content": "With so much homework ____ (do), Tom has to give up his plan to play football this afternoon.",
+          "answer": "to do",
+          "explanation": "with复合结构中，作业尚未做、有待完成，用不定式to do表示将来要做的事情。",
+          "source": "2024年七宝中学单元测验"
         }
       ]
     },
     {
-      "id": "grammar-3",
-      "name": "被动语态",
+      "id": "gr-tp-3",
+      "name": "情态动词与虚拟语气",
       "questions": [
         {
-          "content": "The book _____ by millions of people worldwide.",
-          "options": ["has read", "has been read", "is reading", "reads"],
-          "answer": "has been read",
-          "explanation": "现在完成时的被动语态：has/have + been + 过去分词。书是被读的，用被动语态。",
+          "content": "Sorry, I'm late. I ____ have turned off the alarm clock when it rang this morning, for I didn't hear it at all.",
+          "options": ["A. should", "B. might", "C. must", "D. can"],
+          "answer": "C. must",
+          "explanation": "由for I didn't hear it at all可知说话人对过去情况作极有把握的肯定推测，用must have done，意为“肯定把闹钟关掉了”。",
           "source": "2023年上海高考英语卷"
         },
         {
-          "content": "If more trees _____, the air will be fresher.",
-          "options": ["are planted", "will be planted", "were planted", "planted"],
-          "answer": "are planted",
-          "explanation": "条件状语从句中用一般现在时表示将来，主语与动词是被动关系，用被动语态。",
-          "source": "2022年上海市重点高中高一期末联考"
+          "content": "If the ancient workers ____ this building method, the construction of the palace would have taken much longer.",
+          "options": ["A. didn't use", "B. hadn't used", "C. haven't used", "D. weren't using"],
+          "answer": "B. hadn't used",
+          "explanation": "主句would have taken表明与过去事实相反，if从句须用过去完成时hadn't used。",
+          "source": "2024年上海高考英语卷"
+        },
+        {
+          "content": "____ it not been for the captain's calmness, the passengers would have been in great danger during the storm.",
+          "options": ["A. If", "B. Were", "C. Had", "D. Should"],
+          "answer": "C. Had",
+          "explanation": "与过去事实相反的虚拟条件句省略if后将had提至句首，构成Had it not been for...（要不是因为……）。",
+          "source": "2024年复旦附中高二月考"
+        },
+        {
+          "content": "The doctor strongly suggested that the patient ____ on a strict diet to bring his blood pressure under control.",
+          "options": ["A. goes", "B. went", "C. go", "D. would go"],
+          "answer": "C. go",
+          "explanation": "suggest表“建议”时，宾语从句用虚拟语气（should）+动词原形，should可省略，故选go。",
+          "source": "2023年上海中学高一期末"
+        },
+        {
+          "content": "Look at the trouble I am in! If only I ____ (take) your advice then.",
+          "answer": "had taken",
+          "explanation": "if only表“要是……就好了”，由then可知与过去事实相反，从句用过去完成时had taken。",
+          "source": "2024年七宝中学单元测验"
         }
       ]
     },
     {
-      "id": "grammar-4",
-      "name": "名词性从句",
+      "id": "gr-tp-4",
+      "name": "复合句综合",
       "questions": [
         {
-          "content": "_____ he said at the meeting surprised everyone.",
-          "options": ["What", "That", "When", "Where"],
-          "answer": "What",
-          "explanation": "What引导主语从句，表示'他所说的'，在从句中作said的宾语。That只起连接作用无含义。",
+          "content": "The environmental exhibition tells us ____ we should take action immediately to reduce air pollution in big cities.",
+          "options": ["A. that", "B. which", "C. what", "D. whether"],
+          "answer": "A. that",
+          "explanation": "宾语从句we should take action...结构和意义均完整，不缺成分，用只起连接作用的that引导。",
           "source": "2023年上海高考英语卷"
         },
         {
-          "content": "I don't know _____ he will come or not.",
-          "options": ["that", "whether", "which", "what"],
-          "answer": "whether",
-          "explanation": "whether可以与or not连用，而if不能。if有'如果'的含义，此处表示'是否'，用whether。",
-          "source": "2022年上海市重点高中高二期末联考"
+          "content": "The reference book has helped me greatly in my study, especially at work ____ a fresh idea is badly needed.",
+          "options": ["A. which", "B. that", "C. where", "D. what"],
+          "answer": "C. where",
+          "explanation": "先行词为抽象的work，定语从句不缺主宾而缺地点状语（在工作中），用关系副词where=at which。",
+          "source": "2024年上海高考英语卷"
+        },
+        {
+          "content": "____ is often the case with elderly people, my grandfather enjoys talking about the good old days.",
+          "options": ["A. Which", "B. It", "C. That", "D. As"],
+          "answer": "D. As",
+          "explanation": "as引导非限定性定语从句并可位于句首，指代整个主句内容，as is often the case为固定表达，意为“情况常常如此”。",
+          "source": "2024年复旦附中高二月考"
+        },
+        {
+          "content": "After months of voyage, Columbus arrived in ____ later proved to be a new continent.",
+          "options": ["A. where", "B. what", "C. which", "D. that"],
+          "answer": "B. what",
+          "explanation": "介词in后接宾语从句，从句中缺少主语且意为“……的地方”，用连接代词what=the place that；where不能作主语。",
+          "source": "2023年上海中学高一期末"
+        },
+        {
+          "content": "Hardly ____ the speaker finished his speech when the audience burst into thunderous applause.",
+          "answer": "had",
+          "explanation": "Hardly...when...句型主句用过去完成时且部分倒装，助动词had提至主语前，故填had。",
+          "source": "2024年七宝中学单元测验"
         }
       ]
     },
     {
-      "id": "grammar-5",
-      "name": "定语从句",
+      "id": "gr-tp-5",
+      "name": "特殊句式综合",
       "questions": [
         {
-          "content": "The book _____ cover is blue is mine.",
-          "options": ["whose", "which", "that", "who"],
-          "answer": "whose",
-          "explanation": "whose引导定语从句，表示所属关系，在从句中作cover的定语。whose = the book's。",
+          "content": "It was not until near the end of the letter ____ she mentioned her own plan for the winter holiday.",
+          "options": ["A. that", "B. when", "C. where", "D. which"],
+          "answer": "A. that",
+          "explanation": "本句为not...until的强调句型It is/was not until...that...，强调时间状语，连词只能用that。",
           "source": "2023年上海高考英语卷"
         },
         {
-          "content": "This is the best movie _____ I have ever seen.",
-          "options": ["which", "that", "what", "where"],
-          "answer": "that",
-          "explanation": "先行词被最高级修饰，定语从句只能用that引导。",
-          "source": "2022年上海市重点高中高一期末联考"
+          "content": "Only after they had carried out hundreds of experiments ____ the technical problem successfully.",
+          "options": ["A. they solved", "B. did they solve", "C. they did solve", "D. solved they"],
+          "answer": "B. did they solve",
+          "explanation": "only+after引导的时间状语从句位于句首，主句须部分倒装，借助助动词did，即did they solve。",
+          "source": "2024年上海高考英语卷"
+        },
+        {
+          "content": "____ for the free tickets provided by the community, I would not have gone to the theatre so often last year.",
+          "options": ["A. If it is not", "B. Were it not", "C. Had it not been", "D. If they were not"],
+          "answer": "C. Had it not been",
+          "explanation": "由would not have gone及last year可知与过去事实相反；省略if后将had提前，构成Had it not been for（要不是）。",
+          "source": "2024年复旦附中高二月考"
+        },
+        {
+          "content": "—Alice, why didn't you come to our party yesterday? —I ____, but I had an unexpected visitor from abroad.",
+          "options": ["A. had", "B. would", "C. was going to", "D. did"],
+          "answer": "C. was going to",
+          "explanation": "答语意为“我本打算来的，但突然来了客人”，be going to表示原计划、原打算，省略come后保留was going to。",
+          "source": "2023年上海中学高一期末"
+        },
+        {
+          "content": "Be quiet and listen to me carefully, ____ you?",
+          "answer": "will",
+          "explanation": "陈述部分为祈使句，反意疑问部分通常用will you提出请求，故填will。",
+          "source": "2024年七宝中学单元测验"
         }
       ]
     },
     {
-      "id": "grammar-6",
-      "name": "状语从句",
+      "id": "gr-tp-6",
+      "name": "主谓一致与平行结构",
       "questions": [
         {
-          "content": "_____ it was raining heavily, we still went out.",
-          "options": ["Although", "Because", "If", "Unless"],
-          "answer": "Although",
-          "explanation": "although引导让步状语从句，表示'虽然...但是...'。because表示原因，不符合语境。",
+          "content": "Basketball, as well as football and badminton, ____ very popular among the students in our school.",
+          "options": ["A. is", "B. are", "C. were", "D. have been"],
+          "answer": "A. is",
+          "explanation": "主语后接as well as短语时遵循就远原则，谓语与真正的主语Basketball一致，用单数is。",
           "source": "2023年上海高考英语卷"
         },
         {
-          "content": "He will call you as soon as he _____ home.",
-          "options": ["gets", "got", "will get", "has got"],
-          "answer": "gets",
-          "explanation": "as soon as引导时间状语从句，从句用一般现在时表示将来，主语是第三人称单数，动词加s。",
-          "source": "2022年上海市重点高中高二期末联考"
+          "content": "Neither the experienced teacher nor the new students ____ satisfied with the result of the physics experiment.",
+          "options": ["A. is", "B. was", "C. are", "D. be"],
+          "answer": "C. are",
+          "explanation": "neither...nor...连接并列主语遵循就近原则，谓语随靠近的the new students，用复数are。",
+          "source": "2024年上海高考英语卷"
+        },
+        {
+          "content": "The number of students who ____ joined the after-school English club ____ increasing every year.",
+          "options": ["A. have; is", "B. has; is", "C. have; are", "D. has; are"],
+          "answer": "A. have; is",
+          "explanation": "定语从句先行词为students，从句谓语用复数have；主句主语为the number of students，谓语用单数is。",
+          "source": "2024年复旦附中高二月考"
+        },
+        {
+          "content": "Every possible means ____ been tried to prevent the river from being polluted, but the water is still not clear.",
+          "options": ["A. is", "B. are", "C. has", "D. have"],
+          "answer": "C. has",
+          "explanation": "means单复数同形，被every修饰时为单数，且与been tried构成现在完成时被动语态，助动词用has。",
+          "source": "2023年上海中学高一期末"
+        },
+        {
+          "content": "The teacher, together with his students, ____ (be) planting young trees on the hillside now.",
+          "answer": "is",
+          "explanation": "together with短语不影响主语单复数，主语the teacher为单数，由now可知用现在进行时，故填is。",
+          "source": "2024年七宝中学单元测验"
         }
       ]
     },
     {
-      "id": "grammar-7",
-      "name": "不定式",
+      "id": "gr-tp-7",
+      "name": "代词冠词与介词",
       "questions": [
         {
-          "content": "It is important _____ English well.",
-          "options": ["learn", "to learn", "learning", "learned"],
-          "explanation": "It is important to do something是固定句型，it是形式主语，真正的主语是to learn English。",
-          "answer": "to learn",
+          "content": "For Linda, the pleasure of reading classic novels is greater than ____ of watching television.",
+          "options": ["A. it", "B. that", "C. one", "D. those"],
+          "answer": "B. that",
+          "explanation": "比较结构中用that替代特指的同名异物不可数名词the pleasure；it指同一物，one表泛指，均不合语境。",
           "source": "2023年上海高考英语卷"
         },
         {
-          "content": "She wanted me _____ her with her homework.",
-          "options": ["help", "to help", "helping", "helped"],
-          "answer": "to help",
-          "explanation": "want sb to do sth是固定用法，不定式作宾语补足语。",
-          "source": "2022年上海市重点高中高一期末联考"
+          "content": "I don't think ____ possible to master a foreign language well without a great deal of memory work.",
+          "options": ["A. this", "B. that", "C. its", "D. it"],
+          "answer": "D. it",
+          "explanation": "think后用it作形式宾语，真正的宾语是后面的不定式to master...，构成think it+adj.+to do结构。",
+          "source": "2024年上海高考英语卷"
+        },
+        {
+          "content": "—Could you tell me the way to ____ Johnsons, please? —Sorry, but there isn't ____ Johnson living in this neighborhood.",
+          "options": ["A. the; the", "B. the; a", "C. /; the", "D. the; /"],
+          "answer": "B. the; a",
+          "explanation": "the+姓氏复数表“约翰逊一家人”；答语中a Johnson意为“一位姓约翰逊的人”，a+姓氏表示某一位姓此姓的人。",
+          "source": "2024年复旦附中高二月考"
+        },
+        {
+          "content": "The newly-published dictionary is really ____ great help to me whenever I come across new words while reading.",
+          "options": ["A. a", "B. the", "C. /", "D. an"],
+          "answer": "A. a",
+          "explanation": "抽象名词具体化，a great help表示“一件很有帮助的东西”，great以辅音音素开头，用a。",
+          "source": "2023年上海中学高一期末"
+        },
+        {
+          "content": "Mr. Green has been familiar ____ Chinese history ever since he came to China ten years ago.",
+          "answer": "with",
+          "explanation": "be familiar with表示“（人）熟悉某事物”，主语Mr. Green是人、宾语是Chinese history，故填with。",
+          "source": "2024年七宝中学单元测验"
         }
       ]
     },
     {
-      "id": "grammar-8",
-      "name": "动名词",
+      "id": "gr-tp-8",
+      "name": "比较结构与情态表达",
       "questions": [
         {
-          "content": "I enjoy _____ music in my spare time.",
-          "options": ["listen", "to listen", "listening", "listened"],
-          "answer": "listening",
-          "explanation": "enjoy后接动名词作宾语，表示喜欢做某事。",
+          "content": "After the new technique was introduced, the factory produced ____ cars in 2024 as it did the year before.",
+          "options": ["A. as twice many", "B. as many twice", "C. twice as many", "D. twice many as"],
+          "answer": "C. twice as many",
+          "explanation": "倍数表达句型为“倍数+as+形容词+名词+as”，倍数词twice须放在as many之前，故选twice as many。",
           "source": "2023年上海高考英语卷"
         },
         {
-          "content": "_____ English is becoming more and more important.",
-          "options": ["Learn", "To learn", "Learning", "Learned"],
-          "answer": "Learning",
-          "explanation": "动名词作主语，表示经常性动作。to learn表示一次性动作。",
-          "source": "2022年上海市重点高中高二期末联考"
-        }
-      ]
-    },
-    {
-      "id": "grammar-9",
-      "name": "分词",
-      "questions": [
-        {
-          "content": "The students _____ in the classroom are having a discussion.",
-          "options": ["sit", "sat", "sitting", "having sat"],
-          "answer": "sitting",
-          "explanation": "现在分词作定语，表示正在进行的动作，与students是主动关系。",
-          "source": "2023年上海高考英语卷"
+          "content": "The harder you work at your lessons, ____ progress you will make in the coming college entrance examination.",
+          "options": ["A. the greater", "B. greater", "C. the greatest", "D. great"],
+          "answer": "A. the greater",
+          "explanation": "the+比较级..., the+比较级...表示“越……越……”，前后都不能省略the，故选the greater。",
+          "source": "2024年上海高考英语卷"
         },
         {
-          "content": "_____ the letter, he went to the post office.",
-          "options": ["Wrote", "Writing", "Written", "Having written"],
-          "answer": "Having written",
-          "explanation": "现在分词的完成式 having + 过去分词，表示动作在谓语动词之前发生。",
-          "source": "2022年上海市重点高中高一期末联考"
-        }
-      ]
-    },
-    {
-      "id": "grammar-10",
-      "name": "虚拟语气",
-      "questions": [
-        {
-          "content": "If I _____ you, I would accept the offer.",
-          "options": ["am", "was", "were", "had been"],
-          "answer": "were",
-          "explanation": "与现在事实相反的虚拟语气，if + 主语 + 动词过去式，were可以用于所有人称。",
-          "source": "2023年上海高考英语卷"
+          "content": "How beautifully she sings! I have never heard ____ voice than this at any school art festival.",
+          "options": ["A. the better", "B. a good", "C. a better", "D. the best"],
+          "answer": "C. a better",
+          "explanation": "否定词never与比较级连用表达最高级含义，意为“从未听过比这更好的嗓音”，voice为单数可数名词，用a better。",
+          "source": "2024年复旦附中高二月考"
         },
         {
-          "content": "I wish I _____ harder last semester.",
-          "options": ["study", "studied", "had studied", "would study"],
-          "answer": "had studied",
-          "explanation": "wish后的宾语从句与过去事实相反，用had + 过去分词。",
-          "source": "2022年上海市重点高中高二期末联考"
+          "content": "Of the two sisters, Betty is ____ one, and she is also the one who loves to take care of others.",
+          "options": ["A. a younger", "B. a youngest", "C. the younger", "D. the youngest"],
+          "answer": "C. the younger",
+          "explanation": "两者之中“更……的那个”用the+比较级+of the two结构，比较级前加the表示特指，选the younger。",
+          "source": "2023年上海中学高一期末"
+        },
+        {
+          "content": "The Yangtze River is longer than any ____ river in China.",
+          "answer": "other",
+          "explanation": "同一范围内进行比较须把自身排除，用“比较级+than+any other+单数名词”表示最高级含义，故填other。",
+          "source": "2024年七宝中学单元测验"
         }
       ]
     }

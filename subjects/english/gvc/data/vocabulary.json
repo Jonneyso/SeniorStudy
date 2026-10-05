@@ -1,602 +1,1442 @@
 [
   {
     "id": 1,
-    "english": "hold forth",
-    "chinese": "展现出,充分发挥",
-    "category": "G",
+    "english": "account for",
+    "chinese": "解释，说明（原因）；（数量上）占（比例）",
+    "category": "V",
     "example": {
-      "question": "The speaker was able to ______ his ideas clearly and persuasively during the debate.",
-      "options": ["hold forth", "hold back", "hold on", "hold off"],
-      "answer": "hold forth",
-      "explanation": "hold forth意为展现出，充分发挥，符合语境。hold back意为抑制，hold on意为坚持，hold off意为推迟。"
+      "question": "The poor weather may have ______ the small crowd that attended the outdoor concert.",
+      "options": ["accounted for", "accounted to", "accounted with", "accounted on"],
+      "answer": "accounted for",
+      "explanation": "account for意为“解释、说明原因”，符合恶劣天气导致观众稀少的语境；account不与to/with/on构成此义，其余为形近搭配干扰项。"
     }
   },
   {
     "id": 2,
-    "english": "the final stretch of the voyage",
-    "chinese": "航行的最后一段路程",
-    "category": "G",
+    "english": "put forward",
+    "chinese": "提出（建议、计划、理论等）",
+    "category": "V",
     "example": {
-      "question": "After weeks at sea, we finally reached ______ and could see the shore in the distance.",
-      "options": ["the final stretch of the voyage", "the initial stage of the journey", "the middle part of the trip", "the beginning of the expedition"],
-      "answer": "the final stretch of the voyage",
-      "explanation": "the final stretch of the voyage意为航行的最后一段路程，符合语境。"
+      "question": "At the meeting, a junior engineer ______ a proposal that greatly reduced production costs.",
+      "options": ["put forward", "put out", "put off", "put up"],
+      "answer": "put forward",
+      "explanation": "put forward表示“提出（建议）”；put out为“扑灭”，put off为“推迟”，put up为“张贴、举起”，均与proposal不搭。"
     }
   },
   {
     "id": 3,
-    "english": "spreading through the fabric of spacetime",
-    "chinese": "在时空的结构中蔓延",
-    "category": "G",
+    "english": "rule out",
+    "chinese": "排除（可能性、怀疑等）",
+    "category": "V",
     "example": {
-      "question": "According to the theory, gravitational waves are ______ at the speed of light.",
-      "options": ["spreading through the fabric of spacetime", "moving across the surface of the earth", "flowing through the atmosphere", "traveling along the ocean currents"],
-      "answer": "spreading through the fabric of spacetime",
-      "explanation": "spreading through the fabric of spacetime意为在时空的结构中蔓延，符合语境。"
+      "question": "The police have not yet ______ the possibility that the fire was started deliberately.",
+      "options": ["ruled out", "ruled over", "ruled off", "ruled against"],
+      "answer": "ruled out",
+      "explanation": "rule out the possibility为固定表达，意为“排除可能性”；rule over指“统治”，rule against指“裁决对……不利”，rule off无此搭配。"
     }
   },
   {
     "id": 4,
-    "english": "account for",
-    "chinese": "解释,说明,（数量上）占比",
+    "english": "stand out",
+    "chinese": "突出，显眼，脱颖而出",
     "category": "V",
     "example": {
-      "question": "The increase in sales can ______ by the new marketing strategy.",
-      "options": ["account for", "be accounted for", "be accounted of", "account of"],
-      "answer": "be accounted for",
-      "explanation": "account for意为解释，说明，此处使用被动语态be accounted for，符合语境。"
+      "question": "Her fluent French made her ______ among the other applicants for the post.",
+      "options": ["stand out", "stand by", "stand up", "stand for"],
+      "answer": "stand out",
+      "explanation": "stand out意为“引人注目、脱颖而出”，符合流利法语使其突出的语境；stand by为“支持、袖手旁观”，stand up为“起立”，stand for为“代表”。"
     }
   },
   {
     "id": 5,
-    "english": "keep an eye on",
-    "chinese": "密切关注,留意",
+    "english": "come up with",
+    "chinese": "想出，提出（主意、办法等）",
     "category": "V",
     "example": {
-      "question": "Please ______ the children while I go to the store.",
-      "options": ["keep an eye on", "keep an eye for", "keep an eye in", "keep an eye with"],
-      "answer": "keep an eye on",
-      "explanation": "keep an eye on意为密切关注，留意，符合语境。"
+      "question": "After hours of discussion, the team finally ______ a workable solution to the software bug.",
+      "options": ["came up with", "came up to", "came up for", "came up against"],
+      "answer": "came up with",
+      "explanation": "come up with意为“想出（办法）”；come up to为“达到”，come up against为“遭遇（困难）”，come up for无此固定搭配。"
     }
   },
   {
     "id": 6,
-    "english": "factoring in the length of the night",
-    "chinese": "考虑到夜晚的时长",
+    "english": "be subject to",
+    "chinese": "受……支配；须服从于；易遭受",
     "category": "V",
     "example": {
-      "question": "When planning the hiking trip, we need to ______ to ensure we don't get lost in the dark.",
-      "options": ["factor in the length of the night", "factor out the length of the night", "factor up the length of the night", "factor down the length of the night"],
-      "answer": "factor in the length of the night",
-      "explanation": "factor in意为考虑到，符合语境。"
+      "question": "All employees ______ security checks before entering the research laboratory.",
+      "options": ["are subject to", "are subjective to", "are subjected from", "subject to"],
+      "answer": "are subject to",
+      "explanation": "be subject to为固定短语，意为“须服从、须接受”；subjective意为“主观的”，语义不通；subject为形容词时须与be动词连用，故subject to结构不完整。"
     }
   },
   {
     "id": 7,
-    "english": "a steep winding route",
-    "chinese": "一条陡峭蜿蜒的道路",
-    "category": "C",
+    "english": "be bound to",
+    "chinese": "一定会，必然会",
+    "category": "V",
     "example": {
-      "question": "The mountain village is only accessible via ______ that requires careful driving.",
-      "options": ["a steep winding route", "a flat straight road", "a wide smooth highway", "a short direct path"],
-      "answer": "a steep winding route",
-      "explanation": "a steep winding route意为一条陡峭蜿蜒的道路，符合语境。"
+      "question": "Don't worry. With so little experience, he ______ make a few mistakes at first.",
+      "options": ["is bound to", "is bound for", "bounds to", "is bounded to"],
+      "answer": "is bound to",
+      "explanation": "be bound to do表示“必定会做”；be bound for指“开往（某地）”，bounds to和is bounded to均为错误搭配。"
     }
   },
   {
     "id": 8,
-    "english": "expansion of high-speed rail networks",
-    "chinese": "高速铁路网的扩张",
-    "category": "C",
+    "english": "in terms of",
+    "chinese": "就……而言，在……方面",
+    "category": "V",
     "example": {
-      "question": "The ______ has greatly improved transportation efficiency in China.",
-      "options": ["expansion of high-speed rail networks", "reduction of public transportation", "closure of railway stations", "decrease in train services"],
-      "answer": "expansion of high-speed rail networks",
-      "explanation": "expansion of high-speed rail networks意为高速铁路网的扩张，符合语境。"
+      "question": "The job is not especially rewarding ______ salary, but the working atmosphere is wonderful.",
+      "options": ["in terms of", "in term of", "on terms of", "by terms of"],
+      "answer": "in terms of",
+      "explanation": "in terms of为固定短语，意为“在薪水方面”；term必须用复数，且介词只能用in，其余三项均为形式干扰。"
     }
   },
   {
     "id": 9,
-    "english": "leave a lasting mark on",
-    "chinese": "对……留下深刻印象,对……产生深远影响",
+    "english": "regardless of",
+    "chinese": "不管，不顾",
     "category": "V",
     "example": {
-      "question": "The teacher's words ______ the students' lives.",
-      "options": ["left a lasting mark on", "left a temporary mark on", "left a small mark on", "left a superficial mark on"],
-      "answer": "left a lasting mark on",
-      "explanation": "leave a lasting mark on意为对……留下深刻印象，对……产生深远影响，符合语境。"
+      "question": "The outdoor graduation ceremony will be held as planned, ______ the weather.",
+      "options": ["regardless of", "regarding of", "regarded to", "regardless with"],
+      "answer": "regardless of",
+      "explanation": "regardless of表示“不管、不顾”；regarding本身是介词，不再加of；regarded to语态与搭配皆误，regardless with为错误介词。"
     }
   },
   {
     "id": 10,
-    "english": "invest all his efforts in...",
-    "chinese": "将心血倾注于……",
+    "english": "on behalf of",
+    "chinese": "代表……一方",
     "category": "V",
     "example": {
-      "question": "The scientist ______ his research to find a cure for the disease.",
-      "options": ["invested all his efforts in", "invested some his efforts in", "invested none his efforts in", "invested little his efforts in"],
-      "answer": "invested all his efforts in",
-      "explanation": "invest all his efforts in意为将心血倾注于……，符合语境。"
+      "question": "The manager accepted the award ______ the whole sales department.",
+      "options": ["on behalf of", "on behalf for", "in behalf with", "for behalf of"],
+      "answer": "on behalf of",
+      "explanation": "on behalf of为固定表达，意为“代表”；其余三项介词搭配均不成立，属形近干扰。"
     }
   },
   {
     "id": 11,
-    "english": "keep an eye out for...",
-    "chinese": "留意……,密切关注……",
+    "english": "attribute…to",
+    "chinese": "把……归因于；认为……属于",
     "category": "V",
     "example": {
-      "question": "Please ______ any suspicious activities in the neighborhood.",
-      "options": ["keep an eye out for", "keep an eye in for", "keep an eye up for", "keep an eye down for"],
-      "answer": "keep an eye out for",
-      "explanation": "keep an eye out for意为留意……，密切关注……，符合语境。"
+      "question": "The author ______ the failure of the novel to poor marketing rather than to lack of talent.",
+      "options": ["attributed", "contributed", "distributed", "devoted"],
+      "answer": "attributed",
+      "explanation": "attribute sth to sth意为“把……归因于”；contribute to指“促成、投稿”，distribute为“分配”，devote为“致力于”，均不符合归因含义。"
     }
   },
   {
     "id": 12,
-    "english": "in an attempt to...",
-    "chinese": "试图……,为了……",
+    "english": "be exposed to",
+    "chinese": "暴露于；接触到",
     "category": "V",
     "example": {
-      "question": "The company launched a new product ______ increase its market share.",
-      "options": ["in an attempt to", "in a try to", "in a test to", "in a check to"],
-      "answer": "in an attempt to",
-      "explanation": "in an attempt to意为试图……，为了……，符合语境。"
+      "question": "Children who ______ a second language at an early age tend to acquire it more easily.",
+      "options": ["are exposed to", "expose to", "are exposing with", "exposed of"],
+      "answer": "are exposed to",
+      "explanation": "be exposed to在此意为“接触到”，须用被动结构；expose to语态错误，exposing with与exposed of介词搭配均不成立。"
     }
   },
   {
     "id": 13,
-    "english": "get involved in social interactions",
-    "chinese": "参与社交互动",
+    "english": "contribute to",
+    "chinese": "促成，有助于；向……投稿/捐款",
     "category": "V",
     "example": {
-      "question": "Children need to ______ to develop their social skills.",
-      "options": ["get involved in social interactions", "stay away from social interactions", "avoid social interactions", "ignore social interactions"],
-      "answer": "get involved in social interactions",
-      "explanation": "get involved in social interactions意为参与社交互动，符合语境。"
+      "question": "Regular exercise and a balanced diet both ______ good health and a longer life.",
+      "options": ["contribute to", "contribute for", "attribute to", "distribute to"],
+      "answer": "contribute to",
+      "explanation": "contribute to表示“有助于、促成”；contribute不与for搭配；attribute to是“把……归因于”，主语应为归因者；distribute to为“分发给”。"
     }
   },
   {
     "id": 14,
-    "english": "protect their territory",
-    "chinese": "保护它们的领地",
+    "english": "adapt to",
+    "chinese": "适应（新环境、新情况）",
     "category": "V",
     "example": {
-      "question": "Many animals will fight to ______ from intruders.",
-      "options": ["protect their territory", "invade others' territory", "abandon their territory", "share their territory"],
-      "answer": "protect their territory",
-      "explanation": "protect their territory意为保护它们的领地，符合语境。"
+      "question": "It took the exchange student several months to ______ life in a completely new culture.",
+      "options": ["adapt to", "adopt to", "adept to", "adapt for"],
+      "answer": "adapt to",
+      "explanation": "adapt to意为“适应”；adopt是“采纳、收养”，adept是形容词“熟练的”，adapt for指“为……改编”，均不合语境。"
     }
   },
   {
     "id": 15,
-    "english": "sb. maintains that ... should ...",
-    "chinese": "某人主张…… 应该……",
+    "english": "adhere to",
+    "chinese": "遵守，坚持；粘附于",
     "category": "V",
     "example": {
-      "question": "The expert ______ parents should spend more time with their children.",
-      "options": ["maintains that", "denies that", "doubts that", "questions that"],
-      "answer": "maintains that",
-      "explanation": "maintains that意为主张，符合语境。"
+      "question": "Every member of the expedition must ______ the safety rules drawn up by the guide.",
+      "options": ["adhere to", "adhere with", "adhere on", "adhere for"],
+      "answer": "adhere to",
+      "explanation": "adhere to表示“遵守、坚持（规则）”；adhere只能与介词to搭配，其余三项均为错误搭配。"
     }
   },
   {
     "id": 16,
-    "english": "address the root causes of illegal hunting",
-    "chinese": "解决非法狩猎的根本原因",
+    "english": "coincide with",
+    "chinese": "与……同时发生；与……一致",
     "category": "V",
     "example": {
-      "question": "To effectively protect endangered species, we need to ______.",
-      "options": ["address the root causes of illegal hunting", "ignore the root causes of illegal hunting", "promote the root causes of illegal hunting", "support the root causes of illegal hunting"],
-      "answer": "address the root causes of illegal hunting",
-      "explanation": "address the root causes of illegal hunting意为解决非法狩猎的根本原因，符合语境。"
+      "question": "This year's National Day holiday ______ the Mid-Autumn Festival, creating an unusually long break.",
+      "options": ["coincides with", "coincides to", "collides with", "consists with"],
+      "answer": "coincides with",
+      "explanation": "coincide with指“与……同时发生、恰逢”；collide with指“（物体）相撞”，语义不符；coincide不与to搭配，consist with不成立。"
     }
   },
   {
     "id": 17,
-    "english": "parent a child",
-    "chinese": "养育孩子",
+    "english": "cope with",
+    "chinese": "（成功地）应付，处理",
     "category": "V",
     "example": {
-      "question": "It takes a lot of patience and effort to ______ properly.",
-      "options": ["parent a child", "teach a child", "train a child", "guide a child"],
-      "answer": "parent a child",
-      "explanation": "parent a child意为养育孩子，符合语境。"
+      "question": "Many elderly people find it hard to ______ the rapid changes brought by digital technology.",
+      "options": ["cope with", "cope up", "cope against", "cope for"],
+      "answer": "cope with",
+      "explanation": "cope with为固定短语，意为“应对”；cope up是学生常犯的错误形式，against与for均不能与cope搭配表达此义。"
     }
   },
   {
     "id": 18,
-    "english": "comment on sb. doing sth.",
-    "chinese": "评论某人做某事",
+    "english": "derive from",
+    "chinese": "起源于，来自",
     "category": "V",
     "example": {
-      "question": "It's not polite to ______ without knowing the full story.",
-      "options": ["comment on others doing things", "praise others doing things", "encourage others doing things", "support others doing things"],
-      "answer": "comment on others doing things",
-      "explanation": "comment on sb. doing sth.意为评论某人做某事，符合语境。"
+      "question": "Many common English words, such as telephone, ______ Greek roots.",
+      "options": ["derive from", "deprive of", "derive to", "deride from"],
+      "answer": "derive from",
+      "explanation": "derive from意为“源自、起源于”；deprive sb of sth为“剥夺”，derive不与to搭配，deride意为“嘲笑”，为形近干扰。"
     }
   },
   {
     "id": 19,
-    "english": "be at the risk of becoming spoiled",
-    "chinese": "有被宠坏的风险",
+    "english": "be entitled to",
+    "chinese": "有权享有，有资格得到",
     "category": "V",
     "example": {
-      "question": "Children who get everything they want may ______.",
-      "options": ["be at the risk of becoming spoiled", "be at the risk of becoming independent", "be at the risk of becoming responsible", "be at the risk of becoming mature"],
-      "answer": "be at the risk of becoming spoiled",
-      "explanation": "be at the risk of becoming spoiled意为有被宠坏的风险，符合语境。"
+      "question": "Full-time workers in this company ______ paid annual leave of at least ten days.",
+      "options": ["are entitled to", "are titled to", "entitle to", "are entitling to"],
+      "answer": "are entitled to",
+      "explanation": "be entitled to表示“有权享有”，须用被动；titled指“有头衔的”，entitle to语态错误，entitling to进行时不当。"
     }
   },
   {
     "id": 20,
-    "english": "raise a child in the right way",
-    "chinese": "以正确的方式养育孩子",
+    "english": "for the sake of",
+    "chinese": "为了……（的缘故）",
     "category": "V",
     "example": {
-      "question": "Parents should learn how to ______ to ensure their children grow up well.",
-      "options": ["raise a child in the right way", "raise a child in the wrong way", "raise a child in a strict way", "raise a child in a lenient way"],
-      "answer": "raise a child in the right way",
-      "explanation": "raise a child in the right way意为以正确的方式养育孩子，符合语境。"
+      "question": "He moved to a quieter neighbourhood ______ his young children's health.",
+      "options": ["for the sake of", "on the sake of", "for sake to", "in the sake of"],
+      "answer": "for the sake of",
+      "explanation": "for the sake of为固定短语，意为“为了……的缘故”；其余三项介词结构均不成立。"
     }
   },
   {
     "id": 21,
-    "english": "projections of one's anxieties",
-    "chinese": "焦虑的投射,焦虑的外化表现",
-    "category": "C",
+    "english": "give rise to",
+    "chinese": "引起，导致",
+    "category": "V",
     "example": {
-      "question": "Some people's anger towards others may be ______ rather than genuine dislike.",
-      "options": ["projections of their anxieties", "expressions of their happiness", "indications of their confidence", "signs of their satisfaction"],
-      "answer": "projections of their anxieties",
-      "explanation": "projections of one's anxieties意为焦虑的投射，焦虑的外化表现，符合语境。"
+      "question": "The new tax policy gave ______ widespread dissatisfaction among small business owners.",
+      "options": ["rise to", "rise for", "raise to", "way to"],
+      "answer": "rise to",
+      "explanation": "give rise to为固定表达，意为“引起、导致”；give way to意为“让步于、被……取代”，语义相反；raise to和rise for搭配不成立。"
     }
   },
   {
     "id": 22,
-    "english": "insufficient peer interaction",
-    "chinese": "同伴互动不足",
-    "category": "C",
+    "english": "hold on to",
+    "chinese": "紧紧抓住；保留，不放弃",
+    "category": "V",
     "example": {
-      "question": "______ can lead to social awkwardness in children.",
-      "options": ["Insufficient peer interaction", "Sufficient peer interaction", "Excessive peer interaction", "Regular peer interaction"],
-      "answer": "Insufficient peer interaction",
-      "explanation": "insufficient peer interaction意为同伴互动不足，符合语境。"
+      "question": "Even after becoming famous, the writer ______ the simple habits of his youth.",
+      "options": ["held on to", "held out to", "held up to", "held off to"],
+      "answer": "held on to",
+      "explanation": "hold on to在此意为“保持、不放弃（习惯）”；hold out为“坚持抵抗”，hold up为“举起、耽搁”，hold off为“推迟”，均不接to表达此义。"
     }
   },
   {
     "id": 23,
-    "english": "challenge one's assumptions",
-    "chinese": "质疑自己的固有假设",
+    "english": "in retrospect",
+    "chinese": "回想起来，事后看来",
     "category": "V",
     "example": {
-      "question": "To grow intellectually, it's important to ______ and consider different perspectives.",
-      "options": ["challenge your assumptions", "confirm your assumptions", "strengthen your assumptions", "protect your assumptions"],
-      "answer": "challenge your assumptions",
-      "explanation": "challenge one's assumptions意为质疑自己的固有假设，符合语境。"
+      "question": "______, the years I spent at university were the happiest of my life.",
+      "options": ["In retrospect", "In retrospect of", "On retrospect", "With retrospect"],
+      "answer": "In retrospect",
+      "explanation": "in retrospect为独立的评注性状语，不加of等介词；on/with retrospect均为错误搭配。"
     }
   },
   {
     "id": 24,
-    "english": "can't be separated from the context",
-    "chinese": "不能脱离上下文",
+    "english": "keep pace with",
+    "chinese": "与……并驾齐驱，跟上……的步伐",
     "category": "V",
     "example": {
-      "question": "Words ______ in which they are used.",
-      "options": ["can't be separated from the context", "can be separated from the context", "should be separated from the context", "must be separated from the context"],
-      "answer": "can't be separated from the context",
-      "explanation": "can't be separated from the context意为不能脱离上下文，符合语境。"
+      "question": "Small shops can hardly ______ the changing demands of modern consumers.",
+      "options": ["keep pace with", "keep pace to", "keep up pace with", "make pace with"],
+      "answer": "keep pace with",
+      "explanation": "keep pace with表示“与……同步”，介词固定为with；keep up pace with与make pace with均为不规范表达，英语说keep up with而非keep up pace with。"
     }
   },
   {
     "id": 25,
-    "english": "cope with",
-    "chinese": "应对",
+    "english": "live up to",
+    "chinese": "不辜负；符合，达到（期望、标准）",
     "category": "V",
     "example": {
-      "question": "It's important to learn how to ______ stress in daily life.",
-      "options": ["cope with", "cope for", "cope in", "cope on"],
-      "answer": "cope with",
-      "explanation": "cope with意为应对，符合语境。"
+      "question": "The sequel, unfortunately, failed to ______ the high expectations of the fans.",
+      "options": ["live up to", "live with", "live through", "live on"],
+      "answer": "live up to",
+      "explanation": "live up to one's expectations为固定搭配，意为“达到期望”；live with为“忍受”，live through为“度过（难关）”，live on为“靠……生活”。"
     }
   },
   {
     "id": 26,
-    "english": "depend on",
-    "chinese": "依赖",
+    "english": "make sense of",
+    "chinese": "理解，弄懂……的意思",
     "category": "V",
     "example": {
-      "question": "Plants ______ sunlight and water to grow.",
-      "options": ["depend on", "depend in", "depend for", "depend with"],
-      "answer": "depend on",
-      "explanation": "depend on意为依赖，符合语境。"
+      "question": "The instructions were so poorly translated that no one could ______ them.",
+      "options": ["make sense of", "make sense for", "make the sense of", "make sense to"],
+      "answer": "make sense of",
+      "explanation": "make sense of sth意为“弄懂某事物”；make sense of中sense不加冠词；make sense to后接人，for不能用于此结构。"
     }
   },
   {
     "id": 27,
-    "english": "focus on",
-    "chinese": "专注于",
+    "english": "on the verge of",
+    "chinese": "濒临，接近于",
     "category": "V",
     "example": {
-      "question": "Students should ______ their studies rather than distractions.",
-      "options": ["focus on", "focus in", "focus for", "focus with"],
-      "answer": "focus on",
-      "explanation": "focus on意为专注于，符合语境。"
+      "question": "After three years of losses, the small factory was ______ collapse.",
+      "options": ["on the verge of", "at verge of", "on the verge to", "in verge with"],
+      "answer": "on the verge of",
+      "explanation": "on the verge of为固定短语，介词用on和of，意为“濒临”；其余三项介词均为错误组合。"
     }
   },
   {
     "id": 28,
-    "english": "lead to",
-    "chinese": "导致",
+    "english": "opt for",
+    "chinese": "选择，挑选",
     "category": "V",
     "example": {
-      "question": "Smoking can ______ serious health problems.",
-      "options": ["lead to", "lead in", "lead for", "lead with"],
-      "answer": "lead to",
-      "explanation": "lead to意为导致，符合语境。"
+      "question": "Faced with two equally attractive offers, she finally ______ the one closer to home.",
+      "options": ["opted for", "opted to", "opted in", "opted against"],
+      "answer": "opted for",
+      "explanation": "opt for后接名词，意为“选择”；opt to后须接动词原形；opt in指“决定加入”；opt against指“决定不选”，与语境相反。"
     }
   },
   {
     "id": 29,
-    "english": "participate in",
-    "chinese": "参与",
+    "english": "prior to",
+    "chinese": "在……之前",
     "category": "V",
     "example": {
-      "question": "Everyone is encouraged to ______ the school activities.",
-      "options": ["participate in", "participate for", "participate with", "participate on"],
-      "answer": "participate in",
-      "explanation": "participate in意为参与，符合语境。"
+      "question": "All passengers must fasten their seat belts ______ take-off.",
+      "options": ["prior to", "prior than", "superior to", "preferable to"],
+      "answer": "prior to",
+      "explanation": "prior to相当于before，表示“在……之前”；无prior than此用法；superior to为“优于”，preferable to为“更可取”，语义不符。"
     }
   },
   {
     "id": 30,
-    "english": "result in",
-    "chinese": "导致",
+    "english": "resort to",
+    "chinese": "诉诸，求助于（常含不得已之意）",
     "category": "V",
     "example": {
-      "question": "Poor diet and lack of exercise can ______ obesity.",
-      "options": ["result in", "result from", "result for", "result with"],
-      "answer": "result in",
-      "explanation": "result in意为导致，符合语境。result from意为由……引起。"
+      "question": "We hope to settle the dispute through negotiation rather than ______ legal action.",
+      "options": ["resort to", "resort for", "respond to", "relate to"],
+      "answer": "resort to",
+      "explanation": "resort to意为“诉诸（某种手段）”，常含不得已的意味；respond to为“回应”，relate to为“与……有关”，resort for搭配不成立。"
     }
   },
   {
     "id": 31,
-    "english": "take into account",
-    "chinese": "考虑",
+    "english": "shed light on",
+    "chinese": "阐明，使……更清楚",
     "category": "V",
     "example": {
-      "question": "When making decisions, we should ______ all relevant factors.",
-      "options": ["take into account", "take into consideration", "both A and B", "neither A nor B"],
-      "answer": "both A and B",
-      "explanation": "take into account和take into consideration都意为考虑，符合语境。"
+      "question": "The newly discovered letters may ______ the author's mysterious final years.",
+      "options": ["shed light on", "shed light to", "shade light on", "cast light of"],
+      "answer": "shed light on",
+      "explanation": "shed light on为固定习语，意为“阐明”；介词必须用on；shade意为“遮蔽”，语义不通；cast light of介词错误（可作cast light on）。"
     }
   },
   {
     "id": 32,
-    "english": "be exposed to",
-    "chinese": "接触",
+    "english": "take…for granted",
+    "chinese": "认为……理所当然；对……不重视",
     "category": "V",
     "example": {
-      "question": "Children who ______ different cultures tend to be more open-minded.",
-      "options": ["are exposed to", "are exposed with", "are exposed for", "are exposed in"],
-      "answer": "are exposed to",
-      "explanation": "be exposed to意为接触，符合语境。"
+      "question": "Don't ______ your parents' love and care ______; they deserve your gratitude.",
+      "options": ["take; for granted", "make; for granted", "take; as granted", "put; for granted"],
+      "answer": "take; for granted",
+      "explanation": "take sth for granted为固定结构，意为“把……视为理所当然”；动词只能用take，且介词为for而非as。"
     }
   },
   {
     "id": 33,
-    "english": "be involved in",
-    "chinese": "参与",
+    "english": "turn out",
+    "chinese": "结果是，证明是；生产",
     "category": "V",
     "example": {
-      "question": "He was ______ the planning of the event.",
-      "options": ["involved in", "involved with", "involved for", "involved at"],
-      "answer": "involved in",
-      "explanation": "be involved in意为参与，符合语境。"
+      "question": "The rumour that the old restaurant was closing ______ to be completely false.",
+      "options": ["turned out", "turned off", "turned over", "turned up"],
+      "answer": "turned out",
+      "explanation": "turn out to be表示“结果证明是”；turn off为“关闭”，turn over为“翻转”，turn up为“出现、调高”，均不合语境。"
     }
   },
   {
     "id": 34,
-    "english": "play a role in",
-    "chinese": "在...中起作用",
+    "english": "wind up",
+    "chinese": "最终落得（某种结局）；结束",
     "category": "V",
     "example": {
-      "question": "Education ______ shaping a person's future.",
-      "options": ["plays a role in", "plays a part in", "both A and B", "neither A nor B"],
-      "answer": "both A and B",
-      "explanation": "play a role in和play a part in都意为在...中起作用，符合语境。"
+      "question": "If you keep spending money like this, you'll ______ in serious debt before long.",
+      "options": ["wind up", "wind down", "wind in", "wind over"],
+      "answer": "wind up",
+      "explanation": "wind up doing/in…表示“以……告终、最终落得”；wind down为“放松、逐渐结束”，wind in与wind over均不表示此义。"
     }
   },
   {
     "id": 35,
-    "english": "analyze",
-    "chinese": "分析",
+    "english": "wipe out",
+    "chinese": "彻底摧毁，消灭",
     "category": "V",
     "example": {
-      "question": "We need to ______ the data to find patterns.",
-      "options": ["analyze", "synthesize", "summarize", "categorize"],
-      "answer": "analyze",
-      "explanation": "analyze意为分析，符合语境。"
+      "question": "The earthquake nearly ______ the entire coastal village overnight.",
+      "options": ["wiped out", "wiped off", "wiped away", "wiped up"],
+      "answer": "wiped out",
+      "explanation": "wipe out意为“彻底摧毁、使覆灭”；wipe off指“擦掉（表面）”，wipe away为“擦去（泪水等）”，wipe up为“擦干”，程度与对象均不符。"
     }
   },
   {
     "id": 36,
-    "english": "approach",
-    "chinese": "接近；处理",
+    "english": "work out",
+    "chinese": "成功地发展；算出；制定出；锻炼",
     "category": "V",
     "example": {
-      "question": "We need to ______ the problem from a different angle.",
-      "options": ["approach", "avoid", "ignore", "neglect"],
-      "answer": "approach",
-      "explanation": "approach意为处理，符合语境。"
+      "question": "Things ______ much better than anyone had expected in the end.",
+      "options": ["worked out", "worked on", "worked up", "worked over"],
+      "answer": "worked out",
+      "explanation": "work out在此表示“进展、结果良好”；work on为“致力于”，work up为“逐步发展、激发”，work over为“痛打”，均不合语境。"
     }
   },
   {
     "id": 37,
-    "english": "assess",
-    "chinese": "评估",
+    "english": "yield to",
+    "chinese": "屈服于，让步于",
     "category": "V",
     "example": {
-      "question": "Teachers need to ______ students' progress regularly.",
-      "options": ["assess", "assist", "assign", "assume"],
-      "answer": "assess",
-      "explanation": "assess意为评估，符合语境。"
+      "question": "The brave soldiers refused to ______ the enemy despite being heavily outnumbered.",
+      "options": ["yield to", "yield for", "yield up", "yield with"],
+      "answer": "yield to",
+      "explanation": "yield to sb/sth意为“屈服于”；yield up指“放弃、交出”，yield不与for/with搭配。"
     }
   },
   {
     "id": 38,
-    "english": "benefit",
-    "chinese": "受益",
+    "english": "bring about",
+    "chinese": "导致，引起，带来",
     "category": "V",
     "example": {
-      "question": "Students can ______ from extra-curricular activities.",
-      "options": ["benefit", "suffer", "lose", "fail"],
-      "answer": "benefit",
-      "explanation": "benefit意为受益，符合语境。"
+      "question": "The invention of the smartphone ______ profound changes in the way people communicate.",
+      "options": ["brought about", "brought up", "brought out", "brought in"],
+      "answer": "brought about",
+      "explanation": "bring about表示“引起、导致（变化）”；bring up为“抚养、提出”，bring out为“使显现、出版”，bring in为“引入、赚取”，均不搭配changes表达此义。"
     }
   },
   {
     "id": 39,
-    "english": "challenge",
-    "chinese": "挑战",
+    "english": "call for",
+    "chinese": "需要，要求；呼吁",
     "category": "V",
     "example": {
-      "question": "The new job will ______ my abilities.",
-      "options": ["challenge", "comfort", "support", "encourage"],
-      "answer": "challenge",
-      "explanation": "challenge意为挑战，符合语境。"
+      "question": "The worsening traffic situation ______ immediate action from the city government.",
+      "options": ["calls for", "calls on", "calls up", "calls off"],
+      "answer": "calls for",
+      "explanation": "call for意为“需要、要求”；call on sb to do为“号召某人做”，call up为“打电话、征召”，call off为“取消”。"
     }
   },
   {
     "id": 40,
-    "english": "contribute",
-    "chinese": "贡献",
+    "english": "carry out",
+    "chinese": "执行，实施，进行",
     "category": "V",
     "example": {
-      "question": "Everyone can ______ to making the world a better place.",
-      "options": ["contribute", "detract", "subtract", "withdraw"],
-      "answer": "contribute",
-      "explanation": "contribute意为贡献，符合语境。"
+      "question": "The researchers ______ a series of experiments to test the new drug.",
+      "options": ["carried out", "carried on", "carried off", "carried away"],
+      "answer": "carried out",
+      "explanation": "carry out experiments为“做实验、执行实验”的固定搭配；carry on为“继续”，carry off为“赢得、成功应付”，carry away为“使入迷”。"
     }
   },
   {
     "id": 41,
-    "english": "demonstrate",
-    "chinese": "证明；展示",
+    "english": "come across",
+    "chinese": "偶然发现，偶然遇见",
     "category": "V",
     "example": {
-      "question": "The experiment ______ the theory is correct.",
-      "options": ["demonstrates", "denies", "disproves", "doubts"],
-      "answer": "demonstrates",
-      "explanation": "demonstrate意为证明，符合语境。"
+      "question": "While tidying the attic, I ______ an old photo album of my grandparents'.",
+      "options": ["came across", "came along", "came after", "came between"],
+      "answer": "came across",
+      "explanation": "come across意为“偶然发现”；come along为“一起来、进展”，come after为“追赶、继……而来”，come between为“离间”。"
     }
   },
   {
     "id": 42,
-    "english": "emphasize",
-    "chinese": "强调",
+    "english": "cut down on",
+    "chinese": "减少（消耗、开支等）",
     "category": "V",
     "example": {
-      "question": "The teacher ______ the importance of hard work.",
-      "options": ["emphasized", "minimized", "ignored", "forgot"],
-      "answer": "emphasized",
-      "explanation": "emphasize意为强调，符合语境。"
+      "question": "The doctor advised him to ______ fatty food in order to lower his cholesterol.",
+      "options": ["cut down on", "cut down to", "cut in on", "cut off with"],
+      "answer": "cut down on",
+      "explanation": "cut down on表示“削减、减少（摄入）”；cut down to意为“压缩到（某数量）”，cut in on为“打断”，cut off with无此搭配。"
     }
   },
   {
     "id": 43,
-    "english": "enable",
-    "chinese": "使能够",
+    "english": "draw on",
+    "chinese": "利用，凭借（经验、知识等）",
     "category": "V",
     "example": {
-      "question": "Technology ______ us to communicate with people around the world.",
-      "options": ["enables", "disables", "prevents", "stops"],
-      "answer": "enables",
-      "explanation": "enable意为使能够，符合语境。"
+      "question": "In her speech, the professor ______ twenty years of field research in Africa.",
+      "options": ["drew on", "drew up", "drew in", "drew out"],
+      "answer": "drew on",
+      "explanation": "draw on sth意为“凭借、利用（经验等）”；draw up为“起草、使停下”，draw in为“（白昼）变短”，draw out为“拉长、掏出”。"
     }
   },
   {
     "id": 44,
-    "english": "ensure",
-    "chinese": "确保",
+    "english": "figure out",
+    "chinese": "弄清楚，想明白，算出",
     "category": "V",
     "example": {
-      "question": "We need to ______ that all students have access to education.",
-      "options": ["ensure", "risk", "endanger", "threaten"],
-      "answer": "ensure",
-      "explanation": "ensure意为确保，符合语境。"
+      "question": "Detectives are still trying to ______ how the thieves entered the locked museum.",
+      "options": ["figure out", "figure in", "figure on", "figure up"],
+      "answer": "figure out",
+      "explanation": "figure out意为“弄清楚、查明”；figure in为“把……列入计算”，figure on为“指望、计划”，figure up为“计算总数”，均不合语境。"
     }
   },
   {
     "id": 45,
-    "english": "establish",
-    "chinese": "建立",
+    "english": "get across",
+    "chinese": "使（观点等）被理解，讲清楚",
     "category": "V",
     "example": {
-      "question": "The company was ______ in 1990.",
-      "options": ["established", "destroyed", "closed", "sold"],
-      "answer": "established",
-      "explanation": "establish意为建立，符合语境。"
+      "question": "Professor Lee is knowledgeable, but he sometimes has difficulty ______ his ideas to beginners.",
+      "options": ["getting across", "getting over", "getting through", "getting away"],
+      "answer": "getting across",
+      "explanation": "get sth across (to sb)意为“使某事被理解”；get over为“克服、恢复”，get through为“通过、完成”，get away为“离开、逃脱”。"
     }
   },
   {
     "id": 46,
-    "english": "evaluate",
-    "chinese": "评价",
+    "english": "get away with",
+    "chinese": "做（坏事）而不受惩罚",
     "category": "V",
     "example": {
-      "question": "Employers need to ______ candidates based on their skills and experience.",
-      "options": ["evaluate", "estimate", "calculate", "measure"],
-      "answer": "evaluate",
-      "explanation": "evaluate意为评价，符合语境。"
+      "question": "Those who evade taxes may think they can ______ it, but audits usually catch up with them.",
+      "options": ["get away with", "get along with", "get rid of", "get out of"],
+      "answer": "get away with",
+      "explanation": "get away with it为习语，指“做坏事而逃脱惩罚”；get along with为“与……相处”，get rid of为“摆脱”，get out of为“逃避（责任）、离开”。"
     }
   },
   {
     "id": 47,
-    "english": "evolve",
-    "chinese": "演变",
+    "english": "go through",
+    "chinese": "仔细检查；经历（困难）；浏览",
     "category": "V",
     "example": {
-      "question": "Languages ______ over time to meet new needs.",
-      "options": ["evolve", "remain", "stagnate", "decline"],
-      "answer": "evolve",
-      "explanation": "evolve意为演变，符合语境。"
+      "question": "Before signing any contract, you should ______ it carefully with a lawyer.",
+      "options": ["go through", "go after", "go by", "go for"],
+      "answer": "go through",
+      "explanation": "go through在此意为“仔细审阅、逐条检查”；go after为“追求”，go by为“遵循、（时间）流逝”，go for为“选择、适用于”。"
     }
   },
   {
     "id": 48,
-    "english": "impact",
-    "chinese": "影响",
+    "english": "hand in",
+    "chinese": "提交，上交",
     "category": "V",
     "example": {
-      "question": "Climate change ______ ecosystems around the world.",
-      "options": ["impacts", "improves", "enhances", "strengthens"],
-      "answer": "impacts",
-      "explanation": "impact意为影响，符合语境。"
+      "question": "Students are required to ______ their term papers by next Friday at the latest.",
+      "options": ["hand in", "hand out", "hand over", "hand down"],
+      "answer": "hand in",
+      "explanation": "hand in papers为“上交论文”；hand out为“分发”，hand over为“移交（权力、物品）”，hand down为“传下（传统、判决）”。"
     }
   },
   {
     "id": 49,
-    "english": "implement",
-    "chinese": "实施",
+    "english": "hold back",
+    "chinese": "抑制，阻止；隐瞒",
     "category": "V",
     "example": {
-      "question": "The government plans to ______ new policies to reduce pollution.",
-      "options": ["implement", "ignore", "reject", "oppose"],
-      "answer": "implement",
-      "explanation": "implement意为实施，符合语境。"
+      "question": "She struggled to ______ her tears as she waved goodbye at the airport.",
+      "options": ["hold back", "hold on", "hold up", "hold out"],
+      "answer": "hold back",
+      "explanation": "hold back tears为“忍住眼泪”的固定搭配；hold on为“等一下、坚持”，hold up为“举起、耽搁”，hold out为“伸出、维持”。"
     }
   },
   {
     "id": 50,
-    "english": "improve",
-    "chinese": "改进",
+    "english": "keep up with",
+    "chinese": "跟上；对……消息灵通",
     "category": "V",
     "example": {
-      "question": "Practice can ______ your language skills.",
-      "options": ["improve", "worsen", "deteriorate", "decline"],
-      "answer": "improve",
-      "explanation": "improve意为改进，符合语境。"
+      "question": "Even after retirement, Grandpa reads widely to ______ current affairs.",
+      "options": ["keep up with", "keep on with", "keep in with", "keep from"],
+      "answer": "keep up with",
+      "explanation": "keep up with current affairs指“关注、了解时事动态”；keep on with为“继续做”，keep in with为“与……保持友好”，keep from为“避免”。"
+    }
+  },
+  {
+    "id": 51,
+    "english": "lay off",
+    "chinese": "解雇，使下岗",
+    "category": "V",
+    "example": {
+      "question": "The car manufacturer had to ______ hundreds of workers because of falling sales.",
+      "options": ["lay off", "lay out", "lay down", "lay aside"],
+      "answer": "lay off",
+      "explanation": "lay off workers为“裁员、解雇”；lay out为“布置、铺开”，lay down为“制定（规则）、放下”，lay aside为“搁置、储蓄”。"
+    }
+  },
+  {
+    "id": 52,
+    "english": "live on",
+    "chinese": "靠……生活；以……为主食",
+    "category": "V",
+    "example": {
+      "question": "After losing his job, he had to ______ a very small unemployment benefit.",
+      "options": ["live on", "live by", "live in", "live for"],
+      "answer": "live on",
+      "explanation": "live on接钱或食物，意为“靠……生活”；live by后常接某种方式或准则，live in为“住在（工作处）”，live for为“为……而活”。"
+    }
+  },
+  {
+    "id": 53,
+    "english": "look into",
+    "chinese": "调查，研究",
+    "category": "V",
+    "example": {
+      "question": "A special committee has been set up to ______ the cause of the railway accident.",
+      "options": ["look into", "look up", "look through", "look over"],
+      "answer": "look into",
+      "explanation": "look into an accident为“调查事故”；look up为“查阅、好转”，look through为“浏览、识破”，look over为“快速查看、检阅”。"
+    }
+  },
+  {
+    "id": 54,
+    "english": "make up for",
+    "chinese": "弥补，补偿",
+    "category": "V",
+    "example": {
+      "question": "Hard work can often ______ a lack of natural talent in language learning.",
+      "options": ["make up for", "make up to", "make for", "make off with"],
+      "answer": "make up for",
+      "explanation": "make up for a lack of…为“弥补不足”；make up to为“讨好、弥补（某人）”，make for为“走向、促成”，make off with为“偷走”。"
+    }
+  },
+  {
+    "id": 55,
+    "english": "pick up",
+    "chinese": "（不经意间）学会；捡起；接人",
+    "category": "V",
+    "example": {
+      "question": "During her year in Florence, she ______ a good knowledge of Italian without formal lessons.",
+      "options": ["picked up", "picked out", "picked on", "picked over"],
+      "answer": "picked up",
+      "explanation": "pick up a language表示“不经意间学会语言”；pick out为“辨认、挑选”，pick on为“找……的茬”，pick over为“仔细挑选”。"
+    }
+  },
+  {
+    "id": 56,
+    "english": "put up with",
+    "chinese": "忍受，容忍",
+    "category": "V",
+    "example": {
+      "question": "I will not ______ your constant rudeness any longer; please apologize now.",
+      "options": ["put up with", "put up to", "put forward", "put aside"],
+      "answer": "put up with",
+      "explanation": "put up with意为“忍受”；put sb up to sth为“唆使某人做”，put forward为“提出”，put aside为“把……放在一边、储蓄”。"
+    }
+  },
+  {
+    "id": 57,
+    "english": "result from",
+    "chinese": "由……造成，起因于",
+    "category": "V",
+    "example": {
+      "question": "Most road accidents in winter ______ icy surfaces and careless driving.",
+      "options": ["result from", "result in", "lead to", "bring about"],
+      "answer": "result from",
+      "explanation": "result from后接原因，意为“起因于”；result in、lead to、bring about后均接结果，因果方向恰好相反。"
+    }
+  },
+  {
+    "id": 58,
+    "english": "run out of",
+    "chinese": "用完，耗尽",
+    "category": "V",
+    "example": {
+      "question": "The rescue team ______ food and water before help arrived on the third day.",
+      "options": ["ran out of", "ran out", "ran over", "ran into"],
+      "answer": "ran out of",
+      "explanation": "run out of为及物用法，后接被耗尽的东西；run out单独使用时主语应为物（如food ran out）；run over为“碾过、溢出”，run into为“偶遇、共计”。"
+    }
+  },
+  {
+    "id": 59,
+    "english": "set out",
+    "chinese": "出发，动身；着手",
+    "category": "V",
+    "example": {
+      "question": "That morning the explorers ______ early, hoping to reach the summit before noon.",
+      "options": ["set out", "set aside", "set up", "set down"],
+      "answer": "set out",
+      "explanation": "set out在此意为“出发、动身”；set aside为“留出、搁置”，set up为“建立”，set down为“记下、放下”。"
+    }
+  },
+  {
+    "id": 60,
+    "english": "show up",
+    "chinese": "出现，露面",
+    "category": "V",
+    "example": {
+      "question": "He promised to arrive at seven, but he didn't ______ until nearly nine.",
+      "options": ["show up", "show off", "show around", "show out"],
+      "answer": "show up",
+      "explanation": "show up意为“出现、到场”；show off为“炫耀”，show around为“带……参观”，show out为“送……出门”。"
+    }
+  },
+  {
+    "id": 61,
+    "english": "stand by",
+    "chinese": "支持，忠于；袖手旁观；待命",
+    "category": "V",
+    "example": {
+      "question": "Whatever the newspapers say about him, his family continues to ______ him.",
+      "options": ["stand by", "stand out", "stand for", "stand up to"],
+      "answer": "stand by",
+      "explanation": "stand by sb意为“支持、忠于某人”；stand out为“突出”，stand for为“代表、容忍”，stand up to为“勇敢面对、经得起”。"
+    }
+  },
+  {
+    "id": 62,
+    "english": "take on",
+    "chinese": "承担（责任、工作）；呈现；雇用",
+    "category": "V",
+    "example": {
+      "question": "After the promotion, she was unwilling to ______ any extra responsibilities.",
+      "options": ["take on", "take in", "take up", "take after"],
+      "answer": "take on",
+      "explanation": "take on responsibilities为“承担责任”；take in为“吸收、欺骗”，take up为“开始从事、占据”，take after为“（外貌）像”。"
+    }
+  },
+  {
+    "id": 63,
+    "english": "take over",
+    "chinese": "接管，接任",
+    "category": "V",
+    "example": {
+      "question": "When the CEO retired, her eldest daughter ______ the family business.",
+      "options": ["took over", "took up", "took off", "took to"],
+      "answer": "took over",
+      "explanation": "take over a business为“接管企业”；take up为“开始从事、占据”，take off为“起飞、脱下、迅速成功”，take to为“开始喜欢、养成习惯”。"
+    }
+  },
+  {
+    "id": 64,
+    "english": "turn down",
+    "chinese": "拒绝；调小（音量等）",
+    "category": "V",
+    "example": {
+      "question": "To everyone's surprise, he ______ the well-paid job offer to start his own studio.",
+      "options": ["turned down", "turned away", "turned back", "turned off"],
+      "answer": "turned down",
+      "explanation": "turn down an offer为“拒绝录用/报价”；turn away为“拒之门外”，turn back为“折回”，turn off为“关闭、使反感”。"
+    }
+  },
+  {
+    "id": 65,
+    "english": "turn to",
+    "chinese": "求助于；翻到（某页）",
+    "category": "V",
+    "example": {
+      "question": "With no one else to ______, the lonely old lady often called the community hotline.",
+      "options": ["turn to", "turn over", "turn in", "turn on"],
+      "answer": "turn to",
+      "explanation": "turn to sb意为“向某人求助”；turn over为“翻转、移交”，turn in为“上交、上床睡觉”，turn on为“打开、攻击”。"
+    }
+  },
+  {
+    "id": 66,
+    "english": "wear out",
+    "chinese": "穿破，磨损；使疲惫不堪",
+    "category": "V",
+    "example": {
+      "question": "These cheap sneakers were completely ______ after only two months of daily jogging.",
+      "options": ["worn out", "worn off", "worn away", "worn down"],
+      "answer": "worn out",
+      "explanation": "wear out指“用坏、穿破”；wear off指“（效果、疼痛）逐渐消失”，wear away指“（因摩擦而）磨损、侵蚀”，wear down指“磨短、使衰弱”。"
+    }
+  },
+  {
+    "id": 67,
+    "english": "break down",
+    "chinese": "（机器、车辆）出故障；（人）崩溃；分解",
+    "category": "V",
+    "example": {
+      "question": "Our school bus ______ twice on the way to the museum, making us late.",
+      "options": ["broke down", "broke up", "broke out", "broke in"],
+      "answer": "broke down",
+      "explanation": "break down指“车辆抛锚”；break up为“分手、解散”，break out为“（战争、火灾）爆发”，break in为“闯入、插话”。"
+    }
+  },
+  {
+    "id": 68,
+    "english": "bring up",
+    "chinese": "抚养，养育；提出（话题）",
+    "category": "V",
+    "example": {
+      "question": "After their parents died in the crash, the children were ______ by their aunt.",
+      "options": ["brought up", "brought out", "brought about", "brought forward"],
+      "answer": "brought up",
+      "explanation": "bring up在此为“抚养”，句中用被动；bring out为“使显现、出版”，bring about为“引起”，bring forward为“提前、提出”。"
+    }
+  },
+  {
+    "id": 69,
+    "english": "call off",
+    "chinese": "取消",
+    "category": "V",
+    "example": {
+      "question": "The open-air concert had to be ______ because of the sudden thunderstorm.",
+      "options": ["called off", "called on", "called for", "called up"],
+      "answer": "called off",
+      "explanation": "call off意为“取消（活动）”；call on为“拜访、号召”，call for为“需要、要求”，call up为“打电话、征召”。"
+    }
+  },
+  {
+    "id": 70,
+    "english": "come about",
+    "chinese": "发生，产生",
+    "category": "V",
+    "example": {
+      "question": "Can you tell me how the quarrel between the two roommates actually ______?",
+      "options": ["came about", "came out", "came round", "came over"],
+      "answer": "came about",
+      "explanation": "come about意为“发生、产生”，常用于how did it come about句型；come out为“出版、结果是”，come round为“苏醒、顺便来访”，come over为“突然感到、来访”。"
+    }
+  },
+  {
+    "id": 71,
+    "english": "drop out",
+    "chinese": "退出，退学",
+    "category": "V",
+    "example": {
+      "question": "Injuries forced several top runners to ______ of the marathon before the finish line.",
+      "options": ["drop out", "drop off", "drop in", "drop behind"],
+      "answer": "drop out",
+      "explanation": "drop out of为“退出（比赛、学校）”；drop off为“下降、睡着、让人下车”，drop in为“顺便拜访”，drop behind为“落后”。"
+    }
+  },
+  {
+    "id": 72,
+    "english": "end up",
+    "chinese": "最终成为，最后处于",
+    "category": "V",
+    "example": {
+      "question": "If you go on eating so much junk food, you'll ______ overweight and unhealthy.",
+      "options": ["end up", "end in", "end off", "end with"],
+      "answer": "end up",
+      "explanation": "end up后接形容词或doing，表示“最终落得……”；end in后接名词（如failure），end off为“顺利结束”，end with为“以……结束”，结构与语义均不符。"
+    }
+  },
+  {
+    "id": 73,
+    "english": "focus on",
+    "chinese": "集中于，聚焦于",
+    "category": "V",
+    "example": {
+      "question": "Today's lecture will ______ the causes and consequences of the French Revolution.",
+      "options": ["focus on", "focus in", "focus at", "focus with"],
+      "answer": "focus on",
+      "explanation": "focus on为固定搭配，意为“聚焦于”；focus只能与介词on/upon搭配，其余三项均为错误介词。"
+    }
+  },
+  {
+    "id": 74,
+    "english": "get over",
+    "chinese": "从……中恢复；克服",
+    "category": "V",
+    "example": {
+      "question": "It took her nearly a year to ______ the shock of the accident.",
+      "options": ["get over", "get across", "get away", "get through"],
+      "answer": "get over",
+      "explanation": "get over意为“从（打击、疾病）中恢复”；get across为“讲清楚”，get away为“逃脱”，get through虽可指“熬过”，但强调完成过程，从震惊中平复应用get over。"
+    }
+  },
+  {
+    "id": 75,
+    "english": "go about",
+    "chinese": "着手做，开始处理",
+    "category": "V",
+    "example": {
+      "question": "Could you give me some advice on how to ______ organizing a charity book fair?",
+      "options": ["go about", "go after", "go against", "go without"],
+      "answer": "go about",
+      "explanation": "go about doing sth意为“着手做某事”；go after为“追求”，go against为“违背”，go without为“没有……也行”。"
+    }
+  },
+  {
+    "id": 76,
+    "english": "hold up",
+    "chinese": "耽搁，延误；举起；抢劫",
+    "category": "V",
+    "example": {
+      "question": "The construction of the new subway line was ______ by a shortage of funds.",
+      "options": ["held up", "held on", "held out", "held back"],
+      "answer": "held up",
+      "explanation": "hold up在此意为“耽搁、延误”，常用被动；hold on为“等一下”，hold out为“维持、伸出”，hold back为“抑制、阻碍发展”，强调客观拖延工期应用hold up。"
+    }
+  },
+  {
+    "id": 77,
+    "english": "keep off",
+    "chinese": "（使）不接近，避开",
+    "category": "V",
+    "example": {
+      "question": "Please ______ the grass while the newly sown seeds are germinating.",
+      "options": ["keep off", "keep up", "keep on", "keep out"],
+      "answer": "keep off",
+      "explanation": "keep off the grass为“请勿践踏草地”的固定说法；keep up为“保持、继续”，keep on为“持续”，keep out为“（使）不得进入”，常用keep out of结构。"
+    }
+  },
+  {
+    "id": 78,
+    "english": "make out",
+    "chinese": "勉强辨认出；理解；开（账单）",
+    "category": "V",
+    "example": {
+      "question": "The fog was so thick that we could barely ______ the road signs ahead.",
+      "options": ["make out", "make for", "make off", "make over"],
+      "answer": "make out",
+      "explanation": "make out在此意为“勉强看清、辨认”；make for为“走向、促成”，make off为“匆忙逃走”，make over为“翻新、转让”。"
+    }
+  },
+  {
+    "id": 79,
+    "english": "pass away",
+    "chinese": "去世（婉辞）",
+    "category": "V",
+    "example": {
+      "question": "The famous novelist ______ peacefully at her country home at the age of ninety-two.",
+      "options": ["passed away", "passed out", "passed by", "passed down"],
+      "answer": "passed away",
+      "explanation": "pass away是“去世”的委婉说法，符合讣告语境；pass out为“昏倒、分发”，pass by为“经过、忽视”，pass down为“传下来”。"
+    }
+  },
+  {
+    "id": 80,
+    "english": "point out",
+    "chinese": "指出，指明",
+    "category": "V",
+    "example": {
+      "question": "Critics were quick to ______ that the survey was based on very limited data.",
+      "options": ["point out", "point to", "point at", "point up"],
+      "answer": "point out",
+      "explanation": "point out后可接that从句，意为“指出（事实、错误）”；point to/at后接具体对象，意为“指向”，point up为“强调、凸显”，不接that从句。"
+    }
+  },
+  {
+    "id": 81,
+    "english": "not until 引起倒装",
+    "chinese": "直到……才……（not until置于句首时主句部分倒装）",
+    "category": "G",
+    "example": {
+      "question": "Not until the train pulled out of the station ______ that she had left her laptop on the seat.",
+      "options": ["did she realize", "she realized", "had she realized", "she had realized"],
+      "answer": "did she realize",
+      "explanation": "not until位于句首时主句须部分倒装，借助助动词did；“意识到”发生在火车驶出之后，应用一般过去时而非过去完成时，故选did she realize。"
+    }
+  },
+  {
+    "id": 82,
+    "english": "Had it not been for",
+    "chinese": "要不是因为……（对过去的虚拟，倒装省略if）",
+    "category": "G",
+    "example": {
+      "question": "______ your timely warning, we would have walked straight into the trap.",
+      "options": ["Had it not been for", "If it were not for", "Were it not for", "Had not it been for"],
+      "answer": "Had it not been for",
+      "explanation": "主句would have walked表示对过去的虚拟，条件句应为if it had not been for，省略if后倒装成had it not been for；B、C指对现在的虚拟，D否定词位置错误。"
+    }
+  },
+  {
+    "id": 83,
+    "english": "There is no denying that",
+    "chinese": "不可否认……",
+    "category": "G",
+    "example": {
+      "question": "______ that online learning has become an essential part of modern education.",
+      "options": ["There is no denying", "It is no denying", "There is no doubt whether", "It no use denying"],
+      "answer": "There is no denying",
+      "explanation": "there is no denying that为固定句型；denying是动名词，须用there be引导，不能用形式主语it；no doubt后接that不接whether；D结构残缺。"
+    }
+  },
+  {
+    "id": 84,
+    "english": "It occurs to sb that",
+    "chinese": "某人突然想到……",
+    "category": "G",
+    "example": {
+      "question": "Suddenly ______ that she had completely forgotten to lock the front door.",
+      "options": ["it occurred to her", "she occurred", "it occurred her", "she was occurred"],
+      "answer": "it occurred to her",
+      "explanation": "occur表示“被想到”时以it作形式主语，真正主语是that从句，且人之前必须加介词to；occur为不及物动词，不能用被动，故其余三项均误。"
+    }
+  },
+  {
+    "id": 85,
+    "english": "the more…the more…",
+    "chinese": "越……就越……",
+    "category": "G",
+    "example": {
+      "question": "______ you practise speaking English, ______ you will become.",
+      "options": ["The more; the more confident", "The more; the more confidently", "More; more confident", "The most; the most confident"],
+      "answer": "The more; the more confident",
+      "explanation": "“the＋比较级，the＋比较级”表示“越……越……”；become为系动词，后接形容词confident而不是副词confidently，故B错；C、D缺少the或误用最高级。"
+    }
+  },
+  {
+    "id": 86,
+    "english": "What surprised me was that",
+    "chinese": "使我惊讶的是……（what引导名词性从句）",
+    "category": "G",
+    "example": {
+      "question": "______ was that the shy new boy gave the best speech of the whole contest.",
+      "options": ["What surprised me most", "That surprised me most", "Which surprised me most", "It surprised me most"],
+      "answer": "What surprised me most",
+      "explanation": "what引导主语从句并在从句中作主语，相当于the thing that；that引导主语从句时不在从句中充当成分；which表选择，it不能同时充当先行词。"
+    }
+  },
+  {
+    "id": 87,
+    "english": "It is high time that",
+    "chinese": "早该做……了（从句用一般过去时表虚拟）",
+    "category": "G",
+    "example": {
+      "question": "It is high time that the city council ______ firm measures against air pollution.",
+      "options": ["took", "takes", "will take", "has taken"],
+      "answer": "took",
+      "explanation": "it is (high) time that句型中，从句谓语须用一般过去时（或should＋动词原形，should不可省但不常见），表示“早该做了”；现在时、将来时和完成时均不符合此虚拟结构。"
+    }
+  },
+  {
+    "id": 88,
+    "english": "so…that 部分倒装",
+    "chinese": "如此……以至于……（so＋形容词/副词置于句首时主句倒装）",
+    "category": "G",
+    "example": {
+      "question": "______ that the audience burst into applause before she finished speaking.",
+      "options": ["So moving was her speech", "So moving her speech was", "Such moving was her speech", "Her speech was so moving as"],
+      "answer": "So moving was her speech",
+      "explanation": "so＋形容词置于句首表示强调时，主句须部分倒装：so moving was her speech；B语序未倒装；such后须接名词短语；so…as不引导结果状语从句。"
+    }
+  },
+  {
+    "id": 89,
+    "english": "only＋状语置于句首引起倒装",
+    "chinese": "只有……才……（主句部分倒装）",
+    "category": "G",
+    "example": {
+      "question": "Only after you have paid the registration fee ______ allowed to choose your courses.",
+      "options": ["will you be", "you will be", "you are", "are you been"],
+      "answer": "will you be",
+      "explanation": "only修饰状语从句置于句首时，主句须部分倒装；主句描述缴费之后的将来情形，用will you be allowed；B、C未倒装，D结构错误。"
+    }
+  },
+  {
+    "id": 90,
+    "english": "Hardly…when…",
+    "chinese": "一……就……（hardly置于句首时主句过去完成时倒装）",
+    "category": "G",
+    "example": {
+      "question": "Hardly ______ the house when it began to pour with rain.",
+      "options": ["had I left", "I had left", "did I leave", "I left"],
+      "answer": "had I left",
+      "explanation": "hardly位于句首时主句部分倒装，且“离开”发生在“下雨”之前，须用过去完成时had I left；when从句用一般过去时；C时态错误，B未倒装。"
+    }
+  },
+  {
+    "id": 91,
+    "english": "No sooner…than…",
+    "chinese": "一……就……（no sooner置于句首时主句过去完成时倒装）",
+    "category": "G",
+    "example": {
+      "question": "No sooner ______ asleep than a loud knock at the door woke him up.",
+      "options": ["had he fallen", "he had fallen", "did he fall", "he fell"],
+      "answer": "had he fallen",
+      "explanation": "no sooner位于句首时主句部分倒装，且“入睡”先于“敲门声”，用过去完成时had he fallen；连词用than，从句用一般过去时；C时态不符，B、D未倒装。"
+    }
+  },
+  {
+    "id": 92,
+    "english": "省略if的虚拟条件倒装（were）",
+    "chinese": "假如……（对现在/将来的虚拟，were提前）",
+    "category": "G",
+    "example": {
+      "question": "______ given the chance, I would definitely study medicine rather than law.",
+      "options": ["Were I", "Was I", "Had I", "Did I"],
+      "answer": "Were I",
+      "explanation": "此句相当于if I were given the chance，对与现在事实相反的情况虚拟，be动词一律用were，省略if时将were提前；had I后应接过去分词构成完成结构，与此处given配合语义不符。"
+    }
+  },
+  {
+    "id": 93,
+    "english": "It is/was…that…强调句",
+    "chinese": "正是……（强调句型）",
+    "category": "G",
+    "example": {
+      "question": "It was in the small village library ______ his love of reading first took root.",
+      "options": ["that", "where", "which", "in which"],
+      "answer": "that",
+      "explanation": "被强调部分是地点状语in the small village library，强调句只能用that（强调人时可用who），去掉it was…that后句子依然完整；where和in which引导定语从句，但句中不缺先行词关系。"
+    }
+  },
+  {
+    "id": 94,
+    "english": "not…but…",
+    "chinese": "不是……而是……",
+    "category": "G",
+    "example": {
+      "question": "The secret of happiness is not to do what one likes, ______ to like what one has to do.",
+      "options": ["but", "and", "or", "yet"],
+      "answer": "but",
+      "explanation": "not…but…为并列连词结构，意为“不是……而是……”，前后成分须对称；and表并列、or表选择、yet表转折但不与not构成此固定结构。"
+    }
+  },
+  {
+    "id": 95,
+    "english": "It is no use doing",
+    "chinese": "做……是没有用的",
+    "category": "G",
+    "example": {
+      "question": "It is no use ______ over spilt milk; what we need now is a practical solution.",
+      "options": ["crying", "to cry", "cried", "cry"],
+      "answer": "crying",
+      "explanation": "it is no use后须接动名词作真正主语，构成it is no use doing sth；crying over spilt milk也是英语谚语“覆水难收”，不定式与动词原形均不合此句型。"
+    }
+  },
+  {
+    "id": 96,
+    "english": "There is no point in doing",
+    "chinese": "做……毫无意义",
+    "category": "G",
+    "example": {
+      "question": "There is no point in ______ him to change his mind once he has made a decision.",
+      "options": ["trying to persuade", "try to persuade", "to try persuading", "tried persuading"],
+      "answer": "trying to persuade",
+      "explanation": "there is no point in中的in为介词，后接动名词；“试图说服”为try to persuade，故综合为trying to persuade；B、C、D的动词形式均不能作介词宾语。"
+    }
+  },
+  {
+    "id": 97,
+    "english": "What matters (most) is…",
+    "chinese": "真正重要的是……（what引导主语从句）",
+    "category": "G",
+    "example": {
+      "question": "______ in the long run is not the score of a single exam but the habit of lifelong learning.",
+      "options": ["What matters", "That matters", "It matters", "Which matters"],
+      "answer": "What matters",
+      "explanation": "what引导主语从句并在从句中作主语，相当于the thing that；that引导主语从句时不充当成分；it不能引导从句作主语；which表选择范围，均不合适。"
+    }
+  },
+  {
+    "id": 98,
+    "english": "such…that…",
+    "chinese": "如此……以至于……（such后接名词短语）",
+    "category": "G",
+    "example": {
+      "question": "The lecturer made ______ informative speech that most students stayed behind to ask questions.",
+      "options": ["such an", "so an", "such a", "so"],
+      "answer": "such an",
+      "explanation": "speech为可数名词单数，informative以元音音素开头，故用such an；such修饰名词短语，so修饰形容词或副词，故so an和so结构错误，such a冠词音素不符。"
+    }
+  },
+  {
+    "id": 99,
+    "english": "as引导非限制性定语从句",
+    "chinese": "正如……（as指代整个主句，可位于句首）",
+    "category": "G",
+    "example": {
+      "question": "______ is often the case with beginners, Tom tried to memorize every new word mechanically.",
+      "options": ["As", "Which", "That", "It"],
+      "answer": "As",
+      "explanation": "as引导非限制性定语从句，可位于句首并指代整个主句，意为“正如”；which引导此类从句不能置于句首；that不能引导非限制性定语从句；it不能起连接作用。"
+    }
+  },
+  {
+    "id": 100,
+    "english": "however＋形容词/副词引导让步状语",
+    "chinese": "无论多么……",
+    "category": "G",
+    "example": {
+      "question": "______, the rescue workers refused to give up searching for the missing climbers.",
+      "options": ["However bad the weather was", "However the weather was bad", "No matter bad the weather", "Although bad the weather was"],
+      "answer": "However bad the weather was",
+      "explanation": "however引导让步状语从句时语序为however＋形容词/副词＋主语＋谓语；B语序错误；no matter后须接how；although引导从句不倒装，C、D均不成立。"
+    }
+  },
+  {
+    "id": 101,
+    "english": "should (not) have done",
+    "chinese": "本（不）该做……（对过去行为的责备或后悔）",
+    "category": "G",
+    "example": {
+      "question": "You ______ the confidential report to anyone outside the department; it was a serious breach of rules.",
+      "options": ["shouldn't have shown", "mustn't show", "needn't have shown", "can't have shown"],
+      "answer": "shouldn't have shown",
+      "explanation": "shouldn't have done表示“本不该做却做了”，带责备意味，符合泄密事实；needn't have done为“本不必做却做了”；can't have done表对过去的否定推测；mustn't show时态不符。"
+    }
+  },
+  {
+    "id": 102,
+    "english": "It won't be long before…",
+    "chinese": "不久就会……",
+    "category": "G",
+    "example": {
+      "question": "With artificial intelligence developing so fast, it won't be long ______ self-driving cars become common.",
+      "options": ["before", "when", "since", "until"],
+      "answer": "before",
+      "explanation": "it won't be long before…为固定句型，意为“不久以后就会……”；when不用于此结构，it is/has been＋时间＋since表“自从……已有多久”，until与not连用通常修饰终止性动作，均不符。"
+    }
+  },
+  {
+    "id": 103,
+    "english": "distinguish",
+    "chinese": "区分，辨别；使有别于",
+    "category": "C",
+    "example": {
+      "question": "A true expert can readily ______ an original painting from a clever forgery.",
+      "options": ["distinguish", "distract", "distort", "disguise"],
+      "answer": "distinguish",
+      "explanation": "distinguish A from B意为“辨别A与B”；distract为“使分心”，distort为“歪曲、扭曲”，disguise为“伪装”，均为形近干扰项，语义不符。"
+    }
+  },
+  {
+    "id": 104,
+    "english": "discard",
+    "chinese": "丢弃，抛弃",
+    "category": "C",
+    "example": {
+      "question": "Environmentalists urge people not to ______ used batteries carelessly, as they contain harmful chemicals.",
+      "options": ["discard", "discharge", "dismiss", "dissolve"],
+      "answer": "discard",
+      "explanation": "discard指“随手丢弃（废弃物）”；discharge为“排放、放行”，dismiss为“解雇、不予考虑”，dissolve为“溶解、解散”，均不合乱扔垃圾的语境。"
+    }
+  },
+  {
+    "id": 105,
+    "english": "discharge",
+    "chinese": "排放（液体、气体）；准许离开；履行（职责）",
+    "category": "C",
+    "example": {
+      "question": "The factory was fined for illegally ______ untreated waste water into the nearby river.",
+      "options": ["discharging", "discarding", "draining", "dismissing"],
+      "answer": "discharging",
+      "explanation": "discharge专指“排放（废水、废气）”，符合工厂排污语境；discard为“丢弃（固体物）”，drain为“排干（积水）”，dismiss为“解雇、解散”。"
+    }
+  },
+  {
+    "id": 106,
+    "english": "considerable",
+    "chinese": "相当大（多）的，可观的",
+    "category": "C",
+    "example": {
+      "question": "The new subway line will save commuters a ______ amount of travel time every day.",
+      "options": ["considerable", "considerate", "considering", "considered"],
+      "answer": "considerable",
+      "explanation": "a considerable amount of为“相当多的”，修饰数量；considerate形容人“体贴的”；considering为介词“考虑到”；considered为“经过深思熟虑的”。"
+    }
+  },
+  {
+    "id": 107,
+    "english": "considerate",
+    "chinese": "体贴的，考虑周到的",
+    "category": "C",
+    "example": {
+      "question": "It was very ______ of you to give up your seat to the pregnant woman on the crowded bus.",
+      "options": ["considerate", "considerable", "conservative", "conventional"],
+      "answer": "considerate",
+      "explanation": "it is considerate of sb to do sth形容某人行为“体贴周到”；considerable指数量“可观的”；conservative为“保守的”；conventional为“传统的”，均不形容此举。"
+    }
+  },
+  {
+    "id": 108,
+    "english": "conserve",
+    "chinese": "节约使用，保护（资源、能源）",
+    "category": "C",
+    "example": {
+      "question": "Residents are being asked to ______ water during the unusually dry summer months.",
+      "options": ["conserve", "preserve", "reserve", "observe"],
+      "answer": "conserve",
+      "explanation": "conserve强调节约、合理使用资源（conserve water/energy为常用搭配）；preserve强调使完好保存、免受破坏；reserve为“预留、预订”；observe为“观察、遵守”。"
+    }
+  },
+  {
+    "id": 109,
+    "english": "preserve",
+    "chinese": "保护，保存；腌制",
+    "category": "C",
+    "example": {
+      "question": "Salt has long been used to ______ meat and fish in regions without refrigeration.",
+      "options": ["preserve", "conserve", "reserve", "deserve"],
+      "answer": "preserve",
+      "explanation": "preserve指“保存、防腐”，腌制食品正属此义；conserve侧重节约使用资源；reserve为“预订、储备”；deserve为“值得”，为形近干扰。"
+    }
+  },
+  {
+    "id": 110,
+    "english": "reserve",
+    "chinese": "预订；保留，储备",
+    "category": "C",
+    "example": {
+      "question": "I'd like to ______ a table for four by the window for this Saturday evening.",
+      "options": ["reserve", "preserve", "conserve", "retain"],
+      "answer": "reserve",
+      "explanation": "reserve a table为“预订餐位”的固定表达；preserve、conserve强调保存或节约，不用于订座；retain为“保留、保持（原有状态）”，不接table表示预订。"
+    }
+  },
+  {
+    "id": 111,
+    "english": "reluctant",
+    "chinese": "不情愿的，勉强的",
+    "category": "C",
+    "example": {
+      "question": "Having once been cheated online, the elderly man was ______ to give out any personal information.",
+      "options": ["reluctant", "resistant", "irrelevant", "indifferent"],
+      "answer": "reluctant",
+      "explanation": "be reluctant to do sth意为“不情愿做某事”，后接不定式；be resistant后须接to加名词；irrelevant为“不相关的”；indifferent为“漠不关心的”，通常接to。"
+    }
+  },
+  {
+    "id": 112,
+    "english": "neutral",
+    "chinese": "中立的，不偏不倚的；中性的",
+    "category": "C",
+    "example": {
+      "question": "A good referee must remain ______ and never show favour to either side.",
+      "options": ["neutral", "natural", "mutual", "central"],
+      "answer": "neutral",
+      "explanation": "remain neutral指“保持中立”，与不偏袒任何一方呼应；natural为“自然的”；mutual为“相互的”；central为“中心的”，均为形近或语义干扰。"
+    }
+  },
+  {
+    "id": 113,
+    "english": "arbitrary",
+    "chinese": "任意的，武断的，专横的",
+    "category": "C",
+    "example": {
+      "question": "Critics complained that the selection of prize winners seemed completely ______, with no clear criteria.",
+      "options": ["arbitrary", "deliberate", "compulsory", "temporary"],
+      "answer": "arbitrary",
+      "explanation": "arbitrary指“随心所欲、没有标准的”，与no clear criteria呼应；deliberate为“故意的”；compulsory为“强制的”；temporary为“临时的”，语义均不符。"
+    }
+  },
+  {
+    "id": 114,
+    "english": "deliberate",
+    "chinese": "故意的，蓄意的；从容谨慎的",
+    "category": "C",
+    "example": {
+      "question": "The police believe the fire was ______ rather than the result of an electrical fault.",
+      "options": ["deliberate", "delicate", "desperate", "dense"],
+      "answer": "deliberate",
+      "explanation": "deliberate指“蓄意的”，与“电路故障（意外）”形成对照；delicate为“精致的、脆弱的”；desperate为“绝望的、拼命的”；dense为“密集的”，均为形近干扰。"
+    }
+  },
+  {
+    "id": 115,
+    "english": "adopt",
+    "chinese": "采纳，采用；收养",
+    "category": "C",
+    "example": {
+      "question": "The committee voted to ______ the new safety regulations from the beginning of next year.",
+      "options": ["adopt", "adapt", "adept", "adjust"],
+      "answer": "adopt",
+      "explanation": "adopt regulations为“采纳、通过规章”；adapt为“适应、改编”；adept为形容词“熟练的”；adjust为“调整”，后接to，均为近形近义干扰。"
+    }
+  },
+  {
+    "id": 116,
+    "english": "acknowledge",
+    "chinese": "承认；致谢；告知收到",
+    "category": "C",
+    "example": {
+      "question": "Even his opponents had to ______ that his argument was both clear and well supported.",
+      "options": ["acknowledge", "acquire", "advocate", "allocate"],
+      "answer": "acknowledge",
+      "explanation": "acknowledge that…意为“承认……（属实）”；acquire为“获得”；advocate为“提倡”；allocate为“分配”，均不能接that从句表达承认之义。"
+    }
+  },
+  {
+    "id": 117,
+    "english": "compromise",
+    "chinese": "妥协，折中方案；危及",
+    "category": "C",
+    "example": {
+      "question": "After hours of tough negotiation, both sides finally reached a ______ acceptable to all.",
+      "options": ["compromise", "promise", "comprehension", "composition"],
+      "answer": "compromise",
+      "explanation": "reach a compromise为“达成妥协”的固定搭配；promise为“承诺”；comprehension为“理解”；composition为“作文、构成”，均为形近干扰。"
+    }
+  },
+  {
+    "id": 118,
+    "english": "conventional",
+    "chinese": "传统的，因循守旧的；常规的",
+    "category": "C",
+    "example": {
+      "question": "Despite her ______ upbringing, she chose a career that shocked her small hometown.",
+      "options": ["conventional", "convenient", "controversial", "confident"],
+      "answer": "conventional",
+      "explanation": "conventional upbringing指“传统守旧的家教”，与震惊乡邻形成转折；convenient为“方便的”；controversial为“有争议的”；confident为“自信的”，语义均不衔接。"
+    }
+  },
+  {
+    "id": 119,
+    "english": "superior",
+    "chinese": "更好的，更优越的（superior to）；上级的",
+    "category": "C",
+    "example": {
+      "question": "This new material is vastly ______ to traditional steel in both strength and weight.",
+      "options": ["superior", "senior", "prior", "inferior"],
+      "answer": "superior",
+      "explanation": "be superior to为固定搭配，意为“优于”，本身含比较意义，不加more；senior to为“年长于、级别高于”；prior to为“在……之前”；inferior to为“劣于”，语义相反。"
+    }
+  },
+  {
+    "id": 120,
+    "english": "eventually",
+    "chinese": "最终，终于（强调经过较长过程）",
+    "category": "C",
+    "example": {
+      "question": "Although he failed the driving test twice, Mark ______ passed on his third attempt.",
+      "options": ["eventually", "accidentally", "temporarily", "deliberately"],
+      "answer": "eventually",
+      "explanation": "eventually强调经历波折后“最终”成功；accidentally为“意外地”；temporarily为“暂时地”；deliberately为“故意地”，均与两次失败后终获成功的语境不符。"
     }
   }
 ]
