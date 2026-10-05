@@ -59,8 +59,8 @@ class SubjectComponent {
 
             groupDiv.appendChild(itemsContainer);
 
-            if (data.test_points && this.hasTestPoints(group, data.test_points)) {
-                const testPointsDiv = this.createTestPointsDiv(group, data.test_points);
+            const testPointsDiv = TestPointsRenderer.render(group, data.test_points);
+            if (testPointsDiv) {
                 groupDiv.appendChild(testPointsDiv);
             }
 
@@ -105,65 +105,6 @@ class SubjectComponent {
         A11y.bindToggle(title, detail);
 
         return itemDiv;
-    }
-
-    hasTestPoints(group, allTestPoints) {
-        if (!group.items) return false;
-        for (const item of group.items) {
-            if (item.test_points && item.test_points.length > 0) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    createTestPointsDiv(group, allTestPoints) {
-        const testPointsDiv = document.createElement('div');
-        testPointsDiv.className = 'test-points';
-        testPointsDiv.innerHTML = '<h4>考点</h4>';
-
-        const groupTestPoints = new Set();
-        group.items.forEach(item => {
-            if (item.test_points) {
-                item.test_points.forEach(pointId => {
-                    groupTestPoints.add(pointId);
-                });
-            }
-        });
-
-        groupTestPoints.forEach(pointId => {
-            const testPoint = allTestPoints.find(p => p.id === pointId);
-            if (testPoint) {
-                const testPointDiv = document.createElement('div');
-                testPointDiv.className = 'test-point';
-                testPointDiv.innerHTML = `
-                    <h5 class="test-point-title">${testPoint.name}</h5>
-                    <div class="test-questions"></div>
-                `;
-
-                const questionsContainer = testPointDiv.querySelector('.test-questions');
-                testPoint.questions.forEach(question => {
-                    const questionDiv = document.createElement('div');
-                    questionDiv.className = 'test-question';
-                    questionDiv.innerHTML = `
-                        <div class="question-content"><strong>题目：</strong>${question.content}</div>
-                        ${question.options ? `<div class="options">${question.options.map(opt => `<div class="option">${opt}</div>`).join('')}</div>` : ''}
-                        <div class="question-answer"><strong>参考答案：</strong>${question.answer}</div>
-                        ${question.explanation ? `<div class="question-analysis"><strong>解析：</strong>${question.explanation}</div>` : ''}
-                        ${question.source ? `<div class="question-source"><strong>来源：</strong>${question.source}</div>` : ''}
-                    `;
-                    questionsContainer.appendChild(questionDiv);
-                });
-
-                const title = testPointDiv.querySelector('.test-point-title');
-                const questions = testPointDiv.querySelector('.test-questions');
-                A11y.bindToggle(title, questions);
-
-                testPointsDiv.appendChild(testPointDiv);
-            }
-        });
-
-        return testPointsDiv;
     }
 
     renderError() {

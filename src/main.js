@@ -52,6 +52,8 @@ class App {
     constructor() {
         // 共享一个 DataManager 实例，让所有模块共用缓存
         this.sharedDataManager = new DataManager();
+        // 懒加载注册表：gvc-container id -> 首次激活时执行的数据加载函数
+        this.lazyLoaders = {};
         this.init();
     }
 
@@ -79,24 +81,24 @@ class App {
         apply();
     }
 
-    // 初始化各类组件
+    // 初始化各类组件（全部改为懒加载：首次激活对应容器时才 fetch JSON）
     initComponents() {
         // 1) 英语 GVC（词汇）组件
         if (document.getElementById('vocabulary-list')) {
             const gvcComponent = new GVCComponent('vocabulary-list');
-            gvcComponent.init();
+            this.registerLazyLoader('gvc', () => gvcComponent.init());
         }
 
         // 2) 语文古诗文组件
         if (document.getElementById('classical-content')) {
             const classicalComponent = new ClassicalComponent('classical-content');
-            classicalComponent.init();
+            this.registerLazyLoader('classical', () => classicalComponent.init());
         }
 
         // 3) 英语语法组件
         if (document.getElementById('english-grammar-content')) {
             const grammarComponent = new GrammarComponent('english-grammar-content');
-            grammarComponent.init();
+            this.registerLazyLoader('english-grammar', () => grammarComponent.init());
         }
 
         // 4) 学科知识模块（使用通用初始化函数 + 配置表）
@@ -106,9 +108,25 @@ class App {
         this.initTextbookComponents();
     }
 
+    // 注册懒加载器：containerId 为 .gvc-container 的 id（与卡片链接 hash 一致）
+    registerLazyLoader(containerId, loader) {
+        if (containerId && typeof loader === 'function') {
+            this.lazyLoaders[containerId] = loader;
+        }
+    }
+
+    // 首次激活容器时触发对应数据加载（只执行一次）
+    ensureLoaded(containerId) {
+        const loader = this.lazyLoaders[containerId];
+        if (loader) {
+            delete this.lazyLoaders[containerId];
+            loader();
+        }
+    }
+
     /**
-     * 通用知识模块初始化函数：遍历 SUBJECT_MODULE_CONFIG，对每个存在的容器创建 SubjectComponent
-     * 共享 DataManager 实例 → 跨模块缓存复用，减少重复 fetch
+     * 通用知识模块初始化函数：遍历 SUBJECT_MODULE_CONFIG 创建 SubjectComponent
+     * 不立即加载，注册到懒加载注册表，等首次激活对应内容区时才 fetch
      */
     initSubjectModules() {
         App.SUBJECT_MODULE_CONFIG.forEach(mod => {
@@ -132,17 +150,21 @@ class App {
                 }
             };
 
-            component.loadData();
+            const wrapper = container.closest('.gvc-container');
+            if (wrapper) {
+                this.registerLazyLoader(wrapper.id, () => component.loadData());
+            } else {
+                component.loadData(); // 兜底：无包裹容器时保持立即加载
+            }
         });
     }
 
-    // 初始化课本思维导图组件
+    // 初始化课本思维导图组件（懒加载）
     initTextbookComponents() {
         App.TEXTBOOK_CONFIG.forEach(item => {
-            if (document.getElementById(item.containerId)) {
-                const textbookComponent = new TextbookComponent(item.containerId, item.subjectKey);
-                textbookComponent.init();
-            }
+            if (!document.getElementById(item.containerId)) return;
+            const textbookComponent = new TextbookComponent(item.containerId, item.subjectKey);
+            this.registerLazyLoader(item.containerId, () => textbookComponent.init());
         });
     }
 
@@ -180,6 +202,9 @@ class App {
         }
 
         targetContainer.classList.add('active');
+
+        // 懒加载：首次激活该容器时才加载对应数据
+        this.ensureLoaded(targetId);
 
         if (updateHash) {
             // 使用 replaceState 避免在 history 中添加过多重复条目

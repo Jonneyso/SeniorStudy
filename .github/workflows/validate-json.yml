@@ -28,21 +28,47 @@ jobs:
           import sys
 
           errors = []
-          files = sorted(glob.glob('subjects/**/*.json', recursive=True))
+          files = [f for f in sorted(glob.glob('subjects/**/*.json', recursive=True))
+                   if 'node_modules' not in f]
+          parsed = 0
           for f in files:
               try:
                   with open(f, 'r', encoding='utf-8') as fh:
-                      json.load(fh)
+                      data = json.load(fh)
+                  parsed += 1
               except Exception as e:
                   errors.append(f"{f}: {e}")
+                  continue
 
-          print(f"Checked {len(files)} JSON file(s)")
+              # 知识模块 schema 校验：题目必填字段 + 考点 id 引用完整性
+              if isinstance(data, dict) and isinstance(data.get('test_points'), list):
+                  tp_ids = {tp.get('id') for tp in data['test_points'] if isinstance(tp, dict)}
+                  for tp in data['test_points']:
+                      if not isinstance(tp, dict):
+                          continue
+                      tp_name = tp.get('name', '?')
+                      for qi, q in enumerate(tp.get('questions') or []):
+                          for field in ('content', 'answer', 'explanation'):
+                              if not q.get(field):
+                                  errors.append(f"{f}: 考点[{tp_name}] 第{qi+1}题缺少必填字段 {field}")
+
+                  items = []
+                  for g in (data.get('groups') or []):
+                      items.extend(g.get('items') or [])
+                  if isinstance(data.get('items'), list):
+                      items.extend(data['items'])
+                  for item in items:
+                      for ref in (item.get('test_points') or []):
+                          if ref not in tp_ids:
+                              errors.append(f"{f}: 条目[{item.get('title', '?')}] 引用了不存在的考点 id: {ref}")
+
+          print(f"Checked {len(files)} JSON file(s), {parsed} parsed OK")
           if errors:
               print("\n❌ JSON validation FAILED:")
               for err in errors:
                   print(f"  - {err}")
               sys.exit(1)
-          print("✅ All JSON files are valid")
+          print("✅ All JSON files are valid (schema, references & required fields)")
           PY
 
       - name: Syntax check all JS files

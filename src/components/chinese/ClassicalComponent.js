@@ -31,7 +31,6 @@ class ClassicalComponent {
             groupDiv.innerHTML = `
                 <h3>${group.name}</h3>
                 <div class="classical-items"></div>
-                <div class="test-points"></div>
             `;
 
             const itemsContainer = groupDiv.querySelector('.classical-items');
@@ -55,55 +54,11 @@ class ClassicalComponent {
                 itemsContainer.appendChild(itemDiv);
             });
 
-            const testPointsContainer = groupDiv.querySelector('.test-points');
-            testPointsContainer.innerHTML = '<h4>考点</h4>';
-
-            // 收集该分组所有古诗文的考点
-            const groupTestPoints = new Set();
-            group.items.forEach(item => {
-                if (Array.isArray(item.test_points)) {
-                    item.test_points.forEach(pointId => {
-                        groupTestPoints.add(pointId);
-                    });
-                }
-            });
-
-            // 展示考点
-            groupTestPoints.forEach(pointId => {
-                const testPoint = testPointsData && testPointsData.test_points &&
-                    testPointsData.test_points.find(p => p.id === pointId);
-                if (testPoint) {
-                    const testPointDiv = document.createElement('div');
-                    testPointDiv.className = 'test-point';
-                    testPointDiv.innerHTML = `
-                        <h5 class="test-point-title">${testPoint.name}</h5>
-                        <div class="test-questions"></div>
-                    `;
-
-                    const questionsContainer = testPointDiv.querySelector('.test-questions');
-                    testPoint.questions.forEach(question => {
-                        const questionDiv = document.createElement('div');
-                        questionDiv.className = 'test-question';
-                        const sourceHtml = question.link
-                            ? `<a href="${question.link}" target="_blank" rel="noopener noreferrer">${question.source}</a>`
-                            : (question.source || '—');
-                        questionDiv.innerHTML = `
-                            <div class="question-content"><strong>题目：</strong>${question.content}</div>
-                            <div class="question-source"><strong>来源：</strong>${sourceHtml}</div>
-                            <div class="question-analysis"><strong>解析：</strong>${question.analysis || ''}</div>
-                            <div class="question-answer"><strong>参考答案：</strong>${question.answer}</div>
-                        `;
-                        questionsContainer.appendChild(questionDiv);
-                    });
-
-                    // 无障碍：绑定键盘 + ARIA
-                    const title = testPointDiv.querySelector('.test-point-title');
-                    const questions = testPointDiv.querySelector('.test-questions');
-                    A11y.bindToggle(title, questions);
-
-                    testPointsContainer.appendChild(testPointDiv);
-                }
-            });
+            // 考点渲染统一走公共渲染器（含来源链接支持）
+            const testPointsDiv = TestPointsRenderer.render(group, testPointsData);
+            if (testPointsDiv) {
+                groupDiv.appendChild(testPointsDiv);
+            }
 
             container.appendChild(groupDiv);
         });
