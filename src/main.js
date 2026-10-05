@@ -58,8 +58,25 @@ class App {
     init() {
         this.initComponents();
         this.initEventListeners();
+        this.initSubjectCardsViewport();
         this.initBackToTopButton();
         this.initHashRouting();
+    }
+
+    // 学科折叠卡视口联动：桌面（>768px）默认全开，移动端默认收起
+    initSubjectCardsViewport() {
+        const mq = window.matchMedia('(max-width: 768px)');
+        const apply = () => {
+            document.querySelectorAll('details.subject-card').forEach(card => {
+                card.open = !mq.matches;
+            });
+        };
+        if (typeof mq.addEventListener === 'function') {
+            mq.addEventListener('change', apply);
+        } else if (typeof mq.addListener === 'function') {
+            mq.addListener(apply); // 兼容旧浏览器
+        }
+        apply();
     }
 
     // 初始化各类组件
