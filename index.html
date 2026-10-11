@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -430,15 +430,7 @@
     </div>
 
     <!-- 加载JavaScript文件 -->
-    <script src="src/services/DataService.js"></script>
-    <script src="src/services/DataManager.js"></script>
-    <script src="src/utils/accessibility.js"></script>
-    <script src="src/utils/testPointsRenderer.js"></script>
-    <script src="src/components/SubjectComponent.js"></script>
-    <script src="src/components/english/GrammarComponent.js"></script>
-    <script src="src/components/TextbookComponent.js"></script>
-    <script src="src/components/english/GVCComponent.js"></script>
-    <script src="src/components/chinese/ClassicalComponent.js"></script>
-    <script src="src/main.js"></script>
+    <!-- 合并后的单一脚本（由 node build.js 从下方列表生成；改 src 后需重新运行 build.js） -->
+    <script src="dist/bundle.js"></script>
 </body>
 </html>

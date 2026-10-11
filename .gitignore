@@ -18,13 +18,15 @@ logs
 *.swp
 *.swo
 *~
+.trae/
 
 # 操作系统文件
 .DS_Store
 Thumbs.db
 
-# 构建输出
-dist/
+# 构建输出（保留 bundle.js：GitHub Pages 部署依赖仓库中的它）
+dist/*
+!dist/bundle.js
 build/
 
 # 测试输出
@@ -35,6 +37,8 @@ tmp/
 temp/
 
 # 项目特有：大体积学习资料（PDF电子书、扫描件等）
+# 大型源数据（本地保留，不入仓库）
 *.pdf
+subjects/english/gvc/data/pdf_content.txt
 *.epub
 *.mobi
